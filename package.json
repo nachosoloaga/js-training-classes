@@ -7,6 +7,10 @@
     "build": "webpack",
     "start": "webpack-dev-server --hot"
   },
+  "engines": {
+    "node": "14.17.1",
+    "yarn": "1.22.10"
+  },
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
