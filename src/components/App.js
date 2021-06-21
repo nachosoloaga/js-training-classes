@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Menu from "./Menu";
 import Presentation from "./Spectacle";
 import addSlides from "../utils/addSlides";
-import classesInfo from "../constants/routes";
+import classes from "../constants/classes";
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
       <Switch>
         <Route exact path="/menu" component={Menu} />
 
-        {classesInfo.map(({ classNumber, slidesFilename }) => (
+        {classes.map(({ classNumber, slidesFilename }) => (
           <Route
             key={classNumber}
             exact

@@ -1,4 +1,4 @@
-const classesInfo = [
+const classes = [
   {
     classNumber: 1,
     slidesFilename: "class1.md",
@@ -9,4 +9,4 @@ const classesInfo = [
   },
 ];
 
-export default classesInfo;
+export default classes;
