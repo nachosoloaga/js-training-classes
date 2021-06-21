@@ -25,6 +25,7 @@ module.exports = {
   output: {
     path: path.resolve("dist"),
     filename: "deck.js",
+    publicPath: "/",
   },
   devtool: "source-map",
   module: {
@@ -50,6 +51,9 @@ module.exports = {
         use: [require.resolve("file-loader")],
       },
     ],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   // Default for boilerplate generation.
   plugins: [
