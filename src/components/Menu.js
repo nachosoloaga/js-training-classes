@@ -9,7 +9,7 @@ const Menu = () => {
       <ul className="menu-list">
         {classes.map(({ classNumber }) => {
           return (
-            <li>
+            <li key={classNumber}>
               <Link
                 className="menu-list-item"
                 to={`classes/${classNumber}`}

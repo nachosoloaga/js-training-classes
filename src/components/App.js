@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Menu from "./Menu";
 import Presentation from "./Spectacle";
-import addSlides from "../utils/addSlides";
+import withSlides from "../utils/withSlides";
 import classes from "../constants/classes";
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
             key={classNumber}
             exact
             path={`/classes/${classNumber}`}
-            render={() => addSlides(Presentation, slidesFilename)}
+            render={() => withSlides(Presentation, slidesFilename)}
           />
         ))}
 
