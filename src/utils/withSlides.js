@@ -1,10 +1,7 @@
 import React from "react";
 
 const selectSlides = (slidesFilename) => {
-  const markdownObject = require(`../slides/${slidesFilename}`);
-  const slides = markdownObject.default;
-
-  return slides;
+  return require(`../slides/${slidesFilename}`).default();
 };
 
 const withSlides = (Children, slidesFilename) => {

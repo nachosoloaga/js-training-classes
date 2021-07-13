@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 import {
   FlexBox,
@@ -7,7 +6,6 @@ import {
   Progress,
   Deck,
   Box,
-  MarkdownSlideSet,
 } from "spectacle";
 
 const theme = {
@@ -39,7 +37,9 @@ const template = () => (
 
 const Presentation = ({ slides }) => (
   <Deck theme={theme} template={template}>
-    <MarkdownSlideSet backgroundColor="#ffd84d">{slides}</MarkdownSlideSet>
+    <div style={{ backgroundColor: "#ffd84d" }}>
+      {slides}
+    </div>
   </Deck>
 );
 
