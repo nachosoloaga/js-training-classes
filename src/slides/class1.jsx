@@ -59,7 +59,21 @@ export default () => (
         JavaScript fue creado inicialmente con un único propósito, "traer vida a las páginas web" - <i>make web pages alive</i>. Hoy en día se utiliza en muchos otros entornos también.
       </Text>
       <Text>
-        Los programas escritos en JavaScript son llamados scripts y no necesitan de ningún tipo de proceso especial o compilación para ser ejecutados. De hecho, pueden ser escritos directamente en el código HTML de una página web y se ejecutará cuando ésta sea cargada.
+        Fue desarrollado originalmente por Brendan Eich de Netscape con el nombre de Mocha, el cual fue renombrado posteriormente a LiveScript, para finalmente quedar como JavaScript. Este último cambio de nombre se realizó en diciembre de 1995.
+      </Text>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" padding="0px" fontSize="50px">
+        <i>Javascript</i>
+      </Heading>
+
+      <Text>
+        Los programas escritos en JavaScript son llamados scripts y no necesitan de ningún tipo de procesamiento especial o compilación para ser ejecutados. De hecho, pueden ser escritos directamente en el código HTML de una página web y se ejecutará cuando ésta sea cargada.
+      </Text>
+
+      <Text>
+        Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.
       </Text>
     </Slide>
 
@@ -88,7 +102,7 @@ export default () => (
           Es un lenguaje multi-paradigma.
         </ListItem>
         <ListItem>
-          Existen una gran variedad de frameworks JS tanto Frontend como Backend.
+          Existe una gran variedad de frameworks JS, tanto Frontend como Backend.
         </ListItem>
       </UnorderedList>
     </Slide>
