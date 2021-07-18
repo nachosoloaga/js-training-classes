@@ -8,7 +8,9 @@ import {
   Text,
   UnorderedList,
   CodePane,
-  Notes
+  Notes,
+  FlexBox,
+  Box
 } from "spectacle";
 
 export default () => (
@@ -208,6 +210,211 @@ export default () => (
 
       <Notes>
         Las constantes pueden ser declaradas con mayúsculas o minúsculas, pero generalmente se definen con todas sus letras en mayúscula a modo de convención.
+      </Notes>
+    </Slide>
+
+    {/* Data types and data structures */}
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Valores y estructuras de datos
+      </Heading>
+
+      <Text>
+        Todos los lenguajes de programación tienen estructuras de datos integradas.
+      </Text>
+
+      <Text>
+        Generalmente varían sus nombres o formas de utilización de un lenguaje a otro.
+      </Text>
+    </Slide>
+
+    {/* Primitives */}
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Tipos de datos primitivos
+      </Heading>
+
+      <Text margin="0px" padding="0px">
+        JavaScript cuenta con un conjunto de tipos que son llamados <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#primitive_values">tipos primitivos</a>. Estos tipos definen valores que son inmutables.
+      </Text>
+
+      <UnorderedList>
+        <ListItem>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">Undefined</a>
+        </ListItem>
+        <ListItem>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
+        </ListItem>
+        <ListItem>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+        </ListItem>
+        <ListItem>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+        </ListItem>
+        <ListItem>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">BigInt</a>
+        </ListItem>
+        <ListItem>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/symbol">Symbol</a>
+        </ListItem>
+      </UnorderedList>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Undefined
+      </Heading>
+
+      <Text>
+        <b>undefined</b> es una variable global que posee como valor inicial el tipo primitivo undefined.
+      </Text>
+
+      <UnorderedList>
+        <ListItem>
+          Una variable que no tiene un valor asignado, es creada con el valor undefined.
+        </ListItem>
+        <ListItem>
+          Una función que no posee una sentencia return, devuelve undefined.
+        </ListItem>
+      </UnorderedList>
+
+      <CodePane language="js">
+        {`
+          let foo;
+
+          console.log(foo); // undefined
+          typeof foo // "undefined"
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Null
+      </Heading>
+
+      <div style={{width: '90%'}}>
+        <Text>
+          Este valor se utiliza para representar la no existencia o invalidez de algo, generalmente de manera intencional.
+        </Text>
+
+        <FlexBox justifyContent="space-between" style={{ width: '90%'}}>
+          <CodePane language="js">
+            {`
+              const foo = null;
+
+              console.log(foo); // null
+              typeof foo // ?
+            `}
+          </CodePane>
+
+          <iframe src="/src/slides/class1/examples/null.html"></iframe>
+        </FlexBox>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Boolean
+      </Heading>
+
+      <Text>
+        Representa una entidad lógica que solo puede tomar los valores <b>true</b> o <b>false</b>.
+      </Text>
+      
+      <Text>
+        Podemos usar la función Boolean para convertir cualquier elemento a boolean.
+      </Text>
+
+      <Text>
+        Si el valor es omitido o es 0, -0, null, false, NaN, undefined, o un String vacío (""), el objeto tendrá un valor inicial <b>false</b>.
+      </Text>
+
+      <Text>
+        El resto de los valores, incluyendo Arrays vacíos y el String "false", crean un objeto con un valor inicial de <b>true</b>.
+      </Text>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <div style={{width: '80%'}}>
+        <Heading margin="0px" fontSize="50px">
+          Boolean
+        </Heading>
+
+        <Grid gridTemplateRows="1fr 1fr" gridRowGap={50}>
+          <FlexBox justifyContent="space-between" style={{ width: '80%'}}>
+            <CodePane language="js">
+              {`
+                const bool = true;
+                
+                if (bool) {
+                  console.log("Hola Snapplerxs!");
+                };
+                `}
+            </CodePane>
+
+            <iframe src="/src/slides/class1/examples/boolean1.html"></iframe>
+          </FlexBox>
+
+          <FlexBox justifyContent="space-between" style={{ width: '80%'}}>
+            <CodePane language="js">
+              {`
+                const bool = false;
+
+                if (bool) {
+                  console.log("Hola Snapplerxs!");
+                };
+                `}
+            </CodePane>
+
+            <iframe src="/src/slides/class1/examples/boolean2.html"></iframe>
+          </FlexBox>
+        </Grid>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <div style={{width: '80%'}}>
+
+        <Heading margin="0px" fontSize="50px">
+          Boolean
+        </Heading>
+
+        <Grid gridTemplateRows="1fr 1fr" gridRowGap={50}>
+          <FlexBox justifyContent="space-between" style={{ width: '80%'}}>
+            <CodePane language="js">
+              {`
+                const bool = Boolean(false);
+
+                if (bool) {
+                  console.log("Hola Snapplerxs!");
+                };
+                `}
+            </CodePane>
+
+            <iframe src="/src/slides/class1/examples/boolean3.html"></iframe>
+          </FlexBox>
+
+          <FlexBox justifyContent="space-between" style={{ width: '80%'}}>
+            <CodePane language="js">
+              {`
+                const bool = new Boolean(false);
+
+                if (bool) {
+                  console.log("Hola Snapplerxs!");
+                };
+                `}
+            </CodePane>
+
+            <iframe src="/src/slides/class1/examples/boolean4.html"></iframe>
+          </FlexBox>
+        </Grid>
+      </div>
+
+      <Notes>
+        No confundir el objeto Booelan con los valores primitivos Boolean ni con la función Boolean.
+
+        La función Boolean puede ser usada para generar valores primitivos, pero al hacer un new estamos creando un objeto, que al ser evaluado tendrá un valor de verdad verdadero.
       </Notes>
     </Slide>
   </>
