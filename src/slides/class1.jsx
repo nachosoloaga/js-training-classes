@@ -165,7 +165,7 @@ export default () => (
       </Heading>
 
       <Text>
-        JavaScript es un lenguaje dinámico y de tipado flexible. En parte esto significa que las variables no están asociadas directamente con ningún tipo de valor en particular y se les pueden asignar o reasignar valores de todos los tipos.
+        JavaScript es un lenguaje dinámico y de tipado flexible. En parte esto significa que las variables no están asociadas directamente con ningún tipo de valor en particular y se les pueden asignar o reasignar valores de cualquier tipo.
       </Text>
 
       <CodePane language="js">
@@ -186,7 +186,7 @@ export default () => (
       </Heading>
 
       <Text>
-        A diferencia de las variables, las constantes no pueden cambiar su valor posteriorment. Se debe especificar el valor al momento de su declaración.
+        A diferencia de las variables, las constantes no pueden cambiar su valor posteriormente. Se debe especificar el valor al momento de su declaración.
       </Text>
 
       <Text>
@@ -201,13 +201,13 @@ export default () => (
           FOO = 20;
 
           // trying to redeclare a constant throws an error
-          // Uncaught SyntaxError: Identifier 'MY_FAV' has already been declared
+          // Uncaught SyntaxError: Identifier 'FOO' has already been declared
           const FOO = 20;
         `}
       </CodePane>
 
       <Notes>
-        Constants can be declared with uppercase or lowercase, but a common convention is to use all-uppercase letters.
+        Las constantes pueden ser declaradas con mayúsculas o minúsculas, pero generalmente se definen con todas sus letras en mayúscula a modo de convención.
       </Notes>
     </Slide>
   </>
