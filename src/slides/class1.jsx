@@ -15,13 +15,13 @@ import {
 export default () => (
   <>
     {/* Intro to JS */}
-    <Slide backgroundColor="#ffd84d">
-      <Heading margin="0px" fontSize="100px">
+    <Slide className="flex-center-column">
+      <Heading margin="0px" className="font-size-heading">
         <i>Agenda</i>
       </Heading>
 
       <OrderedList>
-        <Grid gridTemplateColumns="1fr 1fr 1fr" gridColumnGap={15}>
+        <Grid gridTemplateColumns="1fr 1fr" gridColumnGap={15} className="font-size-medium">
           <ListItem>
             Surgimiento de JS
           </ListItem>
@@ -62,42 +62,43 @@ export default () => (
       </OrderedList>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
-      <Heading margin="0px" padding="0px" fontSize="50px">
+    <Slide>
+      <Heading margin="0px" padding="0px" className="font-size-heading">
         <i>Javascript</i>
       </Heading>
 
-      <Text>
+      <Text className="font-size-medium">
         JavaScript fue creado inicialmente con un único propósito, "traer vida a las páginas web" - <i>make web pages alive</i>. Hoy en día se utiliza en muchos otros entornos también.
       </Text>
-      <Text>
+      <Text className="font-size-medium">
         Fue desarrollado originalmente por Brendan Eich de Netscape con el nombre de Mocha, el cual fue renombrado posteriormente a LiveScript, para finalmente quedar como JavaScript. Este último cambio de nombre se realizó en diciembre de 1995.
       </Text>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
-      <Heading margin="0px" padding="0px" fontSize="50px">
+    <Slide>
+      <Heading margin="0px" padding="0px" className="font-size-heading">
         <i>Javascript</i>
       </Heading>
 
-      <Text>
+      <Text className="font-size-medium">
         Los programas escritos en JavaScript son llamados scripts y no necesitan de ningún tipo de procesamiento especial o compilación para ser ejecutados. De hecho, pueden ser escritos directamente en el código HTML de una página web y se ejecutará cuando ésta sea cargada.
       </Text>
 
-      <Text>
+      <Text className="font-size-medium">
         Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.
       </Text>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
-      <Heading margin="0px" padding="0px" fontSize="50px">
+    <Slide>
+      <Heading margin="0px" padding="0px" className="font-size-heading">
         <i>Javascript</i>
       </Heading>
 
-      <Text>
+      <Text className="font-size-medium">
         Podemos destacar varias cosas únicas del lenguaje
       </Text>
-      <UnorderedList>
+
+      <UnorderedList className="font-size-medium">
         <ListItem>
           Es el lenguaje con integración completa con HTML y CSS más adoptado de la web.
         </ListItem>
@@ -119,36 +120,36 @@ export default () => (
       </UnorderedList>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
-      <Heading margin="0px" padding="0px" fontSize="50px">
+    <Slide>
+      <Heading margin="0px" padding="0px" className="font-size-heading">
         <i>ECMAScript</i>
       </Heading>
 
-      <Text>
-        <a href="https://en.wikipedia.org/wiki/ECMAScript">
+      <Text className="font-size-medium">
+        <a className="link" href="https://en.wikipedia.org/wiki/ECMAScript">
           ECMAScript
         </a> es un estándar que define un lenguaje de tipos dinámicos ligeramente inspirado en Java y otros lenguajes del estilo de C. Soporta algunas características de la programación orientada a objetos mediante objetos basados en prototipos y pseudoclases.
       </Text>
-      <Text>
+      <Text className="font-size-medium">
         El objetivo de este estandar es asegurar la interoperabilidad de las páginas web entre diferentes navegadores web.
       </Text>
-      <Text>
+      <Text className="font-size-medium">
         JavaScript es un lenguaje de programación que implementa este estandar - ECMAScript está basado en JavaScript.
       </Text>
     </Slide>
 
     {/* let and const */}
-    <Slide backgroundColor="#ffd84d">
-      <Heading margin="0px" fontSize="100px">
+    <Slide>
+      <Heading margin="0px" className="font-size-heading">
         Variables
       </Heading>
 
-      <Text>
+      <Text className="font-size-medium">
         Las variables son contenedores que nos permiten almacenar valores para su posterior uso y/o manipulación.
       </Text>
 
-      <Text>
-        Para declarar una variable podemos utilizar la palabra clave <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let"><b>let</b></a>.
+      <Text className="font-size-medium">
+        Para declarar una variable podemos utilizar la palabra clave <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let"><b>let</b></a>.
       </Text>
 
       <CodePane language="js">
@@ -160,13 +161,13 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
-      <Heading margin="0px" fontSize="100px">
+    <Slide>
+      <Heading margin="0px" className="font-size-heading">
         Variables
       </Heading>
 
-      <Text>
-        JavaScript es un lenguaje dinámico y de tipado flexible. En parte esto significa que las variables no están asociadas directamente con ningún tipo de valor en particular y se les pueden asignar o reasignar valores de cualquier tipo.
+      <Text className="font-size-medium">
+        JavaScript es un lenguaje dinámico y de tipado flexible. En parte esto significa que las variables no están asociadas directamente con ningún tipo de valor en particular y se les pueden asignar o reasignar valores de todos los tipos.
       </Text>
 
       <CodePane language="js">
@@ -181,17 +182,17 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
-      <Heading margin="0px" fontSize="50px">
+    <Slide>
+      <Heading margin="0px" className="font-size-heading">
         Constantes
       </Heading>
 
-      <Text>
+      <Text className="font-size-medium">
         A diferencia de las variables, las constantes no pueden cambiar su valor posteriormente. Se debe especificar el valor al momento de su declaración.
       </Text>
 
-      <Text>
-        Para definir una constante, usamos la palabra clave <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a>.
+      <Text className="font-size-medium">
+        Para definir una constante, usamos la palabra clave <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a>.
       </Text>
 
       <CodePane language="js">
@@ -213,62 +214,62 @@ export default () => (
     </Slide>
 
     {/* Data types and data structures */}
-    <Slide backgroundColor="#ffd84d">
-      <Heading margin="0px" fontSize="50px">
+    <Slide>
+      <Heading margin="0px" className="font-size-heading">
         Valores y estructuras de datos
       </Heading>
 
-      <Text>
+      <Text className="font-size-medium">
         Todos los lenguajes de programación tienen estructuras de datos integradas.
       </Text>
 
-      <Text>
+      <Text className="font-size-medium">
         Generalmente varían sus nombres o formas de utilización de un lenguaje a otro.
       </Text>
     </Slide>
 
     {/* Primitives */}
-    <Slide backgroundColor="#ffd84d">
-      <Heading margin="0px" fontSize="50px">
+    <Slide>
+      <Heading margin="0px" className="font-size-heading">
         Tipos de datos primitivos
       </Heading>
 
-      <Text margin="0px" padding="0px">
-        JavaScript cuenta con un conjunto de tipos que son llamados <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#primitive_values">tipos primitivos</a>. Estos tipos definen valores que son inmutables.
+      <Text className="font-size-medium align-center" margin="0px" padding="0px">
+        JavaScript cuenta con un conjunto de tipos que son llamados <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#primitive_values">tipos primitivos</a>. Estos tipos definen valores que son inmutables.
       </Text>
 
-      <UnorderedList>
+      <UnorderedList className="flex-center-column font-size-medium">
         <ListItem>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">Undefined</a>
+          <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">Undefined</a>
         </ListItem>
         <ListItem>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
+          <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
         </ListItem>
         <ListItem>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+          <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
         </ListItem>
         <ListItem>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+          <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
         </ListItem>
         <ListItem>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">BigInt</a>
+          <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">BigInt</a>
         </ListItem>
         <ListItem>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/symbol">Symbol</a>
+          <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/symbol">Symbol</a>
         </ListItem>
       </UnorderedList>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
-      <Heading margin="0px" fontSize="50px">
+    <Slide>
+      <Heading margin="0px" className="font-size-heading">
         Undefined
       </Heading>
 
-      <Text>
+      <Text className="font-size-medium align-center">
         <b>undefined</b> es una variable global que posee como valor inicial el tipo primitivo undefined.
       </Text>
 
-      <UnorderedList>
+      <UnorderedList className="font-size-medium">
         <ListItem>
           Una variable que no tiene un valor asignado, es creada con el valor undefined.
         </ListItem>
@@ -287,17 +288,17 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
-      <Heading margin="0px" fontSize="50px">
+    <Slide>
+      <Heading margin="0px" className="font-size-heading align-center" style={{width: "80%"}}>
         Null
       </Heading>
 
-      <div style={{ width: '90%' }}>
-        <Text>
+      <div style={{width: '80%'}}>
+        <Text className="font-size-medium">
           Este valor se utiliza para representar la no existencia o invalidez de algo, generalmente de manera intencional.
         </Text>
 
-        <FlexBox justifyContent="space-between" style={{ width: '90%' }}>
+        <FlexBox justifyContent="space-between" style={{ width: '80%'}}>
           <CodePane language="js">
             {`
               const foo = null;
@@ -360,9 +361,9 @@ export default () => (
       </Text>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
-      <div style={{ width: '80%' }}>
-        <Heading margin="0px" fontSize="50px">
+    <Slide>
+      <div style={{width: '80%'}}>
+        <Heading margin="0px" className="font-size-heading">
           Boolean
         </Heading>
 
@@ -398,10 +399,10 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
-      <div style={{ width: '80%' }}>
+    <Slide>
+      <div style={{width: '80%'}}>
 
-        <Heading margin="0px" fontSize="50px">
+        <Heading margin="0px" className="font-size-heading">
           Boolean
         </Heading>
 
