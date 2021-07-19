@@ -11,6 +11,7 @@ import {
   Notes,
   FlexBox
 } from "spectacle";
+import '../styles/styles.css';
 
 export default () => (
   <>
@@ -568,6 +569,185 @@ export default () => (
       <Notes>
         Mencionar split, slice, splice, indexOf, replace, toLowercase, toUppercase, etc.
       </Notes>
+    </Slide>
+
+    {/* Logical Operators */}
+
+    <Slide backgroundColor="#000000">
+      <div className="flex-center-column">
+        <Heading margin="0px" fontSize="50px">
+          Operadores lógicos
+        </Heading>
+
+        <Text>
+          En JavaScript existen 4 operadores lógicos:
+        </Text>
+        <UnorderedList>
+          <ListItem>
+            || (OR)
+          </ListItem>
+          <ListItem>
+            && (AND)
+          </ListItem>
+          <ListItem>
+            ! (NOT)
+          </ListItem>
+          <ListItem>
+            ?? (Nullish Coalescing)
+          </ListItem>
+        </UnorderedList>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div className="flex-center-column">
+        <Heading margin="0px" fontSize={50}>
+          || (OR)
+        </Heading>
+
+        <Text fontSize={40}>
+          El operador lógico OR evalua a False cuando ambos operandos son False.
+          Caso contrario, siempre evalua a True.
+        </Text>
+        <Text fontSize={40}>
+          Además, en JS el OR encuentra siempre el primer "truthy" value.
+        </Text>
+
+        <CodePane language="js">
+          {`
+            let result = value1 || value2 || value3;
+          `}
+        </CodePane>
+        <Text fontSize={30}>
+          El operador OR hará lo siguiente:
+
+          <OrderedList>
+            <ListItem fontSize={30}>Evaluará los operandos de izquierda a derecha.</ListItem>
+            <ListItem fontSize={30}>A cada operando lo convertirá en Boolean. Si el resultado es true, se detiene y retorna el valor original de ese operando.</ListItem>
+            <ListItem fontSize={30}>Si se evaluaron todos los operandos (y todos eran False), retorna el último operando.</ListItem>
+          </OrderedList>
+        </Text>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div className="flex-center-column">
+        <Heading fontSize={50}>
+          || (OR)
+        </Heading>
+        <Text fontSize={50}>
+          Siguiendo el ejemplo anterior...
+        </Text>
+        <CodePane language="js">
+          {`
+            let firstName = "";
+            let lastName = "";
+            let nickName = "Bob";
+
+            alert( firstName || lastName || nickName || "Anonymous"); // Bob
+          `}
+        </CodePane>
+        <br></br>
+        <CodePane language="js">
+          {`
+            let groupOne = [];
+            let groupTwo = [];
+
+            alert( groupOne || groupTwo || ["Bob", "Ana", "Cam"]); // ["Bob", "Ana", "Cam"]
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div className="flex-center-column">
+        <Heading margin="0px" fontSize={50}>
+          && (AND)
+        </Heading>
+
+        <Text fontSize={40}>
+          El operador lógico AND evalua a True cuando ambos operandos son True.
+          Caso contrario, siempre evalua a False.
+        </Text>
+        <Text fontSize={40}>
+          En este caso, el AND además encuentra siempre el primer "falsy" value.
+        </Text>
+
+        <CodePane language="js">
+          {`
+            let result = value1 && value2 && value3;
+          `}
+        </CodePane>
+        <Text fontSize={30}>
+          El operador AND hará lo siguiente:
+
+          <OrderedList>
+            <ListItem fontSize={30}>Evaluará los operandos de izquierda a derecha.</ListItem>
+            <ListItem fontSize={30}>A cada operando lo convertirá en Boolean. Si el resultado es false, se detiene y retorna el valor original de ese operando.</ListItem>
+            <ListItem fontSize={30}>Si se evaluaron todos los operandos (y todos eran True), retorna el último operando.</ListItem>
+          </OrderedList>
+        </Text>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div className="flex-center-column">
+        <Heading fontSize={50}>
+          && (AND)
+        </Heading>
+        <Text fontSize={50}>
+          Siguiendo el ejemplo anterior...
+        </Text>
+        <CodePane language="js">
+          {`
+            // Si el primer operando es "truthy", el AND retornará el segundo operando:
+            alert( 1 && 0 ); // 0
+            alert( 1 && 5 ); // 5
+            
+            // Si el primer operando es "falsy", AND lo retorna. El segundo operando es ignorado.
+            alert( null && 5 ); // null
+            alert( 0 && "no matter what" ); // 0
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div className="flex-center-column">
+        <Heading margin="0px" fontSize={50}>
+          ! (NOT)
+        </Heading>
+
+        <Text fontSize={35}>
+          El operador lógico NOT es utilizado para invertir el valor de verdad de un valor cualquiera.
+        </Text>
+        <OrderedList>
+          <ListItem fontSize={30}>
+            Convierte el operando a su tipo booleano: true / false.
+          </ListItem>
+          <ListItem fontSize={30}>
+            Retorna el valor inverso.
+          </ListItem>
+        </OrderedList>
+
+        <CodePane language="js">
+          {`
+            alert( !true ); // false
+            alert( !0 ); // true
+          `}
+        </CodePane>
+
+        <Text fontSize={30}>
+          Un doble NOT !! se utiliza a veces para convertir valores a su tipo booleano:
+        </Text>
+
+        <CodePane language="js">
+          {`
+            alert( !!"non-empty string" ); // true
+            alert( !!null ); // false
+          `}
+        </CodePane>
+      </div>
     </Slide>
   </>
 );
