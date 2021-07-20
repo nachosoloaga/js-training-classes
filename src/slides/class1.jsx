@@ -1,8 +1,19 @@
 import React from "react";
-import { Slide, Heading, ListItem, Grid, OrderedList, FlexBox, Text, UnorderedList } from "spectacle";
+import {
+  Slide,
+  Heading,
+  ListItem,
+  Grid,
+  OrderedList,
+  Text,
+  UnorderedList,
+  CodePane,
+  Notes
+} from "spectacle";
 
 export default () => (
   <>
+    {/* Intro to JS */}
     <Slide backgroundColor="#ffd84d">
       <Heading margin="0px" fontSize="100px">
         <i>Agenda</i>
@@ -124,5 +135,80 @@ export default () => (
         JavaScript es un lenguaje de programación que implementa este estandar - ECMAScript está basado en JavaScript.
       </Text>
     </Slide>
+
+    {/* let and const */}
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="100px">
+        Variables
+      </Heading>
+
+      <Text>
+        Las variables son contenedores que nos permiten almacenar valores para su posterior uso y/o manipulación.
+      </Text>
+
+      <Text>
+        Para declarar una variable podemos utilizar la palabra clave <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let"><b>let</b></a>.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          let myVariable;
+          // Initialize with an initial value
+          let myVariable = 'Hola Snapplerxs!';
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="100px">
+        Variables
+      </Heading>
+
+      <Text>
+        JavaScript es un lenguaje dinámico y de tipado flexible. En parte esto significa que las variables no están asociadas directamente con ningún tipo de valor en particular y se les pueden asignar o reasignar valores de cualquier tipo.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          let foo = 42; // foo is a number
+          foo = 'bar';  // foo is a string
+          foo = true;   // foo is a boolean
+
+          // Uncaught SyntaxError: Identifier 'foo' has already been declared
+          let foo = 10;
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Constantes
+      </Heading>
+
+      <Text>
+        A diferencia de las variables, las constantes no pueden cambiar su valor posteriormente. Se debe especificar el valor al momento de su declaración.
+      </Text>
+
+      <Text>
+        Para definir una constante, usamos la palabra clave <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a>.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          const FOO = "bar";
+
+          // this will throw an error - Uncaught TypeError: Assignment to constant variable.
+          FOO = 20;
+
+          // trying to redeclare a constant throws an error
+          // Uncaught SyntaxError: Identifier 'FOO' has already been declared
+          const FOO = 20;
+        `}
+      </CodePane>
+
+      <Notes>
+        Las constantes pueden ser declaradas con mayúsculas o minúsculas, pero generalmente se definen con todas sus letras en mayúscula a modo de convención.
+      </Notes>
+    </Slide>
   </>
-)
+);
