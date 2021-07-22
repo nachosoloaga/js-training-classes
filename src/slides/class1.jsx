@@ -749,5 +749,35 @@ export default () => (
         </CodePane>
       </div>
     </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div className="flex-center-column">
+        <Heading fontSize={50}>
+          ?? (Nullish Coalescing)
+        </Heading>
+
+        <Text fontSize={30}>
+          El operador de Nullish Coalescing se escribe con dos signos ?.
+          Si evaluamos a ?? b pasa que:
+          <UnorderedList>
+          <ListItem fontSize={30}>Si la variable a está definida, entonces se devuelve a</ListItem>
+          <ListItem fontSize={30}>Si la variable a no está definida, entonces se devuelve b.</ListItem>
+        </UnorderedList>
+        </Text>
+
+        <Text fontSize={30}>
+          Es importante notar que este operador trata a Undefined y Null de igual manera, por lo que decimos
+          que una variable esta definida si no es ni Undefined ni Null.
+        </Text>
+
+        <CodePane language="js">
+          {`
+            let user;
+
+            alert(user ?? "Anonymous"); // Anonymous (user not defined)
+          `}
+        </CodePane>
+      </div>
+    </Slide>
   </>
 );
