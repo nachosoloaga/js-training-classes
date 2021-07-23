@@ -314,6 +314,32 @@ export default () => (
 
     <Slide backgroundColor="#ffd84d">
       <Heading margin="0px" fontSize="50px">
+        Null vs Undefined
+      </Heading>
+
+      <Text>
+        Null y undefined son dos tipos primitivos diferentes y no existe un comportamiento intuitivo cuando estos tipos se comparan con otros. Para más info ver este <a href="https://javascript.info/comparison#comparison-with-null-and-undefined">link</a>.
+      </Text>
+
+      <Text>
+        Generalmente el valor null es algo que se utiliza de manera intencional para indicar la no existencia de algo, mientras que undefined no suele usarse tanto de manera intencional, y representa que una variable fue declarada pero aún no tiene un valor definido.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          const logHi = (str = 'hi') => console.log(str);
+        `}
+      </CodePane>
+
+      <Notes>
+        logHi(undefined); // imprime hi
+      
+        logHi(null); // imprime null
+      </Notes>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
         Boolean
       </Heading>
 
