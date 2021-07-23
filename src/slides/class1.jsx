@@ -9,8 +9,7 @@ import {
   UnorderedList,
   CodePane,
   Notes,
-  FlexBox,
-  Box
+  FlexBox
 } from "spectacle";
 
 export default () => (
@@ -131,7 +130,7 @@ export default () => (
         </a> es un estándar que define un lenguaje de tipos dinámicos ligeramente inspirado en Java y otros lenguajes del estilo de C. Soporta algunas características de la programación orientada a objetos mediante objetos basados en prototipos y pseudoclases.
       </Text>
       <Text>
-         El objetivo de este estandar es asegurar la interoperabilidad de las páginas web entre diferentes navegadores web.
+        El objetivo de este estandar es asegurar la interoperabilidad de las páginas web entre diferentes navegadores web.
       </Text>
       <Text>
         JavaScript es un lenguaje de programación que implementa este estandar - ECMAScript está basado en JavaScript.
@@ -293,12 +292,12 @@ export default () => (
         Null
       </Heading>
 
-      <div style={{width: '90%'}}>
+      <div style={{ width: '90%' }}>
         <Text>
           Este valor se utiliza para representar la no existencia o invalidez de algo, generalmente de manera intencional.
         </Text>
 
-        <FlexBox justifyContent="space-between" style={{ width: '90%'}}>
+        <FlexBox justifyContent="space-between" style={{ width: '90%' }}>
           <CodePane language="js">
             {`
               const foo = null;
@@ -321,7 +320,7 @@ export default () => (
       <Text>
         Representa una entidad lógica que solo puede tomar los valores <b>true</b> o <b>false</b>.
       </Text>
-      
+
       <Text>
         Podemos usar la función Boolean para convertir cualquier elemento a boolean.
       </Text>
@@ -336,13 +335,13 @@ export default () => (
     </Slide>
 
     <Slide backgroundColor="#ffd84d">
-      <div style={{width: '80%'}}>
+      <div style={{ width: '80%' }}>
         <Heading margin="0px" fontSize="50px">
           Boolean
         </Heading>
 
         <Grid gridTemplateRows="1fr 1fr" gridRowGap={50}>
-          <FlexBox justifyContent="space-between" style={{ width: '80%'}}>
+          <FlexBox justifyContent="space-between" style={{ width: '80%' }}>
             <CodePane language="js">
               {`
                 const bool = true;
@@ -356,7 +355,7 @@ export default () => (
             <iframe src="/src/slides/class1/examples/boolean1.html"></iframe>
           </FlexBox>
 
-          <FlexBox justifyContent="space-between" style={{ width: '80%'}}>
+          <FlexBox justifyContent="space-between" style={{ width: '80%' }}>
             <CodePane language="js">
               {`
                 const bool = false;
@@ -374,14 +373,14 @@ export default () => (
     </Slide>
 
     <Slide backgroundColor="#ffd84d">
-      <div style={{width: '80%'}}>
+      <div style={{ width: '80%' }}>
 
         <Heading margin="0px" fontSize="50px">
           Boolean
         </Heading>
 
         <Grid gridTemplateRows="1fr 1fr" gridRowGap={50}>
-          <FlexBox justifyContent="space-between" style={{ width: '80%'}}>
+          <FlexBox justifyContent="space-between" style={{ width: '80%' }}>
             <CodePane language="js">
               {`
                 const bool = Boolean(false);
@@ -395,7 +394,7 @@ export default () => (
             <iframe src="/src/slides/class1/examples/boolean3.html"></iframe>
           </FlexBox>
 
-          <FlexBox justifyContent="space-between" style={{ width: '80%'}}>
+          <FlexBox justifyContent="space-between" style={{ width: '80%' }}>
             <CodePane language="js">
               {`
                 const bool = new Boolean(false);
@@ -415,6 +414,132 @@ export default () => (
         No confundir el objeto Booelan con los valores primitivos Boolean ni con la función Boolean.
 
         La función Boolean puede ser usada para generar valores primitivos, pero al hacer un new estamos creando un objeto, que al ser evaluado tendrá un valor de verdad verdadero.
+      </Notes>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Number
+      </Heading>
+
+      <Text>
+        ECMAScript posee dos tipos distintos de números: <b>Number</b> y <b>BigInt</b>.
+      </Text>
+
+      <Text>
+        Number es un valor binario de 64 bits de doble precisión. Representa números entre <b>- (2 ^ 53 - 1)</b> y <b>2 ^ 53 - 1</b>.
+      </Text>
+
+      <Text>
+        Además de representar números de punto flotante, el tipo de número tiene tres valores simbólicos: + Infinito, -Infinito y NaN ("No es un número").
+      </Text>
+
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Number
+      </Heading>
+
+      <Text>
+        Para verificar el valor más grande o el valor más pequeño disponible dentro de ± Infinito, se pueden usar las constantes <b>Number.MAX_VALUE</b> o <b>Number.MIN_VALUE</b>
+      </Text>
+
+      <Text>
+        El 0 que puede ser representado como +0 y -0. En la práctica esto no tiene mucho impacto ya que -0 === +0, sin embargo se puede notar algunas diferencias al dividir por 0.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          42 / +0 == Infinity
+          42 / -0 == -Infinity
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        BigInt
+      </Heading>
+
+      <Text>
+        El tipo BigInt permite representar números con una presición arbitraria, es decir que permite operar con números que superen los límites planteados por el tipo Number.
+      </Text>
+
+      <Text>
+        Un BigInt se crea agregando n al final de un número entero o llamando al constructor.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          const x = 2n ** 53n; // 9007199254740992n
+
+          const y = BigInt(23) // 23n
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Symbol
+      </Heading>
+
+      <Text>
+        Es un valor primitivo único e inmutable y se puede utilizar como clave de una propiedad de objeto.
+      </Text>
+
+      <Text>
+        Se crea invocando la función Symbol, que produce dinámicamente un valor único y anónimo.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          let Sym1 = Symbol("Sym")
+          let Sym2 = Symbol("Sym")
+          
+          console.log(Sym1 === Sym2) // returns "false"
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        String
+      </Heading>
+
+      <Text>
+        Sirve para representar una cadena de caracteres. La longitud del string está dada por la cantidad de elementos que lo componen.
+      </Text>
+
+      <Text>
+        El primer elemento está en el índice 0, el siguiente en el índice 1, y así sucesivamente. La longitud de una cadena es el número de elementos que contiene.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          const foo = 'Hello'
+
+          foo.length // 5
+          foo[0]     // H
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        String
+      </Heading>
+
+      <Text>
+        Existe una gran cantidad de métodos que permiten manipular Strings, al igual que en la mayoría de los lenguajes
+      </Text>
+
+      <Text>
+        Algunos ejemplos se pueden encontrar <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods">aquí</a>.
+      </Text>
+
+      <Notes>
+        Mencionar split, slice, splice, indexOf, replace, toLowercase, toUppercase, etc.
       </Notes>
     </Slide>
   </>
