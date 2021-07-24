@@ -571,7 +571,53 @@ export default () => (
       </Notes>
     </Slide>
 
-    {/* Object and Array */}
+    {/* Array */}
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Arreglos
+      </Heading>
+
+      <Text>
+        Son objetos en forma de lista que poseen una asociación particular entre claves númericas enteras y la longitud de la lista. Podemos decir que son estructuras indexadas.
+      </Text>
+
+      <Text>
+        Para definir un arreglo podemos usar corchetes ([]) o generar una instancia utilizando la función <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array">Array()</a>.
+      </Text>
+
+      <CodePane language='js'>
+        {`
+          const fruits = ['Apple', 'Banana'];
+
+          const moreFruits = new Array('Orange', 'Watermelon');
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Arreglos
+      </Heading>
+
+      <Text>
+        Para acceder a los elementos podemos utilizar un índice numérico indicando la posición.
+      </Text>
+
+      <Text>
+        También existe una gran variedad de métodos que nos permiten iterar, duplicar, partir y manipular los arreglos de múltiples formas distintas. Algunos ejemplos <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">aquí</a>.
+      </Text>
+
+      <CodePane language='js'>
+        {`
+          const fruits = ['Apple', 'Banana'];
+
+          console.log(fruits.length); // 2
+          console.log(fruits[0]); // Apple
+        `}
+      </CodePane>
+    </Slide>
+  
+    {/* Object */}
     <Slide backgroundColor="#ffd84d">
       <Heading margin="0px" fontSize="50px">
         Objetos
@@ -667,7 +713,7 @@ export default () => (
       </Heading>
 
       <Text>
-        La única forma de modificar alguna de los otros atributos de una propiedad de un objeto es utilizando el método <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">Object.defineProperty()</a>
+        Para poder modificar alguno de los otros atributos de una propiedad de un objeto podemos utilizar el método <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">Object.defineProperty()</a>.
       </Text>
 
       <CodePane language='js'>
