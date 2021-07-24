@@ -943,5 +943,113 @@ export default () => (
         </CodePane>
       </div>
     </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div className="flex-center-column">
+        <Heading margin="0px" fontSize="50px">
+          Estructuras de control
+        </Heading>
+
+        <Text>
+          En JavaScript existen 5 estructuras de control básicas:
+        </Text>
+        <UnorderedList>
+          <ListItem>
+            If / else
+          </ListItem>
+          <ListItem>
+            While
+          </ListItem>
+          <ListItem>
+            Do - while
+          </ListItem>
+          <ListItem>
+            For
+          </ListItem>
+          <ListItem>
+            Switch
+          </ListItem>
+        </UnorderedList>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div className="flex-center-column">
+        <Heading margin="0px" fontSize="50px">
+          If / else
+        </Heading>
+
+        <Text fontSize={30}>
+          La sintáxis de la sentencia if es la siguiente (la cláusula <b>else</b> es opcional):
+        </Text>
+        <CodePane language="js">
+          {`
+            if (condition) {
+              // if block statements
+            } else {
+              // else block statements
+            }
+          `}
+        </CodePane>
+        <Text fontSize={30}>
+          La sentencia if evalua la expresión entre paréntesis y convierte su resultado a booleano.
+          Por ejemplo, la siguiente condición nunca ejecutará el bloque de código <b>block1.</b>
+        </Text>
+        <CodePane language="js">
+            {
+              `
+                if (0) { // 0 es un valor falsy
+                  // block1
+                }
+              `
+            }
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div className="flex-center-column">
+        <Heading margin="0px" fontSize="50px">
+          Conditional operator (?)
+        </Heading>
+
+        <Text fontSize={30}>
+          Existe también el operador condicional <b>?</b> que nos permite escribir una sentencia if de manera
+          mucho más corta y simple.
+        </Text>
+        <CodePane language="js">
+          {`
+            let result = condition ? value1 : value2;
+          `}
+        </CodePane>
+        <Text fontSize={30}>
+          En caso que <b>condition</b> evalue a true, entonces se asignará <b>value1</b> a la variable <b>result</b>,
+          y caso contrario se asignará <b>value2</b>. 
+        </Text>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+            Conditional operator (?) (cont...)
+          </Heading>
+        <Text fontSize={30}>
+          El <b>?</b> puede combinarse múltiples veces simulando sentencias <b>if/else</b>:
+        </Text>
+        <CodePane language="js">
+            {`
+              let carBrand = "Peugeot"
+
+              let message = (carBrand == "Suzuki") ? "Nice Suzuki!" :
+                (carBrand == "Fiat") ? 'Nice Fiat!' :
+                (carBrand == "Peugeot") ? 'Nice Peugeot!' :
+                'I don't know that brand, nice car!';
+              
+              alert( message );
+            `}
+        </CodePane>
+      </div>
+    </Slide>
   </>
 );
