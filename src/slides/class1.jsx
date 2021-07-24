@@ -571,6 +571,124 @@ export default () => (
       </Notes>
     </Slide>
 
+    {/* Object and Array */}
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Objetos
+      </Heading>
+
+      <Text>
+        Podemos ver a los objetos como una colección de propiedades, cada una de los cuales posee un valor asociado. Las propiedades de un objeto son identificadas por "claves".
+      </Text>
+
+      <Text>
+        Las claves de un objeto pueden ser de tipo String o Symbol, pero los valores pueden ser de cualquier tipo, incluso otros objetos.
+      </Text>
+
+      <Notes>
+        Notar que se describe a los objetos como collección de propiedades, no simplemente de claves y valores. Las propiedades tienen un valor, pero además de eso existen otros atributos.
+      </Notes>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Objetos
+      </Heading>
+
+      <Text>
+        Podemos crear objetos utilizando la <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals">object literal syntax</a> o a través de la instanciación de Object.
+      </Text>
+
+      <CodePane language='js'>
+        {`
+          let car = new Object();
+          auto.brand = 'Ford';
+          auto.model = 'Mustang';
+          auto.year = 1969;
+          
+          let car2 = {
+            brand: 'Ford',
+            model: 'Mustang',
+            year: 1969
+          };
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Objetos
+      </Heading>
+
+      <Text>
+        Es muy fácil acceder, borrar o actualizar los valores de cualquiera de sus claves.
+      </Text>
+
+      <CodePane language='js'>
+        {`
+          let car = {
+            brand: 'Ford',
+            model: 'Mustang',
+            year: 1969
+          };
+
+          car.brand = 'Chevrolet';
+          
+          console.log(car.brand); // Chevrolet
+
+          delete(car.year);
+          console.log(car); // { brand: 'Chevrolet', model: 'Mustang' }
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Objetos
+      </Heading>
+
+      <Text>
+        Además del valor, las propiedades poseen otros atributos. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#objects">Más info</a>.
+      </Text>
+
+      <div style={{textAlign: 'center'}}>
+        <img
+          src="/src/slides/images/property_attributes.png"
+          alt="property_attributes"
+          width="80%"
+          height="80%"
+        />
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Objetos
+      </Heading>
+
+      <Text>
+        La única forma de modificar alguna de los otros atributos de una propiedad de un objeto es utilizando el método <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">Object.defineProperty()</a>
+      </Text>
+
+      <CodePane language='js'>
+        {`
+          let car = {
+            brand: 'Ford'
+          };
+
+          Object.defineProperty(car, 'model', {
+            value: 'Mustang',
+            writable: false
+          });
+
+          car.brand = 'Chevrolet';
+          car.model = 'Camaro';
+          
+          console.log(car); // { brand: 'Chevrolet', model: 'Mustang' }
+        `}
+      </CodePane>
+    </Slide>
+
     {/* Logical Operators */}
 
     <Slide backgroundColor="#000000">
