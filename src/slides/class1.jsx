@@ -1051,5 +1051,111 @@ export default () => (
         </CodePane>
       </div>
     </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+            While
+          </Heading>
+        <Text fontSize={30}>
+          La sintáxis del loop <b>while</b> es la siguiente:
+        </Text>
+        <CodePane language="js">
+            {`
+              while (condition) {
+                // statements
+              }
+            `}
+        </CodePane>
+        <Text fontSize={30}>
+          El bloque de código que se encuentra dentro del loop while se ejecutará mientras
+          la evaluación de la condición sea <b>true</b>.
+        </Text>
+        <Text fontSize={30}>
+          Para finalizar la ejecución del loop antes que se cumpla la condición podemos utilizar la sentencia <b>break</b>.
+        </Text>
+      </div>
+    </Slide>
+    
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Do - while
+        </Heading>
+        <Text fontSize={30}>
+          El loop do-while es muy similar al loop while, excepto que en este caso primero se ejecuta el bloque
+          de código contenido dentro del mismo y luego se evalua la condición. Su sintáxis es la siguiente:
+        </Text>
+        <CodePane language="js">
+            {`
+              do {
+                // statements
+              } while (condition);
+            `}
+        </CodePane>
+        <Text fontSize={30}>
+          Para finalizar la ejecución del loop antes que se cumpla la condición podemos utilizar la sentencia <b>break</b>.
+        </Text>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          For
+        </Heading>
+        <Text fontSize={30}>
+          La sintáxis del loop <b>For</b> es la siguiente:
+        </Text>
+        <CodePane language="js">
+            {`
+              for (begin; condition; step) {
+                // ... loop body ...
+              }
+            `}
+        </CodePane>
+        <Text fontSize={30}>
+          Por ejemplo, para ejecutar un bloque de código 30 veces deberíamos declarar la condición
+          del for de la siguiente manera:
+        </Text>
+        <CodePane language="js">
+          {`
+            for (let i = 0; i < 30; i++) { // shows 0, then 1, then 2
+              alert(i);
+            }
+          `}
+        </CodePane>
+        <Text fontSize={30}>
+          Para saltar a la siguiente iteración, podemos utilizar la sentencia <b>continue</b> y para finalizar
+          la ejecución del loop antes que se cumpla la condición podemos utilizar la sentencia <b>break</b>.
+        </Text>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Switch
+        </Heading>
+        <Text fontSize={30}>
+          El <b>switch</b> puede utilizarse para reemplazar múltiples sentencias <b>if</b> y su sintáxis es la siguiente:
+        </Text>
+        <CodePane language="js">
+            {`
+              switch(x) {
+                case 'value1':  // if (x === 'value1')
+                  ...
+                  break; // el break es opcional, en caso que no este presente, se siguen evaluando las siguientes condiciones
+                case 'value2':  // if (x === 'value2')
+                  ...
+                  break;
+                default:
+                  ...
+              }
+            `}
+        </CodePane>
+        
+      </div>
+    </Slide>
   </>
 );
