@@ -610,7 +610,7 @@ export default () => (
           Caso contrario, siempre evalua a True.
         </Text>
         <Text fontSize={40}>
-          Además, en JS el OR encuentra siempre el primer "truthy" value.
+          En JS la evaluación del OR es de <b>circuito corto</b>.
         </Text>
 
         <CodePane language="js">
@@ -623,7 +623,7 @@ export default () => (
 
           <OrderedList>
             <ListItem fontSize={30}>Evaluará los operandos de izquierda a derecha.</ListItem>
-            <ListItem fontSize={30}>A cada operando lo convertirá en Boolean. Si el resultado es true, se detiene y retorna el valor original de ese operando.</ListItem>
+            <ListItem fontSize={30}>Dependiendo el valor de verdad del operando actual: si el resultado es true, se detiene y retorna el valor original de ese operando.</ListItem>
             <ListItem fontSize={30}>Si se evaluaron todos los operandos (y todos eran False), retorna el último operando.</ListItem>
           </OrderedList>
         </Text>
@@ -670,7 +670,7 @@ export default () => (
           Caso contrario, siempre evalua a False.
         </Text>
         <Text fontSize={40}>
-          En este caso, el AND además encuentra siempre el primer "falsy" value.
+          En JS la evaluación del AND es de <b>circuito corto</b>.
         </Text>
 
         <CodePane language="js">
@@ -683,7 +683,7 @@ export default () => (
 
           <OrderedList>
             <ListItem fontSize={30}>Evaluará los operandos de izquierda a derecha.</ListItem>
-            <ListItem fontSize={30}>A cada operando lo convertirá en Boolean. Si el resultado es false, se detiene y retorna el valor original de ese operando.</ListItem>
+            <ListItem fontSize={30}>Dependiendo el valor de verdad del operando actual: si el resultado es false, se detiene y retorna el valor original de ese operando.</ListItem>
             <ListItem fontSize={30}>Si se evaluaron todos los operandos (y todos eran True), retorna el último operando.</ListItem>
           </OrderedList>
         </Text>
@@ -723,7 +723,7 @@ export default () => (
         </Text>
         <OrderedList>
           <ListItem fontSize={30}>
-            Convierte el operando a su tipo booleano: true / false.
+            Convierte el operando a su tipo booleano: <b>true</b> / <b>false</b>.
           </ListItem>
           <ListItem fontSize={30}>
             Retorna el valor inverso.
@@ -757,17 +757,17 @@ export default () => (
         </Heading>
 
         <Text fontSize={30}>
-          El operador de Nullish Coalescing se escribe con dos signos ?.
-          Si evaluamos a ?? b pasa que:
+          El operador de Nullish Coalescing se escribe con dos signos <b>?</b>.
+          Si evaluamos <b>a ?? b</b> lo que sucede es lo siguiente:
           <UnorderedList>
-          <ListItem fontSize={30}>Si la variable a está definida, entonces se devuelve a</ListItem>
-          <ListItem fontSize={30}>Si la variable a no está definida, entonces se devuelve b.</ListItem>
+          <ListItem fontSize={30}>Si la variable <b>a</b> está definida, entonces se devuelve <b>a</b></ListItem>
+          <ListItem fontSize={30}>Si la variable <b>a</b> no está definida, entonces se devuelve <b>b</b>.</ListItem>
         </UnorderedList>
         </Text>
 
         <Text fontSize={30}>
-          Es importante notar que este operador trata a Undefined y Null de igual manera, por lo que decimos
-          que una variable esta definida si no es ni Undefined ni Null.
+          Es importante notar que este operador trata a <b>undefined</b> y <b>Null</b> de igual manera, por lo que decimos
+          que una variable esta definida si no es ni undefined ni Null.
         </Text>
 
         <CodePane language="js">
