@@ -489,7 +489,7 @@ export default () => (
       </Heading>
 
       <Text>
-        El tipo BigInt permite representar números con una presición arbitraria, es decir que permite operar con números que superen los límites planteados por el tipo Number.
+        El tipo BigInt permite representar números con una precisión arbitraria, es decir que permite operar con números que superen los límites planteados por el tipo Number.
       </Text>
 
       <Text>
