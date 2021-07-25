@@ -648,9 +648,9 @@ export default () => (
       <CodePane language='js'>
         {`
           let car = new Object();
-          auto.brand = 'Ford';
-          auto.model = 'Mustang';
-          auto.year = 1969;
+          car.brand = 'Ford';
+          car.model = 'Mustang';
+          car.year = 1969;
           
           let car2 = {
             brand: 'Ford',
