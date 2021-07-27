@@ -992,13 +992,13 @@ export default () => (
           `}
         </CodePane>
         <Text fontSize={30}>
-          La sentencia if evalua la expresión entre paréntesis y convierte su resultado a booleano.
+          La sentencia if evalúa la expresión entre paréntesis y luego utiliza el valor de verdad del resultado de dicha evaluación.
           Por ejemplo, la siguiente condición nunca ejecutará el bloque de código <b>block1.</b>
         </Text>
         <CodePane language="js">
             {
               `
-                if (0) { // 0 es un valor falsy
+                if (0) { // 0 is a falsy value
                   // block1
                 }
               `
@@ -1024,7 +1024,7 @@ export default () => (
         </CodePane>
         <Text fontSize={30}>
           En caso que <b>condition</b> evalue a true, entonces se asignará <b>value1</b> a la variable <b>result</b>,
-          y caso contrario se asignará <b>value2</b>. 
+          caso contrario se asignará <b>value2</b>. 
         </Text>
       </div>
     </Slide>
@@ -1039,14 +1039,14 @@ export default () => (
         </Text>
         <CodePane language="js">
             {`
-              let carBrand = "Peugeot"
+              let carBrand = "Peugeot";
 
               let message = (carBrand == "Suzuki") ? "Nice Suzuki!" :
                 (carBrand == "Fiat") ? 'Nice Fiat!' :
                 (carBrand == "Peugeot") ? 'Nice Peugeot!' :
                 'I don't know that brand, nice car!';
               
-              alert( message );
+              alert(message);
             `}
         </CodePane>
       </div>
@@ -1135,6 +1135,105 @@ export default () => (
     <Slide backgroundColor="#000000">
       <div>
         <Heading margin="0px" fontSize="50px">
+          for..in & for..of
+        </Heading>
+        <Text fontSize={30}>
+          Existen otros tipos de loop <b>for</b> que sirven a distintos casos de uso:
+        </Text>
+        <UnorderedList>
+          <ListItem>
+            for..in
+            <Text fontSize={30}>La instrucción <b>for ... in</b> itera sobre todas las propiedades enumerables de un objeto.
+            Generalmente se utiliza para recorrer las "claves" o propiedades de un objeto.</Text>
+          </ListItem>
+          <ListItem>
+            for..of
+            <Text fontSize={30}>La instrucción <b>for ... of</b> crea un loop que itera sobre objetos iterables, 
+            incluidos: String, Array, objetos similares a arreglos (por ejemplo, argumentos o NodeList), 
+            TypedArray, Map, Set e iterables definidos por el usuario.</Text>
+          </ListItem>
+        </UnorderedList>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Ejemplo de uso for..in
+        </Heading>
+        <CodePane language="js">
+          {`
+            const car = {
+              brand: "Peugeot",
+              model: "208",
+              year: 2019
+            }
+
+            for (const prop in car) {
+              console.log(prop);
+            }
+
+            // brand
+            // model
+            // year
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Ejemplo de uso for..of
+        </Heading>
+        <CodePane language="js">
+          {`
+            const array1 = ['a', 'b', 'c'];
+
+            for (const element of array1) {
+              console.log(element);
+            }
+            
+            // expected output: "a"
+            // expected output: "b"
+            // expected output: "c"
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          for..in vs for..of
+        </Heading>
+        <CodePane language="js">
+          {`
+            const array1 = ['a', 'b', 'c'];
+
+            for (const element of array1) {
+              console.log(element);
+            }
+            
+            // expected output: "a"
+            // expected output: "b"
+            // expected output: "c"
+
+            for (const element in array1) {
+              console.log(element);
+            }
+
+            // expected output: "0"
+            // expected output: "1"
+            // expected output: "2"
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
           Switch
         </Heading>
         <Text fontSize={30}>
@@ -1145,7 +1244,7 @@ export default () => (
               switch(x) {
                 case 'value1':  // if (x === 'value1')
                   ...
-                  break; // el break es opcional, en caso que no este presente, se siguen evaluando las siguientes condiciones
+                  break; // break clause is optional, in case it's not present, following conditions are evaluated.
                 case 'value2':  // if (x === 'value2')
                   ...
                   break;
