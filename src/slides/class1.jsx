@@ -944,6 +944,8 @@ export default () => (
       </div>
     </Slide>
 
+    {/* Basic Control Structures */}
+
     <Slide backgroundColor="#000000">
       <div className="flex-center-column">
         <Heading margin="0px" fontSize="50px">
