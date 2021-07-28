@@ -10,12 +10,13 @@ import {
 
 const theme = {
   colors: {
-    primary: "#000000",
-    secondary: "#000000",
+    primary: "#ffffff",
+    secondary: "#ffffff",
+    backgroundColor: "##edeff2"
   },
   fonts: {
-    header: '"Open Sans Condensed", Helvetica, Arial, sans-serif',
-    text: '"Open Sans Condensed", Helvetica, Arial, sans-serif',
+    header: 'Roboto',
+    text: 'Roboto',
   },
 };
 
