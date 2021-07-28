@@ -571,6 +571,170 @@ export default () => (
       </Notes>
     </Slide>
 
+    {/* Array */}
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Arreglos
+      </Heading>
+
+      <Text>
+        Son objetos en forma de lista que poseen una asociación particular entre claves númericas enteras y la longitud de la lista. Podemos decir que son estructuras indexadas.
+      </Text>
+
+      <Text>
+        Para definir un arreglo podemos usar corchetes ([]) o generar una instancia utilizando la función <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array">Array()</a>.
+      </Text>
+
+      <CodePane language='js'>
+        {`
+          const fruits = ['Apple', 'Banana'];
+
+          const moreFruits = new Array('Orange', 'Watermelon');
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Arreglos
+      </Heading>
+
+      <Text>
+        Para acceder a los elementos podemos utilizar un índice numérico indicando la posición.
+      </Text>
+
+      <Text>
+        También existe una gran variedad de métodos que nos permiten iterar, duplicar, partir y manipular los arreglos de múltiples formas distintas. Algunos ejemplos <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">aquí</a>.
+      </Text>
+
+      <CodePane language='js'>
+        {`
+          const fruits = ['Apple', 'Banana'];
+
+          console.log(fruits.length); // 2
+          console.log(fruits[0]); // Apple
+        `}
+      </CodePane>
+    </Slide>
+  
+    {/* Object */}
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Objetos
+      </Heading>
+
+      <Text>
+        Podemos ver a los objetos como una colección de propiedades, cada una de los cuales posee un valor asociado. Las propiedades de un objeto son identificadas por "claves".
+      </Text>
+
+      <Text>
+        Las claves de un objeto pueden ser de tipo String o Symbol, pero los valores pueden ser de cualquier tipo, incluso otros objetos.
+      </Text>
+
+      <Notes>
+        Notar que se describe a los objetos como collección de propiedades, no simplemente de claves y valores. Las propiedades tienen un valor, pero además de eso existen otros atributos.
+      </Notes>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Objetos
+      </Heading>
+
+      <Text>
+        Podemos crear objetos utilizando la <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals">object literal syntax</a> o a través de la instanciación de Object.
+      </Text>
+
+      <CodePane language='js'>
+        {`
+          let car = new Object();
+          car.brand = 'Ford';
+          car.model = 'Mustang';
+          car.year = 1969;
+          
+          let car2 = {
+            brand: 'Ford',
+            model: 'Mustang',
+            year: 1969
+          };
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Objetos
+      </Heading>
+
+      <Text>
+        Es muy fácil acceder, borrar o actualizar los valores de cualquiera de sus claves.
+      </Text>
+
+      <CodePane language='js'>
+        {`
+          let car = {
+            brand: 'Ford',
+            model: 'Mustang',
+            year: 1969
+          };
+
+          car.brand = 'Chevrolet';
+          
+          console.log(car.brand); // Chevrolet
+
+          delete(car.year);
+          console.log(car); // { brand: 'Chevrolet', model: 'Mustang' }
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Objetos
+      </Heading>
+
+      <Text>
+        Además del valor, las propiedades poseen otros atributos. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#objects">Más info</a>.
+      </Text>
+
+      <div style={{textAlign: 'center'}}>
+        <img
+          src="/src/slides/images/property_attributes.png"
+          alt="property_attributes"
+          width="80%"
+          height="80%"
+        />
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Objetos
+      </Heading>
+
+      <Text>
+        Para poder modificar alguno de los otros atributos de una propiedad de un objeto podemos utilizar el método <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">Object.defineProperty()</a>.
+      </Text>
+
+      <CodePane language='js'>
+        {`
+          let car = {
+            brand: 'Ford'
+          };
+
+          Object.defineProperty(car, 'model', {
+            value: 'Mustang',
+            writable: false
+          });
+
+          car.brand = 'Chevrolet';
+          car.model = 'Camaro';
+          
+          console.log(car); // { brand: 'Chevrolet', model: 'Mustang' }
+        `}
+      </CodePane>
+    </Slide>
+
     {/* Logical Operators */}
 
     <Slide backgroundColor="#000000">
