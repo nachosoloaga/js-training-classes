@@ -943,5 +943,320 @@ export default () => (
         </CodePane>
       </div>
     </Slide>
+
+    {/* Basic Control Structures */}
+
+    <Slide backgroundColor="#000000">
+      <div className="flex-center-column">
+        <Heading margin="0px" fontSize="50px">
+          Estructuras de control
+        </Heading>
+
+        <Text>
+          En JavaScript existen 5 estructuras de control básicas:
+        </Text>
+        <UnorderedList>
+          <ListItem>
+            If / else
+          </ListItem>
+          <ListItem>
+            While
+          </ListItem>
+          <ListItem>
+            Do - while
+          </ListItem>
+          <ListItem>
+            For
+          </ListItem>
+          <ListItem>
+            Switch
+          </ListItem>
+        </UnorderedList>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div className="flex-center-column">
+        <Heading margin="0px" fontSize="50px">
+          If / else
+        </Heading>
+
+        <Text fontSize={30}>
+          La sintáxis de la sentencia if es la siguiente (la cláusula <b>else</b> es opcional):
+        </Text>
+        <CodePane language="js">
+          {`
+            if (condition) {
+              // if block statements
+            } else {
+              // else block statements
+            }
+          `}
+        </CodePane>
+        <Text fontSize={30}>
+          La sentencia if evalúa la expresión entre paréntesis y luego utiliza el valor de verdad del resultado de dicha evaluación.
+          Por ejemplo, la siguiente condición nunca ejecutará el bloque de código <b>block1.</b>
+        </Text>
+        <CodePane language="js">
+            {
+              `
+                if (0) { // 0 is a falsy value
+                  // block1
+                }
+              `
+            }
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div className="flex-center-column">
+        <Heading margin="0px" fontSize="50px">
+          Conditional operator (?)
+        </Heading>
+
+        <Text fontSize={30}>
+          Existe también el operador condicional <b>?</b> que nos permite escribir una sentencia if de manera
+          mucho más corta y simple.
+        </Text>
+        <CodePane language="js">
+          {`
+            let result = condition ? value1 : value2;
+          `}
+        </CodePane>
+        <Text fontSize={30}>
+          En caso que <b>condition</b> evalue a true, entonces se asignará <b>value1</b> a la variable <b>result</b>,
+          caso contrario se asignará <b>value2</b>. 
+        </Text>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+            Conditional operator (?) (cont...)
+          </Heading>
+        <Text fontSize={30}>
+          El <b>?</b> puede combinarse múltiples veces simulando sentencias <b>if/else</b>:
+        </Text>
+        <CodePane language="js">
+            {`
+              let carBrand = "Peugeot";
+
+              let message = (carBrand == "Suzuki") ? "Nice Suzuki!" :
+                (carBrand == "Fiat") ? 'Nice Fiat!' :
+                (carBrand == "Peugeot") ? 'Nice Peugeot!' :
+                'I don't know that brand, nice car!';
+              
+              alert(message);
+            `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+            While
+          </Heading>
+        <Text fontSize={30}>
+          La sintáxis del loop <b>while</b> es la siguiente:
+        </Text>
+        <CodePane language="js">
+            {`
+              while (condition) {
+                // statements
+              }
+            `}
+        </CodePane>
+        <Text fontSize={30}>
+          El bloque de código que se encuentra dentro del loop while se ejecutará mientras
+          la evaluación de la condición sea <b>true</b>.
+        </Text>
+        <Text fontSize={30}>
+          Para finalizar la ejecución del loop antes que se cumpla la condición podemos utilizar la sentencia <b>break</b>.
+        </Text>
+      </div>
+    </Slide>
+    
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Do - while
+        </Heading>
+        <Text fontSize={30}>
+          El loop do-while es muy similar al loop while, excepto que en este caso primero se ejecuta el bloque
+          de código contenido dentro del mismo y luego se evalua la condición. Su sintáxis es la siguiente:
+        </Text>
+        <CodePane language="js">
+            {`
+              do {
+                // statements
+              } while (condition);
+            `}
+        </CodePane>
+        <Text fontSize={30}>
+          Para finalizar la ejecución del loop antes que se cumpla la condición podemos utilizar la sentencia <b>break</b>.
+        </Text>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          For
+        </Heading>
+        <Text fontSize={30}>
+          La sintáxis del loop <b>For</b> es la siguiente:
+        </Text>
+        <CodePane language="js">
+            {`
+              for (begin; condition; step) {
+                // ... loop body ...
+              }
+            `}
+        </CodePane>
+        <Text fontSize={30}>
+          Por ejemplo, para ejecutar un bloque de código 30 veces deberíamos declarar la condición
+          del for de la siguiente manera:
+        </Text>
+        <CodePane language="js">
+          {`
+            for (let i = 0; i < 30; i++) { // shows 0, then 1, then 2
+              alert(i);
+            }
+          `}
+        </CodePane>
+        <Text fontSize={30}>
+          Para saltar a la siguiente iteración, podemos utilizar la sentencia <b>continue</b> y para finalizar
+          la ejecución del loop antes que se cumpla la condición podemos utilizar la sentencia <b>break</b>.
+        </Text>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          for..in & for..of
+        </Heading>
+        <Text fontSize={30}>
+          Existen otros tipos de loop <b>for</b> que sirven a distintos casos de uso:
+        </Text>
+        <UnorderedList>
+          <ListItem>
+            for..in
+            <Text fontSize={30}>La instrucción <b>for ... in</b> itera sobre todas las propiedades enumerables de un objeto.
+            Generalmente se utiliza para recorrer las "claves" o propiedades de un objeto.</Text>
+          </ListItem>
+          <ListItem>
+            for..of
+            <Text fontSize={30}>La instrucción <b>for ... of</b> crea un loop que itera sobre objetos iterables, 
+            incluidos: String, Array, objetos similares a arreglos (por ejemplo, argumentos o NodeList), 
+            TypedArray, Map, Set e iterables definidos por el usuario.</Text>
+          </ListItem>
+        </UnorderedList>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Ejemplo de uso for..in
+        </Heading>
+        <CodePane language="js">
+          {`
+            const car = {
+              brand: "Peugeot",
+              model: "208",
+              year: 2019
+            }
+
+            for (const prop in car) {
+              console.log(prop);
+            }
+
+            // brand
+            // model
+            // year
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Ejemplo de uso for..of
+        </Heading>
+        <CodePane language="js">
+          {`
+            const array1 = ['a', 'b', 'c'];
+
+            for (const element of array1) {
+              console.log(element);
+            }
+            
+            // expected output: "a"
+            // expected output: "b"
+            // expected output: "c"
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          for..in vs for..of
+        </Heading>
+        <CodePane language="js">
+          {`
+            const array1 = ['a', 'b', 'c'];
+
+            for (const element of array1) {
+              console.log(element);
+            }
+            
+            // expected output: "a"
+            // expected output: "b"
+            // expected output: "c"
+
+            for (const element in array1) {
+              console.log(element);
+            }
+
+            // expected output: "0"
+            // expected output: "1"
+            // expected output: "2"
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Switch
+        </Heading>
+        <Text fontSize={30}>
+          El <b>switch</b> puede utilizarse para reemplazar múltiples sentencias <b>if</b> y su sintáxis es la siguiente:
+        </Text>
+        <CodePane language="js">
+            {`
+              switch(x) {
+                case 'value1':  // if (x === 'value1')
+                  ...
+                  break; // break clause is optional, in case it's not present, following conditions are evaluated.
+                case 'value2':  // if (x === 'value2')
+                  ...
+                  break;
+                default:
+                  ...
+              }
+            `}
+        </CodePane>
+        
+      </div>
+    </Slide>
   </>
 );
