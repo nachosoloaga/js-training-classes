@@ -1299,7 +1299,7 @@ export default () => (
           Manejo de errores (cont.)
         </Heading>
         <Text fontSize={30}>
-          Si no necesitamos detalles sobre el error podemos <b>omitir el parámetro error en el bloque catch.</b>
+          Si no necesitamos detalles sobre el error podemos <b>omitir el parámetro error en el bloque catch. </b>
           Además, pueden existir casos donde deseemos lanzar un error de manera intencional por comportamiento imprevisto
           en el código. Para esto utilizamos la palabra clave <b>throw</b>.
         </Text>
@@ -1367,6 +1367,61 @@ export default () => (
              } finally {
                 ... execute always ...
              }
+            `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Creando errores custom
+        </Heading>
+        <Text fontSize={30}>
+          Cuando estamos desarrollando es probable que querramos tener nuestras propias clases de errores
+          para reflejar situaciones específicas que pueden fallar durante la ejecución de nuestros programas.
+          Para esto, JavaScript nos permite definir clases que extienden de la clase base <b>Error</b>.
+        </Text>
+        <CodePane language="js">
+            {`
+              class ValidationError extends Error {
+                constructor(message) {
+                  super(message); // (1)
+                  this.name = "ValidationError"; // (2)
+                }
+              }
+            
+              function test() {
+                throw new ValidationError("Whoops!");
+              }
+            `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Creando errores custom (cont.)
+        </Heading>
+        <Text fontSize={30}>
+          En el ejemplo anterior, definimos un nuevo tipo de error para reflejar fallos en validaciones. Si bien al
+          extender de la clase <b>Error</b> nuestra clase hereda las 3 propiedades básicas <b>message, name and stack</b>,
+          podriamos definir todas las props extras que querramos.
+        </Text>
+        <CodePane language="js">
+            {`
+              class HttpError extends Error {
+                constructor(message, statusCode) {
+                  super(message); // (1)
+                  this.name = "HttpError"; // (2)
+                  this.statusCode = statusCode;
+                }
+              }
+            
+              function test() {
+                throw new HttpError("User not found", 404);
+              }
             `}
         </CodePane>
       </div>
