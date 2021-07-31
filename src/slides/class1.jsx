@@ -185,6 +185,26 @@ export default () => (
 
     <Slide>
       <Heading margin="0px" className="font-size-heading">
+        Variables
+      </Heading>
+
+      <Text className="font-size-medium">
+        Para definir variables también podemos utilizar la palabra clave <b>var</b>.
+      </Text>
+
+      <Text className="font-size-medium">
+        <b>var</b> se comporta distinto a <b>let</b> y su uso actualmente no es muy recomendado. Explicaremos las razones más adelante.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          var foo = 42; // foo is a number
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide>
+      <Heading margin="0px" className="font-size-heading">
         Constantes
       </Heading>
 
