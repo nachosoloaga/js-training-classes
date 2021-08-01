@@ -1709,6 +1709,10 @@ export default () => (
           let num_let;
         `}
       </CodePane>
+
+      <Notes>
+        El motor de JavaScript solo hace el "hoisting" de la declaración de las variables, es decir que no tiene en cuenta su inicialización.
+      </Notes>
     </Slide>
   </>
 );
