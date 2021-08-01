@@ -1509,7 +1509,7 @@ export default () => (
       </Heading>
 
       <Text className="font-size-medium">
-        Javascript nos permite definir funciones o procedimientos para modularizar y evitar repetir nuestro código.
+        Javascript nos permite definir funciones para modularizar y evitar repetir nuestro código.
       </Text>
 
       <Text className="font-size-medium">
@@ -1606,7 +1606,7 @@ export default () => (
       </Heading>
 
       <Text className="font-size-medium">
-        Un closure es la combinación de una función y el entorno léxico dentro del cual se declaró esa función. Este entorno consta de las variables locales que estaban dentro del alcance en el momento en que se creó el cierre.
+        Un closure es la combinación de una función y el entorno léxico dentro del cual se declaró esa función. Este entorno consta de las variables locales que estaban dentro del alcance en el momento en que se creó el closure.
       </Text>
 
       <CodePane language="js">
@@ -1630,7 +1630,7 @@ export default () => (
         </p>
 
         <p>
-          Debido a que la función displayName utiliza una variable local a makeFunc, al invocarla luego esta displayName sigue mostrando el nombre Mozilla, a pesar de que ese valor ya no forme parte del contexto de ejecución (formó parte del contexto de declaración).
+          Debido a que la función displayName utiliza una variable local a makeFunc, al invocarla luego displayName sigue mostrando el nombre Mozilla, a pesar de que ese valor ya no forme parte del contexto de ejecución (formó parte del contexto de declaración).
         </p>
       </Notes>
     </Slide>
@@ -1705,7 +1705,7 @@ export default () => (
 
           console.log(num_const) // ReferenceError
           console.log(num_let) // ReferenceError
-          let num_const;
+          const num_const;
           let num_let;
         `}
       </CodePane>
