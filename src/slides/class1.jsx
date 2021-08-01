@@ -1638,29 +1638,36 @@ export default () => (
     {/* Hoisting */}
 
     <Slide backgroundColor="#000000">
-      <Heading margin="0px" fontSize="50px">
-        Hoisting
-      </Heading>
+      <div style={{width: '80%'}}>
+        <Heading margin="0px" fontSize="50px">
+          Hoisting
+        </Heading>
 
-      <Text className="font-size-medium">
-        Hoisting se refiere al proceso donde el compilador aloca memoria para una variable o función previo a que el código de la declaración sea ejecutado.
-      </Text>
+        <Text className="font-size-medium">
+          Si bien el código en JS se ejecuta de manera secuencial (se ejecuta una línea y al terminar se ejecuta la que está debajo), el motor de JS procesa la declaración de funciones y variables previo a la ejecución del código.
+        </Text>
 
-      <CodePane language="js">
-        {`
-          catName("Chloe");
+        <Text className="font-size-medium">
+          Para obtener más información, ver <a href="https://www.javascripttutorial.net/javascript-execution-context/">Javascript execution Context</a>.
+        </Text>
 
-          function catName(name) {
-            console.log("My cat's name is " + name);
-          }
-          /*
-          The result of the code above is: "My cat's name is Chloe"
-          */
-        `}
-      </CodePane>
+        <FlexBox justifyContent="space-between">
+          <CodePane language="js">
+            {`
+              catName("Chloe");
+
+              function catName(name) {
+                console.log("My cat's name is " + name);
+              }
+            `}
+          </CodePane>
+
+          <iframe src="/src/slides/class1/examples/hoisting1.html"></iframe>
+        </FlexBox>
+      </div>
 
       <Notes>
-        Muchos artículos mencionan que JS "mueve las declaraciones de variables y funciones al principio de los archivos" y por eso las funciones por ejemplo pueden ser utilizadas previo a su declaración, pero esto no es del todo cierto porque el hoisting se da al momento de compilación, no de ejecución.
+        Podríamos pensar como que JS "mueve las declaraciones de variables y funciones al principio de los archivos" y por eso éstas pueden ser utilizadas previo a su declaración.
       </Notes>
     </Slide>
 
@@ -1675,8 +1682,9 @@ export default () => (
 
       <CodePane language="js">
         {`
-          console.log(square)    // square is hoisted with an initial value undefined.
-          console.log(square(5)) // Uncaught TypeError: square is not a function
+          console.log(square);    // square is hoisted with an initial value undefined.
+          console.log(square(5)); // Uncaught TypeError: square is not a function
+
           const square = function(n) {
             return n * n;
           }
@@ -1685,30 +1693,37 @@ export default () => (
     </Slide>
 
     <Slide backgroundColor="#000000">
-      <Heading margin="0px" fontSize="50px">
-        Hoisting
-      </Heading>
+      <div style={{width: '80%'}}>
 
-      <Text className="font-size-medium">
-        En el caso de las variables definidas con <b>var</b>, éstas serán declaradas e inicializadas con el valor <b>undefined</b>.
-      </Text>
+        <Heading margin="0px" fontSize="50px">
+          Hoisting
+        </Heading>
 
-      <Text className="font-size-medium">
-        En el caso de variables definidas con <b>let</b> o constantes utilizando <b>const</b>, cualquier referencia a ellas previa a la línea donde son declaradas lanzará una excepción.
-      </Text>
+        <Text className="font-size-medium">
+          En el caso de las variables definidas con <b>var</b>, éstas serán declaradas e inicializadas con el valor <b>undefined</b>.
+        </Text>
 
-      <CodePane language="js">
-        {`
-          console.log(num_var); // Returns 'undefined' from hoisted var declaration (not 6)
-          var num_var; // Declaration
-          num_var = 6; // Initialization
+        <Text className="font-size-medium">
+          En el caso de variables definidas con <b>let</b> o constantes utilizando <b>const</b>, cualquier referencia a ellas previa a la línea donde son declaradas lanzará una excepción.
+        </Text>
 
-          console.log(num_const) // ReferenceError
-          console.log(num_let) // ReferenceError
-          const num_const;
-          let num_let;
-        `}
-      </CodePane>
+        <FlexBox justifyContent="space-between">
+          <CodePane language="js">
+            {`
+              console.log(num_var); // Returns 'undefined' from hoisted var declaration (not 6)
+              var num_var; // Declaration
+              num_var = 6; // Initialization
+
+              console.log(num_const) // ReferenceError
+              console.log(num_let) // ReferenceError
+              const num_const = 6;
+              let num_let;
+            `}
+          </CodePane>
+
+          <iframe src="/src/slides/class1/examples/hoisting2.html"></iframe>
+        </FlexBox>
+      </div>
 
       <Notes>
         El motor de JavaScript solo hace el "hoisting" de la declaración de las variables, es decir que no tiene en cuenta su inicialización.

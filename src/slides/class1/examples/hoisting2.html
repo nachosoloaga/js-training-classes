@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="example1">Run script</button>
+  <textarea id="result" cols="30" rows="10">
+
+  </textarea>
+  
+  <script>
+    function clickHandler() {
+      const textarea = document.getElementById("result");
+
+      textarea.innerHTML = typeof num_var; // Returns 'undefined' from hoisted var declaration (not 6)
+      var num_var; // Declaration
+      num_var = 6; // Initialization
+
+      debugger
+      try {
+        num_const; // ReferenceError
+      } catch (error) {
+        textarea.innerHTML = `${textarea.innerHTML} \n\n ${error.name}: ${error.message}`        
+      }
+
+      try {
+        num_let; // ReferenceError
+      } catch (error) {
+        textarea.innerHTML = `${textarea.innerHTML} \n\n ${error.name}: ${error.message}`        
+      }
+
+      const num_const = 6;
+      let num_let;
+    };
+
+    document.getElementById("example1").addEventListener("click", clickHandler);
+  </script>
+</body>
+</html>
