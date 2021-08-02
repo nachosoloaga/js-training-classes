@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="example1">Run script</button>
+    <textarea id="result" cols="30" rows="10">
+
+    </textarea>
+    
+    <script>
+      const clickHandler = () => {
+        function addFive(num) {
+          var numberFive = 5;
+          return num + numberFive;
+        }
+
+        addFive(3);
+        
+        try {
+          console.log(numberFive)
+        } catch(err) {
+          document.getElementById("result").innerHTML = `${err.name} ${err.message}`;
+        }
+    };
+
+      document.getElementById("example1").addEventListener("click", clickHandler);
+    </script>
+  </body>
+</html>

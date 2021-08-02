@@ -1840,6 +1840,8 @@ export default () => (
             getScore(); // returns "Juan scored 5"
           `}
         </CodePane>
+
+        <iframe src="/src/slides/class1/examples/scopes2.html"></iframe>
       </div>
     </Slide>
 
@@ -1851,15 +1853,17 @@ export default () => (
         <CodePane language="js">
           {`
            function addFive(num) {
-              var numberfive = 5;
+              var numberFive = 5;
               return num + numberFive;
            }
 
            addFive(3); // expected output: 8
 
-           console.log(numberFive); // expected output: ???
+           console.log(numberFive);
           `}
         </CodePane>
+
+        <iframe src="/src/slides/class1/examples/scopes1.html"></iframe>
       </div>
     </Slide>
   </>
