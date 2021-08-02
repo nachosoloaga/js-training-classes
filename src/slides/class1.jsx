@@ -1375,7 +1375,7 @@ export default () => (
     <Slide backgroundColor="#000000">
       <div>
         <Heading margin="0px" fontSize="50px">
-          Creando errores custom
+          Creando nuestro propio error
         </Heading>
         <Text fontSize={30}>
           Cuando estamos desarrollando es probable que querramos tener nuestras propias clases de errores
@@ -1383,18 +1383,18 @@ export default () => (
           Para esto, JavaScript nos permite definir clases que extienden de la clase base <b>Error</b>.
         </Text>
         <CodePane language="js">
-            {`
-              class ValidationError extends Error {
-                constructor(message) {
-                  super(message); // (1)
-                  this.name = "ValidationError"; // (2)
-                }
+          {`
+            class ValidationError extends Error {
+              constructor(message) {
+                super(message); // (1)
+                this.name = "ValidationError"; // (2)
               }
-            
-              function test() {
-                throw new ValidationError("Whoops!");
-              }
-            `}
+            }
+          
+            function test() {
+              throw new ValidationError("Whoops!");
+            }
+          `}
         </CodePane>
       </div>
     </Slide>
@@ -1406,23 +1406,23 @@ export default () => (
         </Heading>
         <Text fontSize={30}>
           En el ejemplo anterior, definimos un nuevo tipo de error para reflejar fallos en validaciones. Si bien al
-          extender de la clase <b>Error</b> nuestra clase hereda las 3 propiedades básicas <b>message, name and stack</b>,
+          extender de la clase <b>Error</b> nuestra clase hereda las 3 propiedades básicas <b>message, name y stack</b>,
           podriamos definir todas las props extras que querramos.
         </Text>
         <CodePane language="js">
-            {`
-              class HttpError extends Error {
-                constructor(message, statusCode) {
-                  super(message); // (1)
-                  this.name = "HttpError"; // (2)
-                  this.statusCode = statusCode;
-                }
+          {`
+            class HttpError extends Error {
+              constructor(message, statusCode) {
+                super(message); // (1)
+                this.name = "HttpError"; // (2)
+                this.statusCode = statusCode;
               }
-            
-              function test() {
-                throw new HttpError("User not found", 404);
-              }
-            `}
+            }
+          
+            function test() {
+              throw new HttpError("User not found", 404);
+            }
+          `}
         </CodePane>
       </div>
     </Slide>
