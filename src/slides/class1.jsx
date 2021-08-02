@@ -1278,5 +1278,173 @@ export default () => (
         
       </div>
     </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Manejo de errores
+        </Heading>
+        <Text fontSize={30}>
+          JavaScript nos provee los bloques <b>try..catch</b> para capturar errores en tiempo de ejecución que pueden
+          provocar la finalización de nuestro script.
+        </Text>
+        <CodePane language="js">
+            {`
+              try {
+                null = "this is a null variable";
+              } catch (err) {
+                console.log(err); // Syntax Error
+                alert('Hey! Something went wrong...');
+              }
+            `}
+        </CodePane>
+        <Text fontSize={30}>
+          Como se puede ver en el snippet anterior, el bloque catch recibe siempre un objeto error como parámetro.
+          Este objeto error tiene 2 propiedades principales:
+          <UnorderedList fontSize={30}>
+            <ListItem>
+              name: el nombre del error (SyntaxError, TypeError, etc...)
+            </ListItem>
+            <ListItem>
+              message: un mensaje descriptivo que brinda un poco (no tanto) más de detalle sobre el error
+            </ListItem>
+          </UnorderedList>
+        </Text>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Manejo de errores (cont.)
+        </Heading>
+        <Text fontSize={30}>
+          Si no necesitamos detalles sobre el error podemos <b>omitir el parámetro error en el bloque catch. </b>
+          Además, pueden existir casos donde deseemos lanzar un error de manera intencional por comportamiento imprevisto
+          en el código. Para esto utilizamos la palabra clave <b>throw</b>.
+        </Text>
+        <CodePane language="js">
+            {`
+              let json = '{ "age": 30 }'; // incomplete data
+
+              try {
+                let user = JSON.parse(json); // <-- no errors
+                if (!user.name) {
+                  throw new SyntaxError("Incomplete data: no name");
+                }
+                alert( user.name );
+              } catch (err) {
+                alert( "JSON Error: " + err.message ); // JSON Error: Incomplete data: no name
+              }
+            `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Manejo de errores (cont.)
+        </Heading>
+        <Text fontSize={30}>
+          Para lanzar errores propios JavaScript nos provee varios constructores para errores comúnes: Error, SyntaxError, ReferenceError, TypeError y otros.
+          Su sintáxis es la siguiente:
+        </Text>
+        <CodePane language="js">
+            {`
+              let error = new Error(message);
+              // or
+              let error = new SyntaxError(message);
+              let error = new ReferenceError(message);
+              // ...
+            `}
+        </CodePane>
+        <Text fontSize={30}>
+          En estos casos, la propiedad <b>name</b> tendrá como valor el nombre del constructor (ej. SyntaxError) y la propiedad <b>message</b> tendrá como valor lo que hayamos pasado como parámetro al constructor.
+        </Text>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Manejo de errores (cont.)
+        </Heading>
+        <Text fontSize={30}>
+          Los bloques <b>try..catch</b> pueden contar con una cláusula extra (opcional) llamada <b>finally</b>.
+          Si está presente, el código contenido dentro de ese bloque se ejecutará siempre:
+          <UnorderedList fontSize={30}>
+            <ListItem>Después del <b>try</b> si no hubo errores.</ListItem>
+            <ListItem>Después del <b>catch</b> si hubo errores.</ListItem>
+          </UnorderedList>
+        </Text>
+        <CodePane language="js">
+            {`
+              try {
+                ... try to execute the code ...
+             } catch (err) {
+                ... handle errors ...
+             } finally {
+                ... execute always ...
+             }
+            `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Creando nuestro propio error
+        </Heading>
+        <Text fontSize={30}>
+          Cuando estamos desarrollando es probable que querramos tener nuestras propias clases de errores
+          para reflejar situaciones específicas que pueden fallar durante la ejecución de nuestros programas.
+          Para esto, JavaScript nos permite definir clases que extienden de la clase base <b>Error</b>.
+        </Text>
+        <CodePane language="js">
+          {`
+            class ValidationError extends Error {
+              constructor(message) {
+                super(message); // (1)
+                this.name = "ValidationError"; // (2)
+              }
+            }
+          
+            function test() {
+              throw new ValidationError("Whoops!");
+            }
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Creando errores custom (cont.)
+        </Heading>
+        <Text fontSize={30}>
+          En el ejemplo anterior, definimos un nuevo tipo de error para reflejar fallos en validaciones. Si bien al
+          extender de la clase <b>Error</b> nuestra clase hereda las 3 propiedades básicas <b>message, name y stack</b>,
+          podriamos definir todas las props extras que querramos.
+        </Text>
+        <CodePane language="js">
+          {`
+            class HttpError extends Error {
+              constructor(message, statusCode) {
+                super(message); // (1)
+                this.name = "HttpError"; // (2)
+                this.statusCode = statusCode;
+              }
+            }
+          
+            function test() {
+              throw new HttpError("User not found", 404);
+            }
+          `}
+        </CodePane>
+      </div>
+    </Slide>
   </>
 );
