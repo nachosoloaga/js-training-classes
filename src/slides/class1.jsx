@@ -338,16 +338,16 @@ export default () => (
     </Slide>
 
     <Slide>
-      <Heading margin="0px" className="font-size-heading align-center" style={{width: "80%"}}>
+      <Heading margin="0px" className="font-size-heading align-center" style={{ width: "80%" }}>
         Null
       </Heading>
 
-      <div style={{width: '80%'}}>
+      <div style={{ width: '80%' }}>
         <Text className="font-size-medium">
           Este valor se utiliza para representar la no existencia o invalidez de algo, generalmente de manera intencional.
         </Text>
 
-        <FlexBox justifyContent="space-between" style={{ width: '80%'}}>
+        <FlexBox justifyContent="space-between" style={{ width: '80%' }}>
           <CodePane language="js">
             {`
               const foo = null;
@@ -383,7 +383,7 @@ export default () => (
 
       <Notes>
         logHi(undefined); // imprime hi
-      
+
         logHi(null); // imprime null
       </Notes>
     </Slide>
@@ -411,7 +411,7 @@ export default () => (
     </Slide>
 
     <Slide>
-      <div style={{width: '80%'}}>
+      <div style={{ width: '80%' }}>
         <Heading margin="0px" className="font-size-heading">
           Boolean
         </Heading>
@@ -449,7 +449,7 @@ export default () => (
     </Slide>
 
     <Slide>
-      <div style={{width: '80%'}}>
+      <div style={{ width: '80%' }}>
 
         <Heading margin="0px" className="font-size-heading">
           Boolean
@@ -664,7 +664,7 @@ export default () => (
         `}
       </CodePane>
     </Slide>
-  
+
     {/* Object */}
     <Slide backgroundColor="#ffd84d">
       <Heading margin="0px" fontSize="50px">
@@ -745,7 +745,7 @@ export default () => (
         Además del valor, las propiedades poseen otros atributos. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#objects">Más info</a>.
       </Text>
 
-      <div style={{textAlign: 'center'}}>
+      <div style={{ textAlign: 'center' }}>
         <img
           src="/src/slides/images/property_attributes.png"
           alt="property_attributes"
@@ -972,9 +972,9 @@ export default () => (
           El operador de Nullish Coalescing se escribe con dos signos <b>?</b>.
           Si evaluamos <b>a ?? b</b> lo que sucede es lo siguiente:
           <UnorderedList>
-          <ListItem fontSize={30}>Si la variable <b>a</b> está definida, entonces se devuelve <b>a</b></ListItem>
-          <ListItem fontSize={30}>Si la variable <b>a</b> no está definida, entonces se devuelve <b>b</b>.</ListItem>
-        </UnorderedList>
+            <ListItem fontSize={30}>Si la variable <b>a</b> está definida, entonces se devuelve <b>a</b></ListItem>
+            <ListItem fontSize={30}>Si la variable <b>a</b> no está definida, entonces se devuelve <b>b</b>.</ListItem>
+          </UnorderedList>
         </Text>
 
         <Text fontSize={30}>
@@ -1046,13 +1046,13 @@ export default () => (
           Por ejemplo, la siguiente condición nunca ejecutará el bloque de código <b>block1.</b>
         </Text>
         <CodePane language="js">
-            {
-              `
+          {
+            `
                 if (0) { // 0 is a falsy value
                   // block1
                 }
               `
-            }
+          }
         </CodePane>
       </div>
     </Slide>
@@ -1074,7 +1074,7 @@ export default () => (
         </CodePane>
         <Text fontSize={30}>
           En caso que <b>condition</b> evalue a true, entonces se asignará <b>value1</b> a la variable <b>result</b>,
-          caso contrario se asignará <b>value2</b>. 
+          caso contrario se asignará <b>value2</b>.
         </Text>
       </div>
     </Slide>
@@ -1082,13 +1082,13 @@ export default () => (
     <Slide backgroundColor="#000000">
       <div>
         <Heading margin="0px" fontSize="50px">
-            Conditional operator (?) (cont...)
-          </Heading>
+          Conditional operator (?) (cont...)
+        </Heading>
         <Text fontSize={30}>
           El <b>?</b> puede combinarse múltiples veces simulando sentencias <b>if/else</b>:
         </Text>
         <CodePane language="js">
-            {`
+          {`
               let carBrand = "Peugeot";
 
               let message = (carBrand == "Suzuki") ? "Nice Suzuki!" :
@@ -1105,13 +1105,13 @@ export default () => (
     <Slide backgroundColor="#000000">
       <div>
         <Heading margin="0px" fontSize="50px">
-            While
-          </Heading>
+          While
+        </Heading>
         <Text fontSize={30}>
           La sintáxis del loop <b>while</b> es la siguiente:
         </Text>
         <CodePane language="js">
-            {`
+          {`
               while (condition) {
                 // statements
               }
@@ -1126,7 +1126,7 @@ export default () => (
         </Text>
       </div>
     </Slide>
-    
+
     <Slide backgroundColor="#000000">
       <div>
         <Heading margin="0px" fontSize="50px">
@@ -1137,7 +1137,7 @@ export default () => (
           de código contenido dentro del mismo y luego se evalua la condición. Su sintáxis es la siguiente:
         </Text>
         <CodePane language="js">
-            {`
+          {`
               do {
                 // statements
               } while (condition);
@@ -1158,7 +1158,7 @@ export default () => (
           La sintáxis del loop <b>For</b> es la siguiente:
         </Text>
         <CodePane language="js">
-            {`
+          {`
               for (begin; condition; step) {
                 // ... loop body ...
               }
@@ -1194,13 +1194,13 @@ export default () => (
           <ListItem>
             for..in
             <Text fontSize={30}>La instrucción <b>for ... in</b> itera sobre todas las propiedades enumerables de un objeto.
-            Generalmente se utiliza para recorrer las "claves" o propiedades de un objeto.</Text>
+              Generalmente se utiliza para recorrer las "claves" o propiedades de un objeto.</Text>
           </ListItem>
           <ListItem>
             for..of
-            <Text fontSize={30}>La instrucción <b>for ... of</b> crea un loop que itera sobre objetos iterables, 
-            incluidos: String, Array, objetos similares a arreglos (por ejemplo, argumentos o NodeList), 
-            TypedArray, Map, Set e iterables definidos por el usuario.</Text>
+            <Text fontSize={30}>La instrucción <b>for ... of</b> crea un loop que itera sobre objetos iterables,
+              incluidos: String, Array, objetos similares a arreglos (por ejemplo, argumentos o NodeList),
+              TypedArray, Map, Set e iterables definidos por el usuario.</Text>
           </ListItem>
         </UnorderedList>
       </div>
@@ -1290,7 +1290,7 @@ export default () => (
           El <b>switch</b> puede utilizarse para reemplazar múltiples sentencias <b>if</b> y su sintáxis es la siguiente:
         </Text>
         <CodePane language="js">
-            {`
+          {`
               switch(x) {
                 case 'value1':  // if (x === 'value1')
                   ...
@@ -1303,9 +1303,35 @@ export default () => (
               }
             `}
         </CodePane>
-        
       </div>
     </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Switch
+        </Heading>
+        <Text fontSize={30}>
+          El <b>switch</b> puede utilizarse para reemplazar múltiples sentencias <b>if</b> y su sintáxis es la siguiente:
+        </Text>
+        <CodePane language="js">
+          {`
+              switch(x) {
+                case 'value1':  // if (x === 'value1')
+                  ...
+                  break; // break clause is optional, in case it's not present, following conditions are evaluated.
+                case 'value2':  // if (x === 'value2')
+                  ...
+                  break;
+                default:
+                  ...
+              }
+            `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    {/* Error handling */}
 
     <Slide backgroundColor="#000000">
       <div>
@@ -1473,6 +1499,235 @@ export default () => (
           `}
         </CodePane>
       </div>
+    </Slide>
+
+    {/* Functions */}
+
+    <Slide backgroundColor="#000000">
+      <Heading margin="0px" fontSize="50px">
+        Funciones
+      </Heading>
+
+      <Text className="font-size-medium">
+        Javascript nos permite definir funciones para modularizar y evitar repetir nuestro código.
+      </Text>
+
+      <Text className="font-size-medium">
+        Para esto, podemos utilizar la palabra clave <b>function</b>.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          function myFunction(arg_1, arg_2) {
+            console.log("This is a function with two arguments!")
+          }
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <Heading margin="0px" fontSize="50px">
+        Funciones
+      </Heading>
+
+      <Text className="font-size-medium">
+        En caso de pasar un parámetro de tipo primitivo, por ejemplo un número, este parámetro será pasado por valor.
+      </Text>
+
+      <Text className="font-size-medium">
+        En caso de pasar un objeto o array por parámetro, éste será pasado por referencia.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          function myFunction(theObject) {
+            theObject.brand = 'Toyota';
+          }
+
+          let mycar = { brand: 'Honda', model: 'Accord', year: 1998 };
+          console.log(mycar.brand); // "Honda"
+
+          myFunc(mycar);
+          console.log(mycar.brand); // "Toyota"
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <Heading margin="0px" fontSize="50px">
+        Expresiones
+      </Heading>
+
+      <Text className="font-size-medium">
+        Las funciones también pueden ser definidas como <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function">expresiones</a>.
+      </Text>
+
+      <Text className="font-size-medium">
+        Podemos definir funciones anónimas, sin proveer un nombre en su declaración.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          // This is an expression.
+          const square = function square(number) { return number * number }
+
+          // This is an anonymous function declared as an expression.
+          const square2 = function(number) { return number * number }
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <Heading margin="0px" fontSize="50px">
+        Lexical scoping
+      </Heading>
+
+      <Text className="font-size-medium">
+        En JavaScript una función puede definirse dentro de otra. De esta forma, la función de adentro tiene acceso al contexto de la función que la contiene, pudiendo acceder a todo lo que está en su alcance.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          function init() {
+            var name = 'Mozilla'; // name is a local variable created by init
+            function displayName() { // displayName() is the inner function, a closure
+              alert(name); // use variable declared in the parent function
+            }
+            displayName();
+          }
+          init();
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <Heading margin="0px" fontSize="50px">
+        Closures
+      </Heading>
+
+      <Text className="font-size-medium">
+        Un closure es la combinación de una función y el entorno léxico dentro del cual se declaró esa función. Este entorno consta de las variables locales que estaban dentro del alcance en el momento en que se creó el closure.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          function makeFunc() {
+            var name = 'Mozilla';
+            function displayName() {
+              alert(name);
+            }
+            return displayName;
+          }
+
+          var myFunc = makeFunc();
+          myFunc();
+        `}
+      </CodePane>
+
+      <Notes>
+        <p>
+          En este ejemplo, la función makeFunc no retorna un valor sino que retorna displayName, que es la función que se define dentro de makeFunc.
+        </p>
+
+        <p>
+          Debido a que la función displayName utiliza una variable local a makeFunc, al invocarla luego displayName sigue mostrando el nombre Mozilla, a pesar de que ese valor ya no forme parte del contexto de ejecución (formó parte del contexto de declaración).
+        </p>
+      </Notes>
+    </Slide>
+
+    {/* Hoisting */}
+
+    <Slide backgroundColor="#000000">
+      <div style={{width: '80%'}}>
+        <Heading margin="0px" fontSize="50px">
+          Hoisting
+        </Heading>
+
+        <Text className="font-size-medium">
+          Si bien el código en JS se ejecuta de manera secuencial (se ejecuta una línea y al terminar se ejecuta la que está debajo), el motor de JS procesa la declaración de funciones y variables previo a la ejecución del código.
+        </Text>
+
+        <Text className="font-size-medium">
+          Para obtener más información, ver <a href="https://www.javascripttutorial.net/javascript-execution-context/">Javascript execution Context</a>.
+        </Text>
+
+        <FlexBox justifyContent="space-between">
+          <CodePane language="js">
+            {`
+              catName("Chloe");
+
+              function catName(name) {
+                console.log("My cat's name is " + name);
+              }
+            `}
+          </CodePane>
+
+          <iframe src="/src/slides/class1/examples/hoisting1.html"></iframe>
+        </FlexBox>
+      </div>
+
+      <Notes>
+        Podríamos pensar como que JS "mueve las declaraciones de variables y funciones al principio de los archivos" y por eso éstas pueden ser utilizadas previo a su declaración.
+      </Notes>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <Heading margin="0px" fontSize="50px">
+        Hoisting
+      </Heading>
+
+      <Text className="font-size-medium">
+        El hoisting de funciones, solo funciona con "function declarations" y no con "function expressions".
+      </Text>
+
+      <CodePane language="js">
+        {`
+          console.log(square);    // square is hoisted with an initial value undefined.
+          console.log(square(5)); // Uncaught TypeError: square is not a function
+
+          const square = function(n) {
+            return n * n;
+          }
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div style={{width: '80%'}}>
+
+        <Heading margin="0px" fontSize="50px">
+          Hoisting
+        </Heading>
+
+        <Text className="font-size-medium">
+          En el caso de las variables definidas con <b>var</b>, éstas serán declaradas e inicializadas con el valor <b>undefined</b>.
+        </Text>
+
+        <Text className="font-size-medium">
+          En el caso de variables definidas con <b>let</b> o constantes utilizando <b>const</b>, cualquier referencia a ellas previa a la línea donde son declaradas lanzará una excepción.
+        </Text>
+
+        <FlexBox justifyContent="space-between">
+          <CodePane language="js">
+            {`
+              console.log(num_var); // Returns 'undefined' from hoisted var declaration (not 6)
+              var num_var; // Declaration
+              num_var = 6; // Initialization
+
+              console.log(num_const) // ReferenceError
+              console.log(num_let) // ReferenceError
+              const num_const = 6;
+              let num_let;
+            `}
+          </CodePane>
+
+          <iframe src="/src/slides/class1/examples/hoisting2.html"></iframe>
+        </FlexBox>
+      </div>
+
+      <Notes>
+        El motor de JavaScript solo hace el "hoisting" de la declaración de las variables, es decir que no tiene en cuenta su inicialización.
+      </Notes>
     </Slide>
   </>
 );
