@@ -234,6 +234,34 @@ export default () => (
       </Notes>
     </Slide>
 
+    {/* Comments */}
+    <Slide>
+      <Heading margin="0px" padding="0px" className="font-size-heading">
+        Comentarios
+      </Heading>
+
+      <Text>
+        En JavaScript, al igual que en todos los lenguajes, tenemos la posibilidad de agregar comentarios en nuestro código.
+      </Text>
+
+      <Text>
+        Podemos agregar comentarios single line o multi line.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          // This is a single line comment.
+
+          /*
+          You can use this kind of comments
+          for documentation or to explain
+          any complex sentence.
+          */
+        `}
+      </CodePane>
+
+    </Slide>
+
     {/* Data types and data structures */}
     <Slide>
       <Heading margin="0px" className="font-size-heading">
