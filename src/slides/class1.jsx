@@ -1729,7 +1729,9 @@ export default () => (
         El motor de JavaScript solo hace el "hoisting" de la declaración de las variables, es decir que no tiene en cuenta su inicialización.
       </Notes>
     </Slide>
-    
+
+    { /* Blocks and scopes */ }
+
     <Slide backgroundColor="#000000">
       <div>
         <Heading margin="0px" fontSize="50px">
