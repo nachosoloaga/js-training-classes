@@ -1814,56 +1814,62 @@ export default () => (
     </Slide>
 
     <Slide backgroundColor="#000000">
-      <div>
+      <div style={{ width: '80%'}}>
         <Heading margin="0px" fontSize="50px">
           Alcance dentro de funciones (cont.)
         </Heading>
-        <CodePane language="js">
-          {`
-            // The following variables are defined in the global scope
-            var num1 = 10,
-                num2 = 5,
-                name = 'Juan';
 
-            // A nested function example
-            function getScore() {
-              var num1 = 2,
-                  num2 = 3;
-                
-              function add() {
-                return name + ' scored ' + (num1 + num2);
+        <div style={{ display: 'flex' }}>
+          <CodePane language="js">
+            {`
+              // The following variables are defined in the global scope
+              var num1 = 10,
+                  num2 = 5,
+                  name = 'Juan';
+
+              // A nested function example
+              function getScore() {
+                var num1 = 2,
+                    num2 = 3;
+                  
+                function add() {
+                  return name + ' scored ' + (num1 + num2);
+                }
+
+                return add();
               }
 
-              return add();
-            }
+              getScore(); // returns "Juan scored 5"
+            `}
+          </CodePane>
 
-            getScore(); // returns "Juan scored 5"
-          `}
-        </CodePane>
-
-        <iframe src="/src/slides/class1/examples/scopes2.html"></iframe>
+          <iframe src="/src/slides/class1/examples/scopes2.html"></iframe>
+        </div>
       </div>
     </Slide>
 
     <Slide backgroundColor="#000000">
-      <div>
+      <div style={{ width: '80%'}}>
         <Heading margin="0px" fontSize="50px">
           Ejercicio
         </Heading>
-        <CodePane language="js">
-          {`
-           function addFive(num) {
-              var numberFive = 5;
-              return num + numberFive;
-           }
 
-           addFive(3); // expected output: 8
+        <div style={{ display: 'flex' }}>
+          <CodePane language="js">
+            {`
+            function addFive(num) {
+                var numberFive = 5;
+                return num + numberFive;
+            }
 
-           console.log(numberFive);
-          `}
-        </CodePane>
+            addFive(3); // expected output: 8
 
-        <iframe src="/src/slides/class1/examples/scopes1.html"></iframe>
+            console.log(numberFive);
+            `}
+          </CodePane>
+
+          <iframe src="/src/slides/class1/examples/scopes1.html"></iframe>
+        </div>
       </div>
     </Slide>
   </>
