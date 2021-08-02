@@ -1729,5 +1729,138 @@ export default () => (
         El motor de JavaScript solo hace el "hoisting" de la declaración de las variables, es decir que no tiene en cuenta su inicialización.
       </Notes>
     </Slide>
+    
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Bloques
+        </Heading>
+        <Text fontSize={30}>
+          Los bloques se utilizan para agrupar cero o más sentencias y están delimitados por llaves {'{'} {'}'}.
+          Por ejemplo, las sentencias if y los loops vistos declaran un bloque para agrupar a las sentencias afectadas.
+        </Text>
+        <CodePane language="js">
+          {`
+            var x = 1;
+            let y = 1;
+            
+            if (true) {  // start of the block
+              var x = 2;
+              let y = 2;
+            }            // end of the block
+            
+            console.log(x); // expected output: 2
+
+            console.log(y); // expected output: 1
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Alcance de las variables
+        </Heading>
+        <Text fontSize={30}>
+          El alcance de una variable hace referencia a la región del programa donde la misma puede utilizarse.
+          En JavaScript los distintos tipos de variables vistos (var, let y const) tienen distintos alcances.
+          <UnorderedList fontSize={30}>
+            <ListItem><b>var:</b> podemos decir que tiene alcance "global".</ListItem>
+            <ListItem><b>let y const:</b> podemos decir que ambas tienen alcance de bloque. Las variables declaradas
+            con let y const podrán ser referenciadas dentro del bloque en que fueron declaradas.</ListItem>
+          </UnorderedList>
+        </Text>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Alcance de las variables (cont.)
+        </Heading>
+        <CodePane language="js">
+          {`
+            var x = 1;
+            {
+              var x = 2;
+            }
+            console.log(x); // logs 2
+
+            let x = 1;
+            {
+              let x = 2;
+            }
+            console.log(x); // logs 1
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Alcance dentro de funciones
+        </Heading>
+        <Text fontSize={30}>
+          Las variables declaradas dentro de una función no pueden ser accedidas fuera de la misma. 
+          Sin embargo, una función SI puede acceder a todas las variables declaradas dentro del alcance 
+          donde la función misma fue declarada.
+        </Text>
+        <Text fontSize={30}>
+          Ejemplo a continuación.
+        </Text>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Alcance dentro de funciones (cont.)
+        </Heading>
+        <CodePane language="js">
+          {`
+            // The following variables are defined in the global scope
+            var num1 = 10,
+                num2 = 5,
+                name = 'Juan';
+
+            // A nested function example
+            function getScore() {
+              var num1 = 2,
+                  num2 = 3;
+                
+              function add() {
+                return name + ' scored ' + (num1 + num2);
+              }
+
+              return add();
+            }
+
+            getScore(); // returns "Juan scored 5"
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Ejercicio
+        </Heading>
+        <CodePane language="js">
+          {`
+           function addFive(num) {
+              var numberfive = 5;
+              return num + numberFive;
+           }
+
+           addFive(3); // expected output: 8
+
+           console.log(numberFive); // expected output: ???
+          `}
+        </CodePane>
+      </div>
+    </Slide>
   </>
 );
