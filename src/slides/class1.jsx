@@ -357,7 +357,7 @@ export default () => (
             `}
           </CodePane>
 
-          <iframe src="/src/slides/class1/examples/null.html"></iframe>
+          <iframe src="snippets/class1/null.html"></iframe>
         </FlexBox>
       </div>
     </Slide>
@@ -428,7 +428,7 @@ export default () => (
                 `}
             </CodePane>
 
-            <iframe src="/src/slides/class1/examples/boolean1.html"></iframe>
+            <iframe src="snippets/class1/boolean1.html"></iframe>
           </FlexBox>
 
           <FlexBox justifyContent="space-between" style={{ width: '80%' }}>
@@ -442,7 +442,7 @@ export default () => (
                 `}
             </CodePane>
 
-            <iframe src="/src/slides/class1/examples/boolean2.html"></iframe>
+            <iframe src="snippets/class1/boolean2.html"></iframe>
           </FlexBox>
         </Grid>
       </div>
@@ -467,7 +467,7 @@ export default () => (
                 `}
             </CodePane>
 
-            <iframe src="/src/slides/class1/examples/boolean3.html"></iframe>
+            <iframe src="snippets/class1/boolean3.html"></iframe>
           </FlexBox>
 
           <FlexBox justifyContent="space-between" style={{ width: '80%' }}>
@@ -481,7 +481,7 @@ export default () => (
                 `}
             </CodePane>
 
-            <iframe src="/src/slides/class1/examples/boolean4.html"></iframe>
+            <iframe src="snippets/class1/boolean4.html"></iframe>
           </FlexBox>
         </Grid>
       </div>
@@ -747,7 +747,7 @@ export default () => (
 
       <div style={{ textAlign: 'center' }}>
         <img
-          src="/src/slides/images/property_attributes.png"
+          src="images/property_attributes.png"
           alt="property_attributes"
           width="80%"
           height="80%"
@@ -1662,7 +1662,7 @@ export default () => (
             `}
           </CodePane>
 
-          <iframe src="/src/slides/class1/examples/hoisting1.html"></iframe>
+          <iframe src="snippets/class1/hoisting1.html"></iframe>
         </FlexBox>
       </div>
 
@@ -1721,7 +1721,7 @@ export default () => (
             `}
           </CodePane>
 
-          <iframe src="/src/slides/class1/examples/hoisting2.html"></iframe>
+          <iframe src="snippets/class1/hoisting2.html"></iframe>
         </FlexBox>
       </div>
 

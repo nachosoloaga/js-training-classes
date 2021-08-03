@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import Menu from "./Menu";
 import Presentation from "./Spectacle";
 import withSlides from "../utils/withSlides";
@@ -7,7 +7,8 @@ import classes from "../constants/classes";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    // https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing
+    <HashRouter>
       <Switch>
         <Route exact path="/menu" component={Menu} />
 
@@ -24,7 +25,7 @@ const App = () => {
           <Redirect to="menu" />
         </Route>
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
