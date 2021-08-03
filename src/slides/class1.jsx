@@ -1779,6 +1779,33 @@ export default () => (
     <Slide backgroundColor="#000000">
       <div>
         <Heading margin="0px" fontSize="50px">
+          Temporal Dead Zone <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#temporal_dead_zone_tdz">(TDZ)</a>
+        </Heading>
+        <Text fontSize={30}>
+          Las variables declaradas con <b>let</b> no pueden ser accedidas ni escritas hasta que hayan
+          sido completamente inicializadas, lo cual sucede en la declaración de las mismas. Acceder a 
+          esa variable antes de haber sido inicializada resultará en <b>ReferenceError.</b>
+        </Text>
+        <Text fontSize={30}>
+          Se dice que la variable está en una "zona muerta temporal" desde el inicio del bloque hasta
+          que la inicialización de la misma se haya completado.
+        </Text>
+        <CodePane language="js">
+          {`
+            { // TDZ starts at beginning of scope
+              console.log(bar); // undefined
+              console.log(foo); // ReferenceError
+              var bar = 1;
+              let foo = 2; // End of TDZ (for foo)
+            }
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
           Alcance de las variables (cont.)
         </Heading>
         <CodePane language="js">
@@ -1808,9 +1835,6 @@ export default () => (
           Las variables declaradas dentro de una función no pueden ser accedidas fuera de la misma. 
           Sin embargo, una función SI puede acceder a todas las variables declaradas dentro del alcance 
           donde la función misma fue declarada.
-        </Text>
-        <Text fontSize={30}>
-          Ejemplo a continuación.
         </Text>
       </div>
     </Slide>
@@ -1853,7 +1877,7 @@ export default () => (
     <Slide backgroundColor="#000000">
       <div style={{ width: '80%'}}>
         <Heading margin="0px" fontSize="50px">
-          Ejercicio
+          Alcance dentro de funciones (cont.)
         </Heading>
 
         <div style={{ display: 'flex' }}>
@@ -1872,6 +1896,31 @@ export default () => (
 
           <iframe src="/src/slides/class1/examples/scopes1.html"></iframe>
         </div>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#000000">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Alcance de declaraciones de funciones
+        </Heading>
+        <Text fontSize={30}>
+          Las declaraciones de funciones son siempre locales al alcance actual. Esto quiere decir que si son
+          definidas en el contexto global, serán alcanzables por todo el script, y si son definidas dentro de otro bloque
+          seran solo alcanzables dentro de ese bloque.
+        </Text>
+        <CodePane language="js">
+          {`
+            // global scope
+
+            // foo is a global function
+            function foo() {
+                // bar is local to foo
+                function bar() {
+                }
+            }
+          `}
+        </CodePane>
       </div>
     </Slide>
   </>
