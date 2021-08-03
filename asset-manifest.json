@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/nachosoloaga/js-training-classes/static/css/main.ee333a37.chunk.css",
-    "main.js": "/nachosoloaga/js-training-classes/static/js/main.f63c44f1.chunk.js",
-    "main.js.map": "/nachosoloaga/js-training-classes/static/js/main.f63c44f1.chunk.js.map",
-    "runtime-main.js": "/nachosoloaga/js-training-classes/static/js/runtime-main.2e6ce971.js",
-    "runtime-main.js.map": "/nachosoloaga/js-training-classes/static/js/runtime-main.2e6ce971.js.map",
-    "static/js/2.18fc07af.chunk.js": "/nachosoloaga/js-training-classes/static/js/2.18fc07af.chunk.js",
-    "static/js/2.18fc07af.chunk.js.map": "/nachosoloaga/js-training-classes/static/js/2.18fc07af.chunk.js.map",
-    "index.html": "/nachosoloaga/js-training-classes/index.html",
-    "static/css/main.ee333a37.chunk.css.map": "/nachosoloaga/js-training-classes/static/css/main.ee333a37.chunk.css.map",
-    "static/js/2.18fc07af.chunk.js.LICENSE.txt": "/nachosoloaga/js-training-classes/static/js/2.18fc07af.chunk.js.LICENSE.txt",
-    "static/media/class2.md": "/nachosoloaga/js-training-classes/static/media/class2.ef13030d.md",
-    "static/media/property_attributes.png": "/nachosoloaga/js-training-classes/static/media/property_attributes.d53ec04f.png"
+    "main.css": "/js-training-classes/static/css/main.ee333a37.chunk.css",
+    "main.js": "/js-training-classes/static/js/main.f63c44f1.chunk.js",
+    "main.js.map": "/js-training-classes/static/js/main.f63c44f1.chunk.js.map",
+    "runtime-main.js": "/js-training-classes/static/js/runtime-main.76d691de.js",
+    "runtime-main.js.map": "/js-training-classes/static/js/runtime-main.76d691de.js.map",
+    "static/js/2.52e36994.chunk.js": "/js-training-classes/static/js/2.52e36994.chunk.js",
+    "static/js/2.52e36994.chunk.js.map": "/js-training-classes/static/js/2.52e36994.chunk.js.map",
+    "index.html": "/js-training-classes/index.html",
+    "static/css/main.ee333a37.chunk.css.map": "/js-training-classes/static/css/main.ee333a37.chunk.css.map",
+    "static/js/2.52e36994.chunk.js.LICENSE.txt": "/js-training-classes/static/js/2.52e36994.chunk.js.LICENSE.txt",
+    "static/media/class2.md": "/js-training-classes/static/media/class2.ef13030d.md",
+    "static/media/property_attributes.png": "/js-training-classes/static/media/property_attributes.d53ec04f.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2e6ce971.js",
-    "static/js/2.18fc07af.chunk.js",
+    "static/js/runtime-main.76d691de.js",
+    "static/js/2.52e36994.chunk.js",
     "static/css/main.ee333a37.chunk.css",
     "static/js/main.f63c44f1.chunk.js"
   ]
