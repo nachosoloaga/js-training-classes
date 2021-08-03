@@ -2,6 +2,7 @@
   "name": "spectacle-presentation",
   "version": "0.0.1",
   "description": "Spectacle presentation",
+  "homepage": "https://nachosoloaga.github.io/js-training-classes",
   "scripts": {
     "build": "react-scripts build",
     "clean": "rimraf build",
