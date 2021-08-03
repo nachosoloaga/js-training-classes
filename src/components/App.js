@@ -7,6 +7,7 @@ import classes from "../constants/classes";
 
 const App = () => {
   return (
+    // https://create-react-app.dev/docs/deployment/#notes-on-client-side-routing
     <HashRouter>
       <Switch>
         <Route exact path="/menu" component={Menu} />
