@@ -1869,7 +1869,7 @@ export default () => (
             `}
           </CodePane>
 
-          <iframe src="/src/slides/class1/examples/scopes2.html"></iframe>
+          <iframe src="snippets/class1/scopes2.html"></iframe>
         </div>
       </div>
     </Slide>
@@ -1894,7 +1894,7 @@ export default () => (
             `}
           </CodePane>
 
-          <iframe src="/src/slides/class1/examples/scopes1.html"></iframe>
+          <iframe src="snippets/class1/scopes1.html"></iframe>
         </div>
       </div>
     </Slide>
