@@ -785,7 +785,7 @@ export default () => (
 
     {/* Logical Operators */}
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading margin="0px" fontSize="50px">
           Operadores lógicos
@@ -811,7 +811,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading margin="0px" fontSize={50}>
           || (OR)
@@ -842,7 +842,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading fontSize={50}>
           || (OR)
@@ -871,7 +871,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading margin="0px" fontSize={50}>
           && (AND)
@@ -902,7 +902,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading fontSize={50}>
           && (AND)
@@ -924,7 +924,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading margin="0px" fontSize={50}>
           ! (NOT)
@@ -962,7 +962,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading fontSize={50}>
           ?? (Nullish Coalescing)
@@ -994,7 +994,7 @@ export default () => (
 
     {/* Basic Control Structures */}
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading margin="0px" fontSize="50px">
           Estructuras de control
@@ -1023,7 +1023,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading margin="0px" fontSize="50px">
           If / else
@@ -1057,7 +1057,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading margin="0px" fontSize="50px">
           Conditional operator (?)
@@ -1079,7 +1079,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Conditional operator (?) (cont...)
@@ -1102,7 +1102,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           While
@@ -1127,7 +1127,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Do - while
@@ -1149,7 +1149,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           For
@@ -1182,7 +1182,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           for..in & for..of
@@ -1206,7 +1206,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Ejemplo de uso for..in
@@ -1231,7 +1231,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Ejemplo de uso for..of
@@ -1252,7 +1252,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           for..in vs for..of
@@ -1281,7 +1281,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Switch
@@ -1306,7 +1306,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Switch
@@ -1333,7 +1333,7 @@ export default () => (
 
     {/* Error handling */}
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Manejo de errores
@@ -1367,7 +1367,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Manejo de errores (cont.)
@@ -1395,7 +1395,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Manejo de errores (cont.)
@@ -1419,7 +1419,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Manejo de errores (cont.)
@@ -1446,7 +1446,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Creando nuestro propio error
@@ -1473,7 +1473,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Creando errores custom (cont.)
@@ -1503,7 +1503,7 @@ export default () => (
 
     {/* Functions */}
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Funciones
       </Heading>
@@ -1525,7 +1525,7 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Funciones
       </Heading>
@@ -1553,7 +1553,7 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Expresiones
       </Heading>
@@ -1577,7 +1577,7 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Lexical scoping
       </Heading>
@@ -1600,7 +1600,7 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Closures
       </Heading>
@@ -1637,7 +1637,7 @@ export default () => (
 
     {/* Hoisting */}
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div style={{width: '80%'}}>
         <Heading margin="0px" fontSize="50px">
           Hoisting
@@ -1671,7 +1671,7 @@ export default () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Hoisting
       </Heading>
@@ -1692,7 +1692,7 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div style={{width: '80%'}}>
 
         <Heading margin="0px" fontSize="50px">
@@ -1732,7 +1732,7 @@ export default () => (
 
     { /* Blocks and scopes */ }
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Bloques
@@ -1759,7 +1759,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Alcance de las variables
@@ -1776,7 +1776,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Temporal Dead Zone <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#temporal_dead_zone_tdz">(TDZ)</a>
@@ -1803,7 +1803,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Alcance de las variables (cont.)
@@ -1826,7 +1826,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Alcance dentro de funciones
@@ -1839,7 +1839,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div style={{ width: '80%'}}>
         <Heading margin="0px" fontSize="50px">
           Alcance dentro de funciones (cont.)
@@ -1874,7 +1874,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div style={{ width: '80%'}}>
         <Heading margin="0px" fontSize="50px">
           Alcance dentro de funciones (cont.)
@@ -1899,7 +1899,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Alcance de declaraciones de funciones
