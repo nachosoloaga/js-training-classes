@@ -785,7 +785,7 @@ export default () => (
 
     {/* Logical Operators */}
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading margin="0px" fontSize="50px">
           Operadores lógicos
@@ -811,7 +811,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading margin="0px" fontSize={50}>
           || (OR)
@@ -842,7 +842,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading fontSize={50}>
           || (OR)
@@ -871,7 +871,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading margin="0px" fontSize={50}>
           && (AND)
@@ -902,7 +902,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading fontSize={50}>
           && (AND)
@@ -924,7 +924,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading margin="0px" fontSize={50}>
           ! (NOT)
@@ -962,7 +962,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading fontSize={50}>
           ?? (Nullish Coalescing)
@@ -994,7 +994,7 @@ export default () => (
 
     {/* Basic Control Structures */}
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading margin="0px" fontSize="50px">
           Estructuras de control
@@ -1023,7 +1023,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading margin="0px" fontSize="50px">
           If / else
@@ -1057,7 +1057,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div className="flex-center-column">
         <Heading margin="0px" fontSize="50px">
           Conditional operator (?)
@@ -1079,7 +1079,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Conditional operator (?) (cont...)
@@ -1102,7 +1102,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           While
@@ -1127,7 +1127,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Do - while
@@ -1149,7 +1149,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           For
@@ -1182,7 +1182,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           for..in & for..of
@@ -1206,7 +1206,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Ejemplo de uso for..in
@@ -1231,7 +1231,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Ejemplo de uso for..of
@@ -1252,7 +1252,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           for..in vs for..of
@@ -1281,7 +1281,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Switch
@@ -1306,7 +1306,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Switch
@@ -1333,7 +1333,7 @@ export default () => (
 
     {/* Error handling */}
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Manejo de errores
@@ -1367,7 +1367,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Manejo de errores (cont.)
@@ -1395,7 +1395,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Manejo de errores (cont.)
@@ -1419,7 +1419,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Manejo de errores (cont.)
@@ -1446,7 +1446,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Creando nuestro propio error
@@ -1473,7 +1473,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
           Creando errores custom (cont.)
@@ -1503,7 +1503,7 @@ export default () => (
 
     {/* Functions */}
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Funciones
       </Heading>
@@ -1525,7 +1525,7 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Funciones
       </Heading>
@@ -1553,7 +1553,7 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Expresiones
       </Heading>
@@ -1577,7 +1577,7 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Lexical scoping
       </Heading>
@@ -1600,7 +1600,7 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Closures
       </Heading>
@@ -1637,7 +1637,7 @@ export default () => (
 
     {/* Hoisting */}
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div style={{width: '80%'}}>
         <Heading margin="0px" fontSize="50px">
           Hoisting
@@ -1671,7 +1671,7 @@ export default () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Hoisting
       </Heading>
@@ -1692,7 +1692,7 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#000000">
+    <Slide backgroundColor="#0d0d0d">
       <div style={{width: '80%'}}>
 
         <Heading margin="0px" fontSize="50px">
@@ -1728,6 +1728,200 @@ export default () => (
       <Notes>
         El motor de JavaScript solo hace el "hoisting" de la declaración de las variables, es decir que no tiene en cuenta su inicialización.
       </Notes>
+    </Slide>
+
+    { /* Blocks and scopes */ }
+
+    <Slide backgroundColor="#0d0d0d">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Bloques
+        </Heading>
+        <Text fontSize={30}>
+          Los bloques se utilizan para agrupar cero o más sentencias y están delimitados por llaves {'{'} {'}'}.
+          Por ejemplo, las sentencias if y los loops vistos declaran un bloque para agrupar a las sentencias afectadas.
+        </Text>
+        <CodePane language="js">
+          {`
+            var x = 1;
+            let y = 1;
+            
+            if (true) {  // start of the block
+              var x = 2;
+              let y = 2;
+            }            // end of the block
+            
+            console.log(x); // expected output: 2
+
+            console.log(y); // expected output: 1
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#0d0d0d">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Alcance de las variables
+        </Heading>
+        <Text fontSize={30}>
+          El alcance de una variable hace referencia a la región del programa donde la misma puede utilizarse.
+          En JavaScript los distintos tipos de variables vistos (var, let y const) tienen distintos alcances.
+          <UnorderedList fontSize={30}>
+            <ListItem><b>var:</b> podemos decir que tiene alcance "global".</ListItem>
+            <ListItem><b>let y const:</b> podemos decir que ambas tienen alcance de bloque. Las variables declaradas
+            con let y const podrán ser referenciadas dentro del bloque en que fueron declaradas.</ListItem>
+          </UnorderedList>
+        </Text>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#0d0d0d">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Temporal Dead Zone <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#temporal_dead_zone_tdz">(TDZ)</a>
+        </Heading>
+        <Text fontSize={30}>
+          Las variables declaradas con <b>let</b> no pueden ser accedidas ni escritas hasta que hayan
+          sido completamente inicializadas, lo cual sucede en la declaración de las mismas. Acceder a 
+          esa variable antes de haber sido inicializada resultará en <b>ReferenceError.</b>
+        </Text>
+        <Text fontSize={30}>
+          Se dice que la variable está en una "zona muerta temporal" desde el inicio del bloque hasta
+          que la inicialización de la misma se haya completado.
+        </Text>
+        <CodePane language="js">
+          {`
+            { // TDZ starts at beginning of scope
+              console.log(bar); // undefined
+              console.log(foo); // ReferenceError
+              var bar = 1;
+              let foo = 2; // End of TDZ (for foo)
+            }
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#0d0d0d">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Alcance de las variables (cont.)
+        </Heading>
+        <CodePane language="js">
+          {`
+            var x = 1;
+            {
+              var x = 2;
+            }
+            console.log(x); // logs 2
+
+            let x = 1;
+            {
+              let x = 2;
+            }
+            console.log(x); // logs 1
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#0d0d0d">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Alcance dentro de funciones
+        </Heading>
+        <Text fontSize={30}>
+          Las variables declaradas dentro de una función no pueden ser accedidas fuera de la misma. 
+          Sin embargo, una función SI puede acceder a todas las variables declaradas dentro del alcance 
+          donde la función misma fue declarada.
+        </Text>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#0d0d0d">
+      <div style={{ width: '80%'}}>
+        <Heading margin="0px" fontSize="50px">
+          Alcance dentro de funciones (cont.)
+        </Heading>
+
+        <div style={{ display: 'flex' }}>
+          <CodePane language="js">
+            {`
+              // The following variables are defined in the global scope
+              var num1 = 10,
+                  num2 = 5,
+                  name = 'Juan';
+
+              // A nested function example
+              function getScore() {
+                var num1 = 2,
+                    num2 = 3;
+                  
+                function add() {
+                  return name + ' scored ' + (num1 + num2);
+                }
+
+                return add();
+              }
+
+              getScore(); // returns "Juan scored 5"
+            `}
+          </CodePane>
+
+          <iframe src="snippets/class1/scopes2.html"></iframe>
+        </div>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#0d0d0d">
+      <div style={{ width: '80%'}}>
+        <Heading margin="0px" fontSize="50px">
+          Alcance dentro de funciones (cont.)
+        </Heading>
+
+        <div style={{ display: 'flex' }}>
+          <CodePane language="js">
+            {`
+            function addFive(num) {
+                var numberFive = 5;
+                return num + numberFive;
+            }
+
+            addFive(3); // expected output: 8
+
+            console.log(numberFive);
+            `}
+          </CodePane>
+
+          <iframe src="snippets/class1/scopes1.html"></iframe>
+        </div>
+      </div>
+    </Slide>
+
+    <Slide backgroundColor="#0d0d0d">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Alcance de declaraciones de funciones
+        </Heading>
+        <Text fontSize={30}>
+          Las declaraciones de funciones son siempre locales al alcance actual. Esto quiere decir que si son
+          definidas en el contexto global, serán alcanzables por todo el script, y si son definidas dentro de otro bloque
+          seran solo alcanzables dentro de ese bloque.
+        </Text>
+        <CodePane language="js">
+          {`
+            // global scope
+
+            // foo is a global function
+            function foo() {
+                // bar is local to foo
+                function bar() {
+                }
+            }
+          `}
+        </CodePane>
+      </div>
     </Slide>
   </>
 );

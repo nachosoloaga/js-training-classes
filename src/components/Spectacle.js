@@ -10,8 +10,8 @@ import {
 
 const theme = {
   colors: {
-    primary: "#ffffff",
-    secondary: "#ffffff",
+    primary: "#d9d9d9",
+    secondary: "#d9d9d9",
     backgroundColor: "##edeff2"
   },
   fonts: {
