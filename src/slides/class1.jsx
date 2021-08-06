@@ -619,6 +619,87 @@ export default () => (
       </Notes>
     </Slide>
 
+    {/* Type Conversions */}
+    
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Conversión de tipos
+      </Heading>
+
+      <Text>
+        Muchas veces los operadores y las funciones convierten automáticamente los valores recibidos al tipo correcto.
+        Por ejemplo, la función alert convierte automáticamente cualquier valor recibido a string, y las operaciones matemáticas convierten cualquier tipo
+        a number.
+      </Text>
+      <Text>
+        Sin embargo, a veces necesitamos explícitamente hacer una <a href="https://javascript.info/type-conversions">conversion de tipos.</a>
+      </Text>
+      <Text>
+        En otros lenguajes este proceso es también conocido como <b>casteo de tipos.</b>
+      </Text>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Conversión a String
+      </Heading>
+
+      <CodePane language="js">
+        {`
+          // String conversion
+
+          let value = true;
+          alert(typeof value); // boolean
+          
+          value = String(value); // now value is a string "true"
+          alert(typeof value); // string
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Conversión a Number
+      </Heading>
+
+      <CodePane language="js">
+        {`
+          // Number conversion
+
+          let str = "123";
+          alert(typeof str); // string
+          
+          let num = Number(str); // becomes a number 123
+          
+          alert(typeof num)
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#ffd84d">
+      <Heading margin="0px" fontSize="50px">
+        Conversión a Boolean
+      </Heading>
+      <Text fontsize={30}>
+        Las reglas de conversión son simples:
+        <UnorderedList>
+          <ListItem>Valores que son intuitivamente "vacios", como por ejemplo 0, un string vacío, null, undefined y NaN se convertien en <b>false.</b></ListItem>
+          <ListItem>El resto se convierten a <b>true.</b></ListItem>
+        </UnorderedList>
+      </Text>
+      <CodePane language="js">
+        {`
+          // Boolean Conversion
+
+          alert( Boolean(1) ); // true
+          alert( Boolean(0) ); // false
+          
+          alert( Boolean("hello") ); // true
+          alert( Boolean("") ); // false
+        `}
+      </CodePane>
+    </Slide>
+
     {/* Array */}
     <Slide backgroundColor="#ffd84d">
       <Heading margin="0px" fontSize="50px">
