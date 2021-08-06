@@ -783,6 +783,38 @@ export default () => (
       </CodePane>
     </Slide>
 
+    {/* Falsy and truthy values */}
+
+    <Slide backgroundColor="#0d0d0d">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Valores "falsy" y "truthy"
+        </Heading>
+        <Text fontSize={30}>
+          En JavaScript, un valor verdadero (truthy) es un valor que se
+          considera <b>true</b> cuando es evaluado en un contexto Booleano. Todos los
+          valores son verdaderos excepto aquellos que evaluan a <b>false: </b>
+          <strong style={{ color: "lightseagreen"}} >false, 0, "", null, undefined, y NaN</strong>.
+        </Text>
+        <CodePane language="js">
+          {`
+            // For example, these conditions will enter the if statement
+            if (true)
+            if ({})
+            if ([])
+            if (42)
+            if ("foo")
+            if (new Date())
+            if (-42)
+            if (3.14)
+            if (-3.14)
+            if (Infinity)
+            if (-Infinity)
+          `}
+        </CodePane>
+      </div>
+    </Slide>
+
     {/* Logical Operators */}
 
     <Slide backgroundColor="#0d0d0d">
