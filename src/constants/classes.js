@@ -1,11 +1,11 @@
 const classes = [
   {
     classNumber: 1,
-    slidesFilename: "class1.jsx",
+    slidesDirectory: "class1",
   },
   {
     classNumber: 2,
-    slidesFilename: "class2.md",
+    slidesDirectory: "class2",
   },
 ];
 

@@ -12,12 +12,12 @@ const App = () => {
       <Switch>
         <Route exact path="/menu" component={Menu} />
 
-        {classes.map(({ classNumber, slidesFilename }) => (
+        {classes.map(({ classNumber, slidesDirectory }) => (
           <Route
             key={classNumber}
             exact
             path={`/classes/${classNumber}`}
-            render={() => withSlides(Presentation, slidesFilename)}
+            render={() => withSlides(Presentation, slidesDirectory)}
           />
         ))}
 
