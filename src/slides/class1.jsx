@@ -1923,5 +1923,35 @@ export default () => (
         </CodePane>
       </div>
     </Slide>
+
+    {/* Typeof */}
+
+    <Slide backgroundColor="#0d0d0d">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          Operador typeof
+        </Heading>
+        <Text fontSize={30}>
+          Para inspeccionar el tipo de un valor podemos utilizar el operador <b>typeof</b>. Este operador retorna el
+          tipo de un valor en formato string. Puede utilizarse con o sin paréntesis alrededor del valor por el cual se está consultando:
+          <strong style={{ color: "lightseagreen" }}> typeof(true)</strong> ó <strong style={{ color: "lightseagreen" }}>typeof false</strong>.
+        </Text>
+        <CodePane language="js">
+          {`
+            typeof(false);              // expected output: “boolean”
+            typeof({});                 // expected output: “object”
+            typeof(1);                  // expected output: “number”
+
+            let aString = “Un string”;
+            typeof(aString);            // expected output: “string”
+
+            typeof([]);                 // expected output: ???
+            typeof(null);               // expected output: ???
+            typeof(undefined);          // expected output: ???
+            typeof(function hey(){});   // expected output: ???
+          `}
+        </CodePane>
+      </div>
+    </Slide>
   </>
 );
