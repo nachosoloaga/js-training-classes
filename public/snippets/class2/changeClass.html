@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/changeClass.css">
+</head>
+<body>
+  <button id="btn">Cambiar color</button>
+  
+  <p style="color: white;">
+    Contiene texto <b class="coloredText coloredTextRed">Rojo</b>
+  </p>
+  
+  <script>
+    const coloredElem = document.querySelector(".coloredText");
+
+    function clickHandler() {
+      if (coloredElem.classList.contains('coloredTextRed')) {
+        coloredElem.classList.add('coloredTextGreen');
+        coloredElem.classList.remove('coloredTextRed');
+        coloredElem.innerHTML = "Verde";
+      } else {
+        coloredElem.classList.add('coloredTextRed');
+        coloredElem.classList.remove('coloredTextGreen');
+        coloredElem.innerHTML = "Rojo";
+      }
+    };
+
+    document.querySelector("#btn").addEventListener("click", clickHandler);
+  </script>
+</body>
+</html>
