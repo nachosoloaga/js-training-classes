@@ -5,6 +5,8 @@ import {
   Text,
   CodePane,
   FlexBox,
+  UnorderedList,
+  ListItem,
 } from 'spectacle';
 
 export default () => (
@@ -142,6 +144,10 @@ export default () => (
       <Text fontSize={30}>
         Algunos ejemplos comúnes son <b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#attr-class">class</a></b> que permite a CSS y JS acceder al elemento, <b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#attr-style">style</a></b> que personaliza el CSS de ese elemento en particular, <b><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#attr-id">id</a></b> que asigna un identificador único al elemento, entre otros.
       </Text>
+
+      <Text fontSize={30}>
+        Podemos obtener, modificar o borrar cualquier atributo de los elementos HTML utilizando <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute">element.setAttribute</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute">element.getAttribute</a> y <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/removeAttribute">element.removeAttribute</a>
+      </Text>
     </Slide>
    
     <Slide backgroundColor="#0d0d0d">
@@ -215,6 +221,92 @@ export default () => (
 
         <iframe src={`${process.env.PUBLIC_URL}/snippets/class2/changeClass.html`}></iframe>
       </FlexBox>
+    </Slide>
+
+    <Slide backgroundColor="#0d0d0d">
+      <Heading margin="0px" fontSize="50px">
+        InnerHTML y outherHTML
+      </Heading>
+
+      <Text fontSize={30}>
+        Atributos de Element que nos permiten obtener una representación del elemento o modificarlo. Ambos atributos nos permiten obtener un string con la representación HTML del elemento.
+      </Text>
+
+      <Text fontSize={30}>
+        La diferencia básica es que <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML">innerHTML</a> nos devuelve la representación de los elementos descendientes, mientras que <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/outerHTML">outherHTML</a> también devuelve el elemento mismo como parte de la presentación.
+        Lo mismo sucede al intentar modificar estos atributos. Si utilizamos <b>innerHTML</b> solo sobreescribiremos el contenido del elemento, mientras que si usamos <b>outherHTML</b> también estaríamos sobreescribiendo el elemento mismo.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          // <p id="example">Paragraph</p>
+
+          const elem = document.querySelector(#example);
+          console.log(elem.innerHTML); // "Paragraph"
+          console.log(elem.outherHTML); // <p id="example">Paragraph</p>
+        `}
+      </CodePane>
+    </Slide>
+
+    <Slide backgroundColor="#0d0d0d">
+      <Heading margin="0px" fontSize="50px">
+        Buscar elementos
+      </Heading>
+
+      <Text fontSize={30}>
+        Existe una gran variedad de métodos para obtener elementos del DOM. Notar que algunos devuelven un único elemento mientras que otros devuelven una colección (array).
+        Algunos ejemplos: 
+      </Text>
+
+      <UnorderedList>
+        <ListItem>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">document.querySelector</a>
+        </ListItem>
+
+        <ListItem>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelectorAll">document.querySelectorAll</a>
+        </ListItem>
+
+        <ListItem>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByClassName">document.getElementsByClassName</a>
+        </ListItem>
+
+        <ListItem>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById">document.getElementById</a>
+        </ListItem>
+
+        <ListItem>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName">document.getElemenstByTagName</a>
+        </ListItem>
+      </UnorderedList>
+    </Slide>
+
+    <Slide backgroundColor="#0d0d0d">
+      <Heading margin="0px" fontSize="50px">
+        Creación de nuevos elementos
+      </Heading>
+
+      <Text fontSize={30}>
+        Utilizando la document API, podemos crear nuevos elementos HTML, los cuales podemos luego agregar al documento. Para esto debemos usar la funcion <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement">document.createElement</a>.
+      </Text>
+
+      <CodePane language="js">
+        {`
+          function addElement () {
+            // create a new div element
+            const newDiv = document.createElement("div");
+
+            // and give it some content
+            const newContent = document.createTextNode("Hi there and greetings!");
+
+            // add the text node to the newly created div
+            newDiv.appendChild(newContent);
+
+            // add the newly created element and its content into the DOM
+            document.body.appendChild(newDiv);
+          }
+        `}
+      </CodePane>
     </Slide>
   </>
 );
