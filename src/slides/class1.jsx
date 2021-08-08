@@ -683,7 +683,7 @@ export default () => (
       <Text fontsize={30}>
         Las reglas de conversión son simples:
         <UnorderedList>
-          <ListItem>Valores que son intuitivamente "vacios", como por ejemplo 0, un string vacío, null, undefined y NaN se convertien en <b>false.</b></ListItem>
+          <ListItem>Valores que son intuitivamente "vacios", como por ejemplo 0, un string vacío, null, undefined y NaN se convierten en <b>false.</b></ListItem>
           <ListItem>El resto se convierten a <b>true.</b></ListItem>
         </UnorderedList>
       </Text>
