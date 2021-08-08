@@ -3,7 +3,6 @@ import React from "react";
 import {
   FlexBox,
   FullScreen,
-  Progress,
   Deck,
   Box,
 } from "spectacle";
@@ -31,7 +30,6 @@ const template = () => (
       <FullScreen />
     </Box>
     <Box padding="1em">
-      <Progress />
     </Box>
   </FlexBox>
 );

@@ -127,7 +127,7 @@ export default () => (
       </Heading>
 
       <Text className="font-size-medium">
-        <a className="link" href="https://en.wikipedia.org/wiki/ECMAScript">
+        <a href="https://en.wikipedia.org/wiki/ECMAScript">
           ECMAScript
         </a> es un estándar que define un lenguaje de tipos dinámicos ligeramente inspirado en Java y otros lenguajes del estilo de C. Soporta algunas características de la programación orientada a objetos mediante objetos basados en prototipos y pseudoclases.
       </Text>
@@ -150,7 +150,7 @@ export default () => (
       </Text>
 
       <Text className="font-size-medium">
-        Para declarar una variable podemos utilizar la palabra clave <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let"><b>let</b></a>.
+        Para declarar una variable podemos utilizar la palabra clave <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let"><b>let</b></a>.
       </Text>
 
       <CodePane language="js">
@@ -213,7 +213,7 @@ export default () => (
       </Text>
 
       <Text className="font-size-medium">
-        Para definir una constante, usamos la palabra clave <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a>.
+        Para definir una constante, usamos la palabra clave <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a>.
       </Text>
 
       <CodePane language="js">
@@ -284,27 +284,27 @@ export default () => (
       </Heading>
 
       <Text className="font-size-medium align-center" margin="0px" padding="0px">
-        JavaScript cuenta con un conjunto de tipos que son llamados <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#primitive_values">tipos primitivos</a>. Estos tipos definen valores que son inmutables.
+        JavaScript cuenta con un conjunto de tipos que son llamados <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#primitive_values">tipos primitivos</a>. Estos tipos definen valores que son inmutables.
       </Text>
 
       <UnorderedList className="flex-center-column font-size-medium">
         <ListItem>
-          <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">Undefined</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">Undefined</a>
         </ListItem>
         <ListItem>
-          <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">Boolean</a>
         </ListItem>
         <ListItem>
-          <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>
         </ListItem>
         <ListItem>
-          <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>
         </ListItem>
         <ListItem>
-          <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">BigInt</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt">BigInt</a>
         </ListItem>
         <ListItem>
-          <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/symbol">Symbol</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/symbol">Symbol</a>
         </ListItem>
       </UnorderedList>
     </Slide>
@@ -357,7 +357,7 @@ export default () => (
             `}
           </CodePane>
 
-          <iframe src="snippets/class1/null.html"></iframe>
+          <iframe src={`${process.env.PUBLIC_URL}/snippets/class1/null.html`}></iframe>
         </FlexBox>
       </div>
     </Slide>
@@ -368,7 +368,7 @@ export default () => (
       </Heading>
 
       <Text fontSize={30}>
-        Null y undefined son dos tipos primitivos diferentes y no existe un comportamiento intuitivo cuando estos tipos se comparan con otros. Para más info ver este <a className="link" href="https://javascript.info/comparison#comparison-with-null-and-undefined">link</a>.
+        Null y undefined son dos tipos primitivos diferentes y no existe un comportamiento intuitivo cuando estos tipos se comparan con otros. Para más info ver este <a href="https://javascript.info/comparison#comparison-with-null-and-undefined">link</a>.
       </Text>
 
       <Text fontSize={30}>
@@ -428,7 +428,7 @@ export default () => (
                 `}
             </CodePane>
 
-            <iframe src="snippets/class1/boolean1.html"></iframe>
+            <iframe src={`${process.env.PUBLIC_URL}/snippets/class1/boolean1.html`}></iframe>
           </FlexBox>
 
           <FlexBox justifyContent="space-between" style={{ width: '80%' }}>
@@ -442,7 +442,7 @@ export default () => (
                 `}
             </CodePane>
 
-            <iframe src="snippets/class1/boolean2.html"></iframe>
+            <iframe src={`${process.env.PUBLIC_URL}/snippets/class1/boolean2.html`}></iframe>
           </FlexBox>
         </Grid>
       </div>
@@ -467,7 +467,7 @@ export default () => (
                 `}
             </CodePane>
 
-            <iframe src="snippets/class1/boolean3.html"></iframe>
+            <iframe src={`${process.env.PUBLIC_URL}/snippets/class1/boolean3.html`}></iframe>
           </FlexBox>
 
           <FlexBox justifyContent="space-between" style={{ width: '80%' }}>
@@ -481,7 +481,7 @@ export default () => (
                 `}
             </CodePane>
 
-            <iframe src="snippets/class1/boolean4.html"></iframe>
+            <iframe src={`${process.env.PUBLIC_URL}/snippets/class1/boolean4.html`}></iframe>
           </FlexBox>
         </Grid>
       </div>
@@ -611,7 +611,7 @@ export default () => (
       </Text>
 
       <Text fontSize={30}>
-        Algunos ejemplos se pueden encontrar <a className="link" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods">aquí</a>.
+        Algunos ejemplos se pueden encontrar <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods">aquí</a>.
       </Text>
 
       <Notes>
@@ -632,7 +632,7 @@ export default () => (
         a number.
       </Text>
       <Text fontSize={30}>
-        Sin embargo, a veces necesitamos explícitamente hacer una <a className="link" href="https://javascript.info/type-conversions">conversion de tipos.</a>
+        Sin embargo, a veces necesitamos explícitamente hacer una <a href="https://javascript.info/type-conversions">conversion de tipos.</a>
       </Text>
       <Text fontSize={30}>
         En otros lenguajes este proceso es también conocido como <b>casteo de tipos.</b>
@@ -733,7 +733,7 @@ export default () => (
       </Text>
 
       <Text fontSize={30}>
-        También existe una gran variedad de métodos que nos permiten iterar, duplicar, partir y manipular los arreglos de múltiples formas distintas. Algunos ejemplos <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">aquí</a>.
+        También existe una gran variedad de métodos que nos permiten iterar, duplicar, partir y manipular los arreglos de múltiples formas distintas. Algunos ejemplos <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">aquí</a>.
       </Text>
 
       <CodePane language='js'>
@@ -771,7 +771,7 @@ export default () => (
       </Heading>
 
       <Text fontSize={30}>
-        Podemos crear objetos utilizando la <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals">object literal syntax</a> o a través de la instanciación de Object.
+        Podemos crear objetos utilizando la <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals">object literal syntax</a> o a través de la instanciación de Object.
       </Text>
 
       <CodePane language='js'>
@@ -823,12 +823,12 @@ export default () => (
       </Heading>
 
       <Text fontSize={30}>
-        Además del valor, las propiedades poseen otros atributos. <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#objects">Más info</a>.
+        Además del valor, las propiedades poseen otros atributos. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#objects">Más info</a>.
       </Text>
 
       <div style={{ textAlign: 'center' }}>
         <img
-          src="images/property_attributes.png"
+          src={`${process.env.PUBLIC_URL}/images/property_attributes.png`}
           alt="property_attributes"
           width="80%"
           height="80%"
@@ -842,7 +842,7 @@ export default () => (
       </Heading>
 
       <Text fontSize={30}>
-        Para poder modificar alguno de los otros atributos de una propiedad de un objeto podemos utilizar el método <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">Object.defineProperty()</a>.
+        Para poder modificar alguno de los otros atributos de una propiedad de un objeto podemos utilizar el método <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">Object.defineProperty()</a>.
       </Text>
 
       <CodePane language='js'>
@@ -1672,7 +1672,7 @@ export default () => (
       </Heading>
 
       <Text className="font-size-medium">
-        Las funciones también pueden ser definidas como <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function">expresiones</a>.
+        Las funciones también pueden ser definidas como <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function">expresiones</a>.
       </Text>
 
       <Text className="font-size-medium">
@@ -1761,7 +1761,7 @@ export default () => (
         </Text>
 
         <Text className="font-size-medium">
-          Para obtener más información, ver <a className="link" href="https://www.javascripttutorial.net/javascript-execution-context/">Javascript execution Context</a>.
+          Para obtener más información, ver <a href="https://www.javascripttutorial.net/javascript-execution-context/">Javascript execution Context</a>.
         </Text>
 
         <FlexBox justifyContent="space-between">
@@ -1775,7 +1775,7 @@ export default () => (
             `}
           </CodePane>
 
-          <iframe src="snippets/class1/hoisting1.html"></iframe>
+          <iframe src={`${process.env.PUBLIC_URL}/snippets/class1/hoisting1.html`}></iframe>
         </FlexBox>
       </div>
 
@@ -1834,7 +1834,7 @@ export default () => (
             `}
           </CodePane>
 
-          <iframe src="snippets/class1/hoisting2.html"></iframe>
+          <iframe src={`${process.env.PUBLIC_URL}/snippets/class1/hoisting2.html`}></iframe>
         </FlexBox>
       </div>
 
@@ -1892,7 +1892,7 @@ export default () => (
     <Slide backgroundColor="#0d0d0d">
       <div>
         <Heading margin="0px" fontSize="50px">
-          Temporal Dead Zone <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#temporal_dead_zone_tdz">(TDZ)</a>
+          Temporal Dead Zone <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#temporal_dead_zone_tdz">(TDZ)</a>
         </Heading>
         <Text fontSize={30}>
           Las variables declaradas con <b>let</b> no pueden ser accedidas ni escritas hasta que hayan
@@ -1982,7 +1982,7 @@ export default () => (
             `}
           </CodePane>
 
-          <iframe src="snippets/class1/scopes2.html"></iframe>
+          <iframe src={`${process.env.PUBLIC_URL}/snippets/class1/scopes2.html`}></iframe>
         </div>
       </div>
     </Slide>
@@ -2007,7 +2007,7 @@ export default () => (
             `}
           </CodePane>
 
-          <iframe src="snippets/class1/scopes1.html"></iframe>
+          <iframe src={`${process.env.PUBLIC_URL}/snippets/class1/scopes1.html`}></iframe>
         </div>
       </div>
     </Slide>
@@ -2064,6 +2064,19 @@ export default () => (
             typeof(function hey(){});   // expected output: ???
           `}
         </CodePane>
+      </div>
+    </Slide>
+
+    {/* CodeSandbox */}
+
+    <Slide backgroundColor="#0d0d0d">
+      <div>
+        <Heading margin="0px" fontSize="50px">
+          CodeSandbox
+        </Heading>
+        <Text className="flex-center-column" fontSize={30}>
+          <a href="https://codesandbox.io/s/boring-haze-h36gd?file=/src/index.js:168-247">Ejercicios</a>
+        </Text>
       </div>
     </Slide>
   </>
