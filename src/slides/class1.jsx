@@ -16,7 +16,7 @@ import '../styles/styles.css';
 export default () => (
   <>
     {/* Intro to JS */}
-    <Slide className="flex-center-column">
+    <Slide backgroundColor="#0d0d0d" className="flex-center-column">
       <Heading margin="0px" className="font-size-heading">
         <i>Agenda</i>
       </Heading>
@@ -63,7 +63,7 @@ export default () => (
       </OrderedList>
     </Slide>
 
-    <Slide>
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" padding="0px" className="font-size-heading">
         <i>Javascript</i>
       </Heading>
@@ -76,7 +76,7 @@ export default () => (
       </Text>
     </Slide>
 
-    <Slide>
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" padding="0px" className="font-size-heading">
         <i>Javascript</i>
       </Heading>
@@ -90,7 +90,7 @@ export default () => (
       </Text>
     </Slide>
 
-    <Slide>
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" padding="0px" className="font-size-heading">
         <i>Javascript</i>
       </Heading>
@@ -121,7 +121,7 @@ export default () => (
       </UnorderedList>
     </Slide>
 
-    <Slide>
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" padding="0px" className="font-size-heading">
         <i>ECMAScript</i>
       </Heading>
@@ -140,7 +140,7 @@ export default () => (
     </Slide>
 
     {/* let and const */}
-    <Slide>
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" className="font-size-heading">
         Variables
       </Heading>
@@ -162,7 +162,7 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide>
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" className="font-size-heading">
         Variables
       </Heading>
@@ -183,7 +183,7 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide>
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" className="font-size-heading">
         Variables
       </Heading>
@@ -203,7 +203,7 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide>
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" className="font-size-heading">
         Constantes
       </Heading>
@@ -235,16 +235,16 @@ export default () => (
     </Slide>
 
     {/* Comments */}
-    <Slide>
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" padding="0px" className="font-size-heading">
         Comentarios
       </Heading>
 
-      <Text>
+      <Text fontSize={30}>
         En JavaScript, al igual que en todos los lenguajes, tenemos la posibilidad de agregar comentarios en nuestro código.
       </Text>
 
-      <Text>
+      <Text fontSize={30}>
         Podemos agregar comentarios single line o multi line.
       </Text>
 
@@ -263,7 +263,7 @@ export default () => (
     </Slide>
 
     {/* Data types and data structures */}
-    <Slide>
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" className="font-size-heading">
         Valores y estructuras de datos
       </Heading>
@@ -278,7 +278,7 @@ export default () => (
     </Slide>
 
     {/* Primitives */}
-    <Slide>
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" className="font-size-heading">
         Tipos de datos primitivos
       </Heading>
@@ -309,7 +309,7 @@ export default () => (
       </UnorderedList>
     </Slide>
 
-    <Slide>
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" className="font-size-heading">
         Undefined
       </Heading>
@@ -337,7 +337,7 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide>
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" className="font-size-heading align-center" style={{ width: "80%" }}>
         Null
       </Heading>
@@ -362,16 +362,16 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Null vs Undefined
       </Heading>
 
-      <Text>
-        Null y undefined son dos tipos primitivos diferentes y no existe un comportamiento intuitivo cuando estos tipos se comparan con otros. Para más info ver este <a href="https://javascript.info/comparison#comparison-with-null-and-undefined">link</a>.
+      <Text fontSize={30}>
+        Null y undefined son dos tipos primitivos diferentes y no existe un comportamiento intuitivo cuando estos tipos se comparan con otros. Para más info ver este <a className="link" href="https://javascript.info/comparison#comparison-with-null-and-undefined">link</a>.
       </Text>
 
-      <Text>
+      <Text fontSize={30}>
         Generalmente el valor null es algo que se utiliza de manera intencional para indicar la no existencia de algo, mientras que undefined no suele usarse tanto de manera intencional, y representa que una variable fue declarada pero aún no tiene un valor definido.
       </Text>
 
@@ -388,29 +388,29 @@ export default () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Boolean
       </Heading>
 
-      <Text>
+      <Text fontSize={30}>
         Representa una entidad lógica que solo puede tomar los valores <b>true</b> o <b>false</b>.
       </Text>
 
-      <Text>
+      <Text fontSize={30}>
         Podemos usar la función Boolean para convertir cualquier elemento a boolean.
       </Text>
 
-      <Text>
+      <Text fontSize={30}>
         Si el valor es omitido o es 0, -0, null, false, NaN, undefined, o un String vacío (""), el objeto tendrá un valor inicial <b>false</b>.
       </Text>
 
-      <Text>
+      <Text fontSize={30}>
         El resto de los valores, incluyendo Arrays vacíos y el String "false", crean un objeto con un valor inicial de <b>true</b>.
       </Text>
     </Slide>
 
-    <Slide>
+    <Slide backgroundColor="#0d0d0d">
       <div style={{ width: '80%' }}>
         <Heading margin="0px" className="font-size-heading">
           Boolean
@@ -448,7 +448,7 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide>
+    <Slide backgroundColor="#0d0d0d">
       <div style={{ width: '80%' }}>
 
         <Heading margin="0px" className="font-size-heading">
@@ -493,35 +493,35 @@ export default () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Number
       </Heading>
 
-      <Text>
+      <Text fontSize={30}>
         ECMAScript posee dos tipos distintos de números: <b>Number</b> y <b>BigInt</b>.
       </Text>
 
-      <Text>
+      <Text fontSize={30}>
         Number es un valor binario de 64 bits de doble precisión. Representa números entre <b>- (2 ^ 53 - 1)</b> y <b>2 ^ 53 - 1</b>.
       </Text>
 
-      <Text>
+      <Text fontSize={30}>
         Además de representar números de punto flotante, el tipo de número tiene tres valores simbólicos: + Infinito, -Infinito y NaN ("No es un número").
       </Text>
 
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Number
       </Heading>
 
-      <Text>
+      <Text fontSize={30}>
         Para verificar el valor más grande o el valor más pequeño disponible dentro de ± Infinito, se pueden usar las constantes <b>Number.MAX_VALUE</b> o <b>Number.MIN_VALUE</b>
       </Text>
 
-      <Text>
+      <Text fontSize={30}>
         El 0 que puede ser representado como +0 y -0. En la práctica esto no tiene mucho impacto ya que -0 === +0, sin embargo se puede notar algunas diferencias al dividir por 0.
       </Text>
 
@@ -533,16 +533,16 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         BigInt
       </Heading>
 
-      <Text>
+      <Text fontSize={30}>
         El tipo BigInt permite representar números con una precisión arbitraria, es decir que permite operar con números que superen los límites planteados por el tipo Number.
       </Text>
 
-      <Text>
+      <Text fontSize={30}>
         Un BigInt se crea agregando n al final de un número entero o llamando al constructor.
       </Text>
 
@@ -555,16 +555,16 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Symbol
       </Heading>
 
-      <Text>
+      <Text fontSize={30}>
         Es un valor primitivo único e inmutable y se puede utilizar como clave de una propiedad de objeto.
       </Text>
 
-      <Text>
+      <Text fontSize={30}>
         Se crea invocando la función Symbol, que produce dinámicamente un valor único y anónimo.
       </Text>
 
@@ -578,16 +578,16 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         String
       </Heading>
 
-      <Text>
+      <Text fontSize={30}>
         Sirve para representar una cadena de caracteres. La longitud del string está dada por la cantidad de elementos que lo componen.
       </Text>
 
-      <Text>
+      <Text fontSize={30}>
         El primer elemento está en el índice 0, el siguiente en el índice 1, y así sucesivamente. La longitud de una cadena es el número de elementos que contiene.
       </Text>
 
@@ -601,17 +601,17 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         String
       </Heading>
 
-      <Text>
+      <Text fontSize={30}>
         Existe una gran cantidad de métodos que permiten manipular Strings, al igual que en la mayoría de los lenguajes
       </Text>
 
-      <Text>
-        Algunos ejemplos se pueden encontrar <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods">aquí</a>.
+      <Text fontSize={30}>
+        Algunos ejemplos se pueden encontrar <a className="link" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods">aquí</a>.
       </Text>
 
       <Notes>
@@ -621,25 +621,25 @@ export default () => (
 
     {/* Type Conversions */}
     
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Conversión de tipos
       </Heading>
 
-      <Text>
+      <Text fontSize={30}>
         Muchas veces los operadores y las funciones convierten automáticamente los valores recibidos al tipo correcto.
         Por ejemplo, la función alert convierte automáticamente cualquier valor recibido a string, y las operaciones matemáticas convierten cualquier tipo
         a number.
       </Text>
-      <Text>
-        Sin embargo, a veces necesitamos explícitamente hacer una <a href="https://javascript.info/type-conversions">conversion de tipos.</a>
+      <Text fontSize={30}>
+        Sin embargo, a veces necesitamos explícitamente hacer una <a className="link" href="https://javascript.info/type-conversions">conversion de tipos.</a>
       </Text>
-      <Text>
+      <Text fontSize={30}>
         En otros lenguajes este proceso es también conocido como <b>casteo de tipos.</b>
       </Text>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Conversión a String
       </Heading>
@@ -657,7 +657,7 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Conversión a Number
       </Heading>
@@ -676,13 +676,13 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Conversión a Boolean
       </Heading>
       <Text fontsize={30}>
         Las reglas de conversión son simples:
-        <UnorderedList>
+        <UnorderedList fontSize={30}>
           <ListItem>Valores que son intuitivamente "vacios", como por ejemplo 0, un string vacío, null, undefined y NaN se convierten en <b>false.</b></ListItem>
           <ListItem>El resto se convierten a <b>true.</b></ListItem>
         </UnorderedList>
@@ -701,16 +701,16 @@ export default () => (
     </Slide>
 
     {/* Array */}
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Arreglos
       </Heading>
 
-      <Text>
+      <Text fontSize={30}>
         Son objetos en forma de lista que poseen una asociación particular entre claves númericas enteras y la longitud de la lista. Podemos decir que son estructuras indexadas.
       </Text>
 
-      <Text>
+      <Text fontSize={30}>
         Para definir un arreglo podemos usar corchetes ([]) o generar una instancia utilizando la función <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array">Array()</a>.
       </Text>
 
@@ -723,17 +723,17 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Arreglos
       </Heading>
 
-      <Text>
+      <Text fontSize={30}>
         Para acceder a los elementos podemos utilizar un índice numérico indicando la posición.
       </Text>
 
-      <Text>
-        También existe una gran variedad de métodos que nos permiten iterar, duplicar, partir y manipular los arreglos de múltiples formas distintas. Algunos ejemplos <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">aquí</a>.
+      <Text fontSize={30}>
+        También existe una gran variedad de métodos que nos permiten iterar, duplicar, partir y manipular los arreglos de múltiples formas distintas. Algunos ejemplos <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">aquí</a>.
       </Text>
 
       <CodePane language='js'>
@@ -747,16 +747,16 @@ export default () => (
     </Slide>
 
     {/* Object */}
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Objetos
       </Heading>
 
-      <Text>
+      <Text fontSize={30}>
         Podemos ver a los objetos como una colección de propiedades, cada una de los cuales posee un valor asociado. Las propiedades de un objeto son identificadas por "claves".
       </Text>
 
-      <Text>
+      <Text fontSize={30}>
         Las claves de un objeto pueden ser de tipo String o Symbol, pero los valores pueden ser de cualquier tipo, incluso otros objetos.
       </Text>
 
@@ -765,13 +765,13 @@ export default () => (
       </Notes>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Objetos
       </Heading>
 
-      <Text>
-        Podemos crear objetos utilizando la <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals">object literal syntax</a> o a través de la instanciación de Object.
+      <Text fontSize={30}>
+        Podemos crear objetos utilizando la <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#object_literals">object literal syntax</a> o a través de la instanciación de Object.
       </Text>
 
       <CodePane language='js'>
@@ -790,12 +790,12 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Objetos
       </Heading>
 
-      <Text>
+      <Text fontSize={30}>
         Es muy fácil acceder, borrar o actualizar los valores de cualquiera de sus claves.
       </Text>
 
@@ -817,13 +817,13 @@ export default () => (
       </CodePane>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Objetos
       </Heading>
 
-      <Text>
-        Además del valor, las propiedades poseen otros atributos. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#objects">Más info</a>.
+      <Text fontSize={30}>
+        Además del valor, las propiedades poseen otros atributos. <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#objects">Más info</a>.
       </Text>
 
       <div style={{ textAlign: 'center' }}>
@@ -836,13 +836,13 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#ffd84d">
+    <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
         Objetos
       </Heading>
 
-      <Text>
-        Para poder modificar alguno de los otros atributos de una propiedad de un objeto podemos utilizar el método <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">Object.defineProperty()</a>.
+      <Text fontSize={30}>
+        Para poder modificar alguno de los otros atributos de una propiedad de un objeto podemos utilizar el método <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty">Object.defineProperty()</a>.
       </Text>
 
       <CodePane language='js'>
@@ -904,10 +904,10 @@ export default () => (
           Operadores lógicos
         </Heading>
 
-        <Text>
+        <Text fontSize={30}>
           En JavaScript existen 4 operadores lógicos:
         </Text>
-        <UnorderedList>
+        <UnorderedList fontSize={30}>
           <ListItem>
             || (OR)
           </ListItem>
@@ -930,11 +930,11 @@ export default () => (
           || (OR)
         </Heading>
 
-        <Text fontSize={40}>
+        <Text fontSize={30}>
           El operador lógico OR evalua a False cuando ambos operandos son False.
           Caso contrario, siempre evalua a True.
         </Text>
-        <Text fontSize={40}>
+        <Text fontSize={30}>
           En JS la evaluación del OR es de <b>circuito corto</b>.
         </Text>
 
@@ -960,7 +960,7 @@ export default () => (
         <Heading fontSize={50}>
           || (OR)
         </Heading>
-        <Text fontSize={50}>
+        <Text fontSize={30}>
           Siguiendo el ejemplo anterior...
         </Text>
         <CodePane language="js">
@@ -990,11 +990,11 @@ export default () => (
           && (AND)
         </Heading>
 
-        <Text fontSize={40}>
+        <Text fontSize={30}>
           El operador lógico AND evalua a True cuando ambos operandos son True.
           Caso contrario, siempre evalua a False.
         </Text>
-        <Text fontSize={40}>
+        <Text fontSize={30}>
           En JS la evaluación del AND es de <b>circuito corto</b>.
         </Text>
 
@@ -1020,7 +1020,7 @@ export default () => (
         <Heading fontSize={50}>
           && (AND)
         </Heading>
-        <Text fontSize={50}>
+        <Text fontSize={30}>
           Siguiendo el ejemplo anterior...
         </Text>
         <CodePane language="js">
@@ -1084,7 +1084,7 @@ export default () => (
         <Text fontSize={30}>
           El operador de Nullish Coalescing se escribe con dos signos <b>?</b>.
           Si evaluamos <b>a ?? b</b> lo que sucede es lo siguiente:
-          <UnorderedList>
+          <UnorderedList fontSize={30}>
             <ListItem fontSize={30}>Si la variable <b>a</b> está definida, entonces se devuelve <b>a</b></ListItem>
             <ListItem fontSize={30}>Si la variable <b>a</b> no está definida, entonces se devuelve <b>b</b>.</ListItem>
           </UnorderedList>
@@ -1113,10 +1113,10 @@ export default () => (
           Estructuras de control
         </Heading>
 
-        <Text>
+        <Text fontSize={30}>
           En JavaScript existen 5 estructuras de control básicas:
         </Text>
-        <UnorderedList>
+        <UnorderedList fontSize={30}>
           <ListItem>
             If / else
           </ListItem>
@@ -1303,7 +1303,7 @@ export default () => (
         <Text fontSize={30}>
           Existen otros tipos de loop <b>for</b> que sirven a distintos casos de uso:
         </Text>
-        <UnorderedList>
+        <UnorderedList fontSize={30}>
           <ListItem>
             for..in
             <Text fontSize={30}>La instrucción <b>for ... in</b> itera sobre todas las propiedades enumerables de un objeto.
@@ -1672,7 +1672,7 @@ export default () => (
       </Heading>
 
       <Text className="font-size-medium">
-        Las funciones también pueden ser definidas como <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function">expresiones</a>.
+        Las funciones también pueden ser definidas como <a className="link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function">expresiones</a>.
       </Text>
 
       <Text className="font-size-medium">
@@ -1761,7 +1761,7 @@ export default () => (
         </Text>
 
         <Text className="font-size-medium">
-          Para obtener más información, ver <a href="https://www.javascripttutorial.net/javascript-execution-context/">Javascript execution Context</a>.
+          Para obtener más información, ver <a className="link" href="https://www.javascripttutorial.net/javascript-execution-context/">Javascript execution Context</a>.
         </Text>
 
         <FlexBox justifyContent="space-between">
