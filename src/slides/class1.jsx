@@ -653,10 +653,10 @@ export default () => (
           // String conversion
 
           let value = true;
-          alert(typeof value); // boolean
+          console.log(typeof value); // boolean
           
           value = String(value); // now value is a string "true"
-          alert(typeof value); // string
+          console.log(typeof value); // string
         `}
       </CodePane>
     </Slide>
@@ -671,11 +671,11 @@ export default () => (
           // Number conversion
 
           let str = "123";
-          alert(typeof str); // string
+          console.log(typeof str); // string
           
           let num = Number(str); // becomes a number 123
           
-          alert(typeof num)
+          console.log(typeof num)
         `}
       </CodePane>
     </Slide>
@@ -695,11 +695,11 @@ export default () => (
         {`
           // Boolean Conversion
 
-          alert(Boolean(1)); // true
-          alert(Boolean(0)); // false
+          console.log(Boolean(1)); // true
+          console.log(Boolean(0)); // false
           
-          alert(Boolean("hello")); // true
-          alert(Boolean("")); // false
+          console.log(Boolean("hello")); // true
+          console.log(Boolean("")); // false
         `}
       </CodePane>
     </Slide>
@@ -977,7 +977,7 @@ export default () => (
             let lastName = "";
             let nickName = "Bob";
 
-            alert(firstName || lastName || nickName || "Anonymous"); // Bob
+            console.log(firstName || lastName || nickName || "Anonymous"); // Bob
           `}
         </CodePane>
         <br></br>
@@ -986,7 +986,7 @@ export default () => (
             let groupOne = [];
             let groupTwo = [];
 
-            alert(groupOne || groupTwo || ["Bob", "Ana", "Cam"]); // [];
+            console.log(groupOne || groupTwo || ["Bob", "Ana", "Cam"]); // [];
           `}
         </CodePane>
       </div>
@@ -1034,12 +1034,12 @@ export default () => (
         <CodePane language="js">
           {`
             // Si el primer operando es "truthy", el AND retornará el segundo operando:
-            alert(1 && 0); // 0
-            alert(1 && 5); // 5
+            console.log(1 && 0); // 0
+            console.log(1 && 5); // 5
             
             // Si el primer operando es "falsy", AND lo retorna. El segundo operando es ignorado.
-            alert(null && 5); // null
-            alert(0 && "no matter what"); // 0
+            console.log(null && 5); // null
+            console.log(0 && "no matter what"); // 0
           `}
         </CodePane>
       </div>
@@ -1065,8 +1065,8 @@ export default () => (
 
         <CodePane language="js">
           {`
-            alert(!true); // false
-            alert(!0); // true
+            console.log(!true); // false
+            console.log(!0); // true
           `}
         </CodePane>
 
@@ -1076,8 +1076,8 @@ export default () => (
 
         <CodePane language="js">
           {`
-            alert(!!"non-empty string"); // true
-            alert(!!null); // false
+            console.log(!!"non-empty string"); // true
+            console.log(!!null); // false
           `}
         </CodePane>
       </div>
@@ -1107,7 +1107,7 @@ export default () => (
           {`
             let user;
 
-            alert(user ?? "Anonymous"); // Anonymous (user not defined)
+            console.log(user ?? "Anonymous"); // Anonymous (user not defined)
           `}
         </CodePane>
       </div>
@@ -1217,7 +1217,7 @@ export default () => (
                 (carBrand == "Peugeot") ? 'Nice Peugeot!' :
                 'I don't know that brand, nice car!';
               
-              alert(message);
+              console.log(message);
             `}
         </CodePane>
       </div>
@@ -1292,7 +1292,7 @@ export default () => (
         <CodePane language="js">
           {`
             for (let i = 0; i < 30; i++) { // shows 0, then 1, then 2
-              alert(i);
+              console.log(i);
             }
           `}
         </CodePane>
@@ -1444,7 +1444,7 @@ export default () => (
                 null = "this is a null variable";
               } catch (err) {
                 console.log(err); // Syntax Error
-                alert('Hey! Something went wrong...');
+                console.log('Hey! Something went wrong...');
               }
             `}
         </CodePane>
@@ -1482,9 +1482,9 @@ export default () => (
                 if (!user.name) {
                   throw new SyntaxError("Incomplete data: no name");
                 }
-                alert(user.name);
+                console.log(user.name);
               } catch (err) {
-                alert("JSON Error: " + err.message); // JSON Error: Incomplete data: no name
+                console.log("JSON Error: " + err.message); // JSON Error: Incomplete data: no name
               }
             `}
         </CodePane>
@@ -1687,7 +1687,7 @@ export default () => (
           function init() {
             var name = 'Mozilla'; // name is a local variable created by init
             function displayName() { // displayName() is the inner function, a closure
-              alert(name); // use variable declared in the parent function
+              console.log(name); // use variable declared in the parent function
             }
             displayName();
           }
@@ -1710,7 +1710,7 @@ export default () => (
           function makeFunc() {
             var name = 'Mozilla';
             function displayName() {
-              alert(name);
+              console.log(name);
             }
             return displayName;
           }
