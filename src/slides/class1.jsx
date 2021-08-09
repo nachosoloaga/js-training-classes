@@ -22,7 +22,7 @@ export default () => (
       </Heading>
 
       <OrderedList>
-        <Grid gridTemplateColumns="1fr 1fr" gridColumnGap={15} className="font-size-medium">
+        <Grid gridTemplateColumns="1fr 1fr" gridColumnGap={15} fontSize={30}>
           <ListItem>
             Surgimiento de JS
           </ListItem>
@@ -68,10 +68,10 @@ export default () => (
         <i>Javascript</i>
       </Heading>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         JavaScript fue creado inicialmente con un único propósito, "traer vida a las páginas web" - <i>make web pages alive</i>. Hoy en día se utiliza en muchos otros entornos también.
       </Text>
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         Fue desarrollado originalmente por Brendan Eich de Netscape con el nombre de Mocha, el cual fue renombrado posteriormente a LiveScript, para finalmente quedar como JavaScript. Este último cambio de nombre se realizó en diciembre de 1995.
       </Text>
     </Slide>
@@ -81,11 +81,11 @@ export default () => (
         <i>Javascript</i>
       </Heading>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         Los programas escritos en JavaScript son llamados scripts y no necesitan de ningún tipo de procesamiento especial o compilación para ser ejecutados. De hecho, pueden ser escritos directamente en el código HTML de una página web y se ejecutará cuando ésta sea cargada.
       </Text>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.
       </Text>
     </Slide>
@@ -95,11 +95,11 @@ export default () => (
         <i>Javascript</i>
       </Heading>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         Podemos destacar varias cosas únicas del lenguaje
       </Text>
 
-      <UnorderedList className="font-size-medium">
+      <UnorderedList fontSize={30}>
         <ListItem>
           Es el lenguaje con integración completa con HTML y CSS más adoptado de la web.
         </ListItem>
@@ -126,15 +126,15 @@ export default () => (
         <i>ECMAScript</i>
       </Heading>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         <a href="https://en.wikipedia.org/wiki/ECMAScript">
           ECMAScript
         </a> es un estándar que define un lenguaje de tipos dinámicos ligeramente inspirado en Java y otros lenguajes del estilo de C. Soporta algunas características de la programación orientada a objetos mediante objetos basados en prototipos y pseudoclases.
       </Text>
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         El objetivo de este estandar es asegurar la interoperabilidad de las páginas web entre diferentes navegadores web.
       </Text>
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         JavaScript es un lenguaje de programación que implementa este estandar - ECMAScript está basado en JavaScript.
       </Text>
     </Slide>
@@ -145,11 +145,11 @@ export default () => (
         Variables
       </Heading>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         Las variables son contenedores que nos permiten almacenar valores para su posterior uso y/o manipulación.
       </Text>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         Para declarar una variable podemos utilizar la palabra clave <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let"><b>let</b></a>.
       </Text>
 
@@ -167,7 +167,7 @@ export default () => (
         Variables
       </Heading>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         JavaScript es un lenguaje dinámico y de tipado flexible. En parte esto significa que las variables no están asociadas directamente con ningún tipo de valor en particular y se les pueden asignar o reasignar valores de todos los tipos.
       </Text>
 
@@ -188,11 +188,11 @@ export default () => (
         Variables
       </Heading>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         Para definir variables también podemos utilizar la palabra clave <b>var</b>.
       </Text>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         <b>var</b> se comporta distinto a <b>let</b> y su uso actualmente no es muy recomendado. Explicaremos las razones más adelante.
       </Text>
 
@@ -208,11 +208,11 @@ export default () => (
         Constantes
       </Heading>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         A diferencia de las variables, las constantes no pueden cambiar su valor posteriormente. Se debe especificar el valor al momento de su declaración.
       </Text>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         Para definir una constante, usamos la palabra clave <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const">const</a>.
       </Text>
 
@@ -268,11 +268,11 @@ export default () => (
         Valores y estructuras de datos
       </Heading>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         Todos los lenguajes de programación tienen estructuras de datos integradas.
       </Text>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         Generalmente varían sus nombres o formas de utilización de un lenguaje a otro.
       </Text>
     </Slide>
@@ -283,11 +283,11 @@ export default () => (
         Tipos de datos primitivos
       </Heading>
 
-      <Text className="font-size-medium align-center" margin="0px" padding="0px">
+      <Text className="align-center" fontSize={30} margin="0px" padding="0px">
         JavaScript cuenta con un conjunto de tipos que son llamados <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#primitive_values">tipos primitivos</a>. Estos tipos definen valores que son inmutables.
       </Text>
 
-      <UnorderedList className="flex-center-column font-size-medium">
+      <UnorderedList className="flex-center-column" fontSize={30}>
         <ListItem>
           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">Undefined</a>
         </ListItem>
@@ -314,11 +314,11 @@ export default () => (
         Undefined
       </Heading>
 
-      <Text className="font-size-medium align-center">
+      <Text className="align-center" fontSize={30}>
         <b>undefined</b> es una variable global que posee como valor inicial el tipo primitivo undefined.
       </Text>
 
-      <UnorderedList className="font-size-medium">
+      <UnorderedList fontSize={30}>
         <ListItem>
           Una variable que no tiene un valor asignado, es creada con el valor undefined.
         </ListItem>
@@ -343,7 +343,7 @@ export default () => (
       </Heading>
 
       <div style={{ width: '80%' }}>
-        <Text className="font-size-medium">
+        <Text fontSize={30}>
           Este valor se utiliza para representar la no existencia o invalidez de algo, generalmente de manera intencional.
         </Text>
 
@@ -1621,11 +1621,11 @@ export default () => (
         Funciones
       </Heading>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         Javascript nos permite definir funciones para modularizar y evitar repetir nuestro código.
       </Text>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         Para esto, podemos utilizar la palabra clave <b>function</b>.
       </Text>
 
@@ -1643,11 +1643,11 @@ export default () => (
         Funciones
       </Heading>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         En caso de pasar un parámetro de tipo primitivo, por ejemplo un número, este parámetro será pasado por valor.
       </Text>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         En caso de pasar un objeto o array por parámetro, éste será pasado por referencia.
       </Text>
 
@@ -1671,11 +1671,11 @@ export default () => (
         Expresiones
       </Heading>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         Las funciones también pueden ser definidas como <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function">expresiones</a>.
       </Text>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         Podemos definir funciones anónimas, sin proveer un nombre en su declaración.
       </Text>
 
@@ -1695,7 +1695,7 @@ export default () => (
         Lexical scoping
       </Heading>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         En JavaScript una función puede definirse dentro de otra. De esta forma, la función de adentro tiene acceso al contexto de la función que la contiene, pudiendo acceder a todo lo que está en su alcance.
       </Text>
 
@@ -1718,7 +1718,7 @@ export default () => (
         Closures
       </Heading>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         Un closure es la combinación de una función y el entorno léxico dentro del cual se declaró esa función. Este entorno consta de las variables locales que estaban dentro del alcance en el momento en que se creó el closure.
       </Text>
 
@@ -1756,11 +1756,11 @@ export default () => (
           Hoisting
         </Heading>
 
-        <Text className="font-size-medium">
+        <Text fontSize={30}>
           Si bien el código en JS se ejecuta de manera secuencial (se ejecuta una línea y al terminar se ejecuta la que está debajo), el motor de JS procesa la declaración de funciones y variables previo a la ejecución del código.
         </Text>
 
-        <Text className="font-size-medium">
+        <Text fontSize={30}>
           Para obtener más información, ver <a href="https://www.javascripttutorial.net/javascript-execution-context/">Javascript execution Context</a>.
         </Text>
 
@@ -1789,7 +1789,7 @@ export default () => (
         Hoisting
       </Heading>
 
-      <Text className="font-size-medium">
+      <Text fontSize={30}>
         El hoisting de funciones, solo funciona con "function declarations" y no con "function expressions".
       </Text>
 
@@ -1812,11 +1812,11 @@ export default () => (
           Hoisting
         </Heading>
 
-        <Text className="font-size-medium">
+        <Text fontSize={30}>
           En el caso de las variables definidas con <b>var</b>, éstas serán declaradas e inicializadas con el valor <b>undefined</b>.
         </Text>
 
-        <Text className="font-size-medium">
+        <Text fontSize={30}>
           En el caso de variables definidas con <b>let</b> o constantes utilizando <b>const</b>, cualquier referencia a ellas previa a la línea donde son declaradas lanzará una excepción.
         </Text>
 
