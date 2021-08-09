@@ -3,7 +3,6 @@ import React from "react";
 import {
   FlexBox,
   FullScreen,
-  Progress,
   Deck,
   Box,
 } from "spectacle";
@@ -12,7 +11,7 @@ const theme = {
   colors: {
     primary: "#d9d9d9",
     secondary: "#d9d9d9",
-    backgroundColor: "##edeff2"
+    backgroundColor: "#0d0d0d"
   },
   fonts: {
     header: 'Roboto',
@@ -31,7 +30,6 @@ const template = () => (
       <FullScreen />
     </Box>
     <Box padding="1em">
-      <Progress />
     </Box>
   </FlexBox>
 );
