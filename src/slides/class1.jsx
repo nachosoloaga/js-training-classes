@@ -378,6 +378,10 @@ export default () => (
       <CodePane language="js">
         {`
           const logHi = (str = 'hi') => console.log(str);
+
+          logHi(undefined); // 'hi'
+
+          logHi(null); // null
         `}
       </CodePane>
 
@@ -691,11 +695,11 @@ export default () => (
         {`
           // Boolean Conversion
 
-          alert( Boolean(1) ); // true
-          alert( Boolean(0) ); // false
+          alert(Boolean(1)); // true
+          alert(Boolean(0)); // false
           
-          alert( Boolean("hello") ); // true
-          alert( Boolean("") ); // false
+          alert(Boolean("hello")); // true
+          alert(Boolean("")); // false
         `}
       </CodePane>
     </Slide>
@@ -742,6 +746,10 @@ export default () => (
 
           console.log(fruits.length); // 2
           console.log(fruits[0]); // Apple
+
+          fruits.push('Pear'); ['Apple', 'Banana', 'Pear'];
+          fruits.pop(); 'Pear';
+          fruits.shift(); 'Apple';
         `}
       </CodePane>
     </Slide>
@@ -969,7 +977,7 @@ export default () => (
             let lastName = "";
             let nickName = "Bob";
 
-            alert( firstName || lastName || nickName || "Anonymous"); // Bob
+            alert(firstName || lastName || nickName || "Anonymous"); // Bob
           `}
         </CodePane>
         <br></br>
@@ -978,7 +986,7 @@ export default () => (
             let groupOne = [];
             let groupTwo = [];
 
-            alert( groupOne || groupTwo || ["Bob", "Ana", "Cam"]); // ["Bob", "Ana", "Cam"]
+            alert(groupOne || groupTwo || ["Bob", "Ana", "Cam"]); // [];
           `}
         </CodePane>
       </div>
@@ -1026,12 +1034,12 @@ export default () => (
         <CodePane language="js">
           {`
             // Si el primer operando es "truthy", el AND retornará el segundo operando:
-            alert( 1 && 0 ); // 0
-            alert( 1 && 5 ); // 5
+            alert(1 && 0); // 0
+            alert(1 && 5); // 5
             
             // Si el primer operando es "falsy", AND lo retorna. El segundo operando es ignorado.
-            alert( null && 5 ); // null
-            alert( 0 && "no matter what" ); // 0
+            alert(null && 5); // null
+            alert(0 && "no matter what"); // 0
           `}
         </CodePane>
       </div>
@@ -1057,8 +1065,8 @@ export default () => (
 
         <CodePane language="js">
           {`
-            alert( !true ); // false
-            alert( !0 ); // true
+            alert(!true); // false
+            alert(!0); // true
           `}
         </CodePane>
 
@@ -1068,8 +1076,8 @@ export default () => (
 
         <CodePane language="js">
           {`
-            alert( !!"non-empty string" ); // true
-            alert( !!null ); // false
+            alert(!!"non-empty string"); // true
+            alert(!!null); // false
           `}
         </CodePane>
       </div>
@@ -1419,31 +1427,6 @@ export default () => (
       </div>
     </Slide>
 
-    <Slide backgroundColor="#0d0d0d">
-      <div>
-        <Heading margin="0px" fontSize="50px">
-          Switch
-        </Heading>
-        <Text fontSize={30}>
-          El <b>switch</b> puede utilizarse para reemplazar múltiples sentencias <b>if</b> y su sintáxis es la siguiente:
-        </Text>
-        <CodePane language="js">
-          {`
-              switch(x) {
-                case 'value1':  // if (x === 'value1')
-                  ...
-                  break; // break clause is optional, in case it's not present, following conditions are evaluated.
-                case 'value2':  // if (x === 'value2')
-                  ...
-                  break;
-                default:
-                  ...
-              }
-            `}
-        </CodePane>
-      </div>
-    </Slide>
-
     {/* Error handling */}
 
     <Slide backgroundColor="#0d0d0d">
@@ -1499,9 +1482,9 @@ export default () => (
                 if (!user.name) {
                   throw new SyntaxError("Incomplete data: no name");
                 }
-                alert( user.name );
+                alert(user.name);
               } catch (err) {
-                alert( "JSON Error: " + err.message ); // JSON Error: Incomplete data: no name
+                alert("JSON Error: " + err.message); // JSON Error: Incomplete data: no name
               }
             `}
         </CodePane>
@@ -1978,7 +1961,7 @@ export default () => (
                 return add();
               }
 
-              getScore(); // returns "Juan scored 5"
+              getScore();
             `}
           </CodePane>
 
