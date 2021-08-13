@@ -11,7 +11,7 @@ import {
   Notes,
   FlexBox
 } from "spectacle";
-import '../styles/styles.css';
+import '../../styles/styles.css';
 
 export default () => (
   <>

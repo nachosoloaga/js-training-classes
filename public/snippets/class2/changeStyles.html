@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="btn">Cambiar color</button>
+  
+  <p id="paragraph" style="color: white;">Contiene texto <b style="color: red;">Rojo</b></p>
+  
+  <script>
+    const coloredElem = document.querySelector("#paragraph b");
+
+    function clickHandler() {
+      coloredElem.style.color = "green"
+      coloredElem.innerHTML = "Verde";
+    };
+
+    document.querySelector("#btn").addEventListener("click", clickHandler);
+  </script>
+</body>
+</html>
