@@ -36,11 +36,11 @@ export default () => (
       </Heading>
 
       <Text fontSize={30}>
-        Muchas funciones que solemos utilizar desde el código son expuestas por esta API.
+        Muchas funciones que solemos utilizar desde el código son expuestas por esta API, incluso la variable global <b>document</b> que utilizamos para interactuar con el DOM es una propiedad del objecto <b>window</b>.
       </Text>
       
       <Text fontSize={30}>
-        Algunos ejemplos:
+        Algunos ejemplos de funciones:
       </Text>
 
       <UnorderedList>
