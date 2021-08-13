@@ -225,7 +225,7 @@ export default () => (
 
     <Slide backgroundColor="#0d0d0d">
       <Heading margin="0px" fontSize="50px">
-        InnerHTML y outherHTML
+        InnerHTML y outerHTML
       </Heading>
 
       <Text fontSize={30}>
@@ -233,8 +233,8 @@ export default () => (
       </Text>
 
       <Text fontSize={30}>
-        La diferencia básica es que <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML">innerHTML</a> nos devuelve la representación de los elementos descendientes, mientras que <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/outerHTML">outherHTML</a> también devuelve el elemento mismo como parte de la presentación.
-        Lo mismo sucede al intentar modificar estos atributos. Si utilizamos <b>innerHTML</b> solo sobreescribiremos el contenido del elemento, mientras que si usamos <b>outherHTML</b> también estaríamos sobreescribiendo el elemento mismo.
+        La diferencia básica es que <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML">innerHTML</a> nos devuelve la representación de los elementos descendientes, mientras que <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/outerHTML">outerHTML</a> también devuelve el elemento mismo como parte de la presentación.
+        Lo mismo sucede al intentar modificar estos atributos. Si utilizamos <b>innerHTML</b> solo sobreescribiremos el contenido del elemento, mientras que si usamos <b>outerHTML</b> también estaríamos sobreescribiendo el elemento mismo.
       </Text>
 
       <CodePane language="js">
@@ -243,7 +243,7 @@ export default () => (
 
           const elem = document.querySelector(#example);
           console.log(elem.innerHTML); // "Paragraph"
-          console.log(elem.outherHTML); // <p id="example">Paragraph</p>
+          console.log(elem.outerHTML); // <p id="example">Paragraph</p>
         `}
       </CodePane>
     </Slide>
