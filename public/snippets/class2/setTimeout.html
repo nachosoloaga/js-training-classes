@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>setTimeout example</title>
+</head>
+<body>
+  <button id="startBtn">Start</button>
+  <button id="clearBtn">Clear</button>
+  <textarea id="result" cols="30" rows="10">
+  </textarea>
+  
+  <script>
+    const resultContainer = document.querySelector("#result");
+    const clickHandler = () => {
+      setTimeout(function () {
+        resultContainer.value = resultContainer.value + "\n" + "Timer expired after 1 second";
+      }, 1000)
+    };
+
+    document.querySelector("#startBtn").addEventListener("click", clickHandler);
+    document.querySelector("#clearBtn").addEventListener("click", function () {
+      result.value = '';
+    });
+  </script>
+</body>
+</html>

@@ -11,5 +11,7 @@ export default () => (
     <Slides.WindowAPI />
 
     <Slides.Debugger />
+
+    <Slides.Callbacks />
   </>
 );

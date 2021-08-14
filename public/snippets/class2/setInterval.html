@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>setInterval/clearInterval example</title>
+</head>
+
+<body style="background-color: white;">
+  <div id="container">
+    <p>Hello World</p>
+  </div>
+
+  <button id="btnStart">Start</button>
+  <button id="btnStop">Stop</button>
+
+  <script>
+    const btnStop = document.querySelector('#btnStop');
+    const btnStart = document.querySelector('#btnStart');
+    let intervalId;
+
+    btnStop.addEventListener('click', stopTextColor)
+    btnStart.addEventListener('click', startInterval)
+
+    function startInterval() {
+      intervalId = setInterval(flashText, 500);
+    }
+
+    function flashText() {
+      const container = document.querySelector('#container');
+
+      if (container.style.color === 'red') {
+        container.style.color = 'blue'
+      } else {
+        container.style.color = 'red'
+      }
+    }
+
+    function stopTextColor() {
+      clearInterval(intervalId);
+    }
+  </script>
+</body>
+</html>
