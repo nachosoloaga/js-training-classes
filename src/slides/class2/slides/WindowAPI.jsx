@@ -4,7 +4,6 @@ import {
   Heading,
   Text,
   CodePane,
-  FlexBox,
   UnorderedList,
   ListItem,
   Notes
