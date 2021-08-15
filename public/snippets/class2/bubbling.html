@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bubbling example</title>
+</head>
+<body>
+  <style>
+    body * {
+      margin: 10px;
+      border: 1px solid blue;
+      background-color: white;
+    }
+  </style>
+  
+  <form id="form">FORM
+    <div id="div">DIV
+      <p id="p">
+        P
+      </p>
+    </div>
+  </form>
+
+  <script>
+    const form = document.querySelector("#form");
+    const div = document.querySelector("#div");
+    const p = document.querySelector("#p");
+
+    function clickHandler(e) {
+      alert(e.currentTarget.tagName);
+    }
+
+    form.addEventListener('click', clickHandler);
+    div.addEventListener('click', clickHandler);
+    p.addEventListener('click', clickHandler);
+  </script>
+</body>
+</html>

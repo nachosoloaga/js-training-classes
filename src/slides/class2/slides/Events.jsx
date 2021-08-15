@@ -152,7 +152,7 @@ export default () => (
           
           // Dispatch the event.
           elem.dispatchEvent(event);
-          `}
+        `}
       </CodePane>
 
       <Notes>
@@ -177,6 +177,40 @@ export default () => (
           width="50%"
         />
       </div>
+    </Slide>
+
+    <Slide backgroundColor="#0d0d0d">
+      <Heading margin="0px" fontSize="50px">
+        Propagación de eventos
+      </Heading>
+
+      <CodePane language="html">
+        {`
+          <form id="form">FORM
+            <div id="div">DIV
+              <p id="p">
+                P
+              </p>
+            </div>
+          </form>
+        
+          <script>
+            const form = document.querySelector("#form");
+            const div = document.querySelector("#div");
+            const p = document.querySelector("#p");
+        
+            function clickHandler(e) {
+              alert(e.currentTarget.tagName);
+            }
+        
+            form.addEventListener('click', clickHandler);
+            div.addEventListener('click', clickHandler);
+            p.addEventListener('click', clickHandler);
+          </script>
+        `}
+      </CodePane>
+      
+      <iframe src={`${process.env.PUBLIC_URL}/snippets/class2/bubbling.html`}></iframe>
     </Slide>
   </>
 );
