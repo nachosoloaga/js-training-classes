@@ -13,5 +13,7 @@ export default () => (
     <Slides.Debugger />
 
     <Slides.Callbacks />
+
+    <Slides.Events />
   </>
 );
