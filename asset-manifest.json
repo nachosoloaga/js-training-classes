@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/js-training-classes/static/css/main.01dd1891.chunk.css",
-    "main.js": "/js-training-classes/static/js/main.1453bf55.chunk.js",
-    "main.js.map": "/js-training-classes/static/js/main.1453bf55.chunk.js.map",
+    "main.js": "/js-training-classes/static/js/main.012877a4.chunk.js",
+    "main.js.map": "/js-training-classes/static/js/main.012877a4.chunk.js.map",
     "runtime-main.js": "/js-training-classes/static/js/runtime-main.76d691de.js",
     "runtime-main.js.map": "/js-training-classes/static/js/runtime-main.76d691de.js.map",
-    "static/js/2.d7971a10.chunk.js": "/js-training-classes/static/js/2.d7971a10.chunk.js",
-    "static/js/2.d7971a10.chunk.js.map": "/js-training-classes/static/js/2.d7971a10.chunk.js.map",
+    "static/js/2.15f20116.chunk.js": "/js-training-classes/static/js/2.15f20116.chunk.js",
+    "static/js/2.15f20116.chunk.js.map": "/js-training-classes/static/js/2.15f20116.chunk.js.map",
     "index.html": "/js-training-classes/index.html",
     "static/css/main.01dd1891.chunk.css.map": "/js-training-classes/static/css/main.01dd1891.chunk.css.map",
-    "static/js/2.d7971a10.chunk.js.LICENSE.txt": "/js-training-classes/static/js/2.d7971a10.chunk.js.LICENSE.txt"
+    "static/js/2.15f20116.chunk.js.LICENSE.txt": "/js-training-classes/static/js/2.15f20116.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.76d691de.js",
-    "static/js/2.d7971a10.chunk.js",
+    "static/js/2.15f20116.chunk.js",
     "static/css/main.01dd1891.chunk.css",
-    "static/js/main.1453bf55.chunk.js"
+    "static/js/main.012877a4.chunk.js"
   ]
 }
