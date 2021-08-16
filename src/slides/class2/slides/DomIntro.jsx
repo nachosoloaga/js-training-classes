@@ -258,7 +258,7 @@ export default () => (
         Algunos ejemplos: 
       </Text>
 
-      <UnorderedList>
+      <UnorderedList fontSize={30}>
         <ListItem>
           <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">document.querySelector</a>
         </ListItem>
