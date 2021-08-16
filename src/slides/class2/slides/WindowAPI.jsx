@@ -42,7 +42,7 @@ export default () => (
         Algunos ejemplos de funciones:
       </Text>
 
-      <UnorderedList>
+      <UnorderedList fontSize={30}>
         <ListItem>
           <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert">alert</a>
         </ListItem>

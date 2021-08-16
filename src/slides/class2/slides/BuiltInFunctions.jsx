@@ -133,7 +133,7 @@ export default () => (
         El tipo Object provee una gran variedad de métodos que podemos utilizar para recorrerlo, copiarlo, filtrar sus claves, etc.
       </Text>
 
-      <UnorderedList>
+      <UnorderedList fontSize={30}>
         <ListItem>
           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries">Object.entries</a> retorna un array de arrays. Permite recorrer un objeto iterando por sus claves y valores.
         </ListItem>
