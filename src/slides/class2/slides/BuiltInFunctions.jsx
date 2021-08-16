@@ -56,10 +56,6 @@ export default () => (
         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat">parseFloat</a> es una función que recibe un string (si no es un string lo convierte) y retorna un número flotante (o NaN).
       </Text>
 
-      <Text fontSize={30}>
-        <a href="https://thisthat.dev/number-constructor-vs-parse-int/">Number() vs parseInt()</a>
-      </Text>
-
       <CodePane language="js">
         {`
           parseFloat(3.14);
