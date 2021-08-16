@@ -5,3 +5,4 @@ export { default as WindowAPI } from './WindowAPI';
 export { default as Debugger } from './Debugger';
 export { default as Callbacks } from './Callbacks';
 export { default as Events } from './Events';
+export { default as Exercises } from './Exercises';

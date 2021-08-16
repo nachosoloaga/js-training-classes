@@ -17,5 +17,7 @@ export default () => (
     <Slides.Callbacks />
 
     <Slides.Events />
+
+    <Slides.Exercises />
   </>
 );
