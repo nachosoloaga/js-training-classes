@@ -4,6 +4,8 @@ import * as Slides from './slides';
 
 export default () => (
   <>
+    <Slides.Agenda />
+
     <Slides.BuiltInFunctions />
 
     <Slides.DomIntro />

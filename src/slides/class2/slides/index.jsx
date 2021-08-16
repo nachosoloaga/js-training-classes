@@ -1,3 +1,4 @@
+export { default as Agenda } from './Agenda';
 export { default as BuiltInFunctions } from './BuiltInFunctions';
 export { default as DomIntro } from './DomIntro';
 export { default as WindowAPI } from './WindowAPI';
