@@ -25,7 +25,7 @@ export default () => (
       </Text>
 
       <Text fontSize={30}>
-        Cada evento está representado por un objeto basado en la interfaz <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event">Event</a>, y puede tener propiedades o métodos adicionales que ayuden a tratar mejor el error. Existe una gran variedad de <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event#introduction">tipos de eventos</a> distintos, representados por interfaces que implementan Event.
+        Cada evento está representado por un objeto basado en la interfaz <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event">Event</a>, y puede tener propiedades o métodos adicionales que ayuden o faciliten su procesamiento. Existe una gran variedad de <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event#introduction">tipos de eventos</a> distintos, representados por interfaces que implementan Event.
       </Text>
     </Slide>
 
@@ -148,7 +148,7 @@ export default () => (
           // Listen for the event.
           elem.addEventListener('build', handler);
           
-          const event = new CustomEvent('build', { detail: 'Sucess' });
+          const event = new CustomEvent('build', { detail: 'Success' });
           
           // Dispatch the event.
           elem.dispatchEvent(event);
