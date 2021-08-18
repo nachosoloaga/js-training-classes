@@ -17,7 +17,6 @@ const Menu = () => {
             </li>
           );
         })}
-        <li className="menu-list-item">📖 Clase 3</li>
         <li className="menu-list-item">📖 Clase 4</li>
       </ul>
     </div>
