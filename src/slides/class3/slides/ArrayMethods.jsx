@@ -17,9 +17,9 @@ export default () => (
 
       <Text fontSize={30}>
         Con ES6 llegaron nuevos métodos sobre el tipo de dato Array, que nos
-        permiten manipular los mismos de una forma mas “funcional”. Si bien
-        algunos de los métodos que veremos existen con anterioridad a la versión
-        ES6, aprovechamos esta clase para introducirlos. Los más populares son:
+        permiten manipularlo de una forma más “funcional”. Si bien algunos de
+        los métodos que veremos existen con anterioridad a la versión ES6,
+        aprovechamos esta clase para introducirlos. Los más populares son:
       </Text>
 
       <UnorderedList fontSize={30}>
@@ -54,9 +54,12 @@ export default () => (
       </Heading>
 
       <Text fontSize={30}>
-        El método <strong>map()</strong> crea un nuevo array con los resultados
-        de la llamada a la función callback recibida sobre cada uno de sus
-        elementos.
+        El método{" "}
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map">
+          map()
+        </a>{" "}
+        crea un nuevo array con los resultados de la llamada a la función
+        callback recibida sobre cada uno de sus elementos.
       </Text>
 
       <CodePane language="js">
@@ -80,8 +83,12 @@ export default () => (
       </Heading>
 
       <Text fontSize={30}>
-        El método <strong>find()</strong> devuelve el valor del primer elemento
-        del array que cumple la función de prueba proporcionada.
+        El método{" "}
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/find">
+          find()
+        </a>{" "}
+        devuelve el valor del primer elemento del array que evalúa a true la
+        función proporcionada.
       </Text>
 
       <CodePane language="js">
@@ -107,8 +114,11 @@ export default () => (
       </Heading>
 
       <Text fontSize={30}>
-        El método <strong>forEach()</strong> ejecuta la función indicada una vez
-        por cada elemento del array..
+        El método{" "}
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/foreach">
+          forEach()
+        </a>{" "}
+        ejecuta la función indicada una vez por cada elemento del array.
       </Text>
 
       <CodePane language="js">
@@ -130,8 +140,12 @@ export default () => (
       </Heading>
 
       <Text fontSize={30}>
-        El método <strong>reduce()</strong> ejecuta una función reductora sobre
-        cada elemento de un array, devolviendo como resultado un único valor.
+        El método{" "}
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce">
+          reduce()
+        </a>{" "}
+        ejecuta una función reductora sobre cada elemento de un array,
+        devolviendo como resultado un único valor.
       </Text>
 
       <CodePane language="js">
@@ -161,8 +175,8 @@ export default () => (
       </UnorderedList>
       <Text fontSize={30}>
         El valor devuelto de la función reductora se asigna al acumulador, cuyo
-        valor se recuerda en cada iteración de la matriz y, en última instancia,
-        se convierte en el valor final, único y resultante.
+        valor se recuerda en cada iteración y, en última instancia, se convierte
+        en el valor final, único y resultante.
       </Text>
     </Slide>
 
@@ -172,8 +186,11 @@ export default () => (
       </Heading>
 
       <Text fontSize={30}>
-        El método <strong>from()</strong> crea una nueva instancia de Array a
-        partir de un objeto iterable.
+        El método{" "}
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/from">
+          from()
+        </a>{" "}
+        crea una nueva instancia de Array a partir de un objeto iterable.
       </Text>
 
       <CodePane language="js">
