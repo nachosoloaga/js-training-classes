@@ -65,3 +65,7 @@ a {
   color: #e08434;
   text-decoration: none;
 }
+
+strong {
+  color: lightseagreen;
+}
