@@ -5,5 +5,6 @@ import * as Slides from "./slides";
 export default () => (
   <>
     <Slides.Introduction />
+    <Slides.ArrayMethods />
   </>
 );
