@@ -30,8 +30,19 @@ export default () => (
             métodos dentro de un objeto o clase.
           </ListItem>
           <ListItem>
-            No son aptas para los métodos call, apply y bind, que se basan en
-            establecer un alcance particular.
+            No son aptas para los métodos{" "}
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Function/call">
+              call
+            </a>
+            ,{" "}
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Function/apply">
+              apply
+            </a>{" "}
+            y{" "}
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Function/bind">
+              bind
+            </a>
+            , que se basan en establecer un alcance particular.
           </ListItem>
           <ListItem>No se pueden utilizar como constructor.</ListItem>
         </UnorderedList>
@@ -67,7 +78,39 @@ export default () => (
         `}
       </CodePane>
 
+      <Text fontSize={30}>
+        Las arrow functions no bindean su propio this, si no que lo heredan de
+        su <strong>"bloque padre"</strong>, a lo que también nos referimos como
+        <strong>"alcance léxico"</strong>. En{" "}
+        <a href="https://www.codementor.io/@dariogarciamoya/understanding-this-in-javascript-with-arrow-functions-gcpjwfyuc">
+          este artículo
+        </a>{" "}
+        se detalla en profundidad la diferencia en el binding de{" "}
+        <strong>this</strong> en arrow functions vs funciones normales.
+      </Text>
+
       <Notes>Notar como en el segundo ejemplo se remueven las llaves.</Notes>
+    </Slide>
+
+    <Slide backgroundColor="#0d0d0d" style={{ display: "flex" }}>
+      <Heading margin="0px" fontSize="50px">
+        Arrow functions
+      </Heading>
+
+      <CodePane language="js">
+        {`
+          const myObject = {
+            myMethod: () => {
+              console.log(this);
+            }
+          };
+
+          myObject.myMethod() // this === window or global object
+
+          const myMethod = myObject.myMethod;
+          myMethod() // this === window or global object
+        `}
+      </CodePane>
     </Slide>
   </>
 );
