@@ -7,5 +7,6 @@ export default () => (
     <Slides.Introduction />
     <Slides.ArrayMethods />
     <Slides.RestSpread />
+    <Slides.Destructuring />
   </>
 );
