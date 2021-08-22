@@ -11,5 +11,6 @@ export default () => (
     <Slides.ConditionalChaining />
     <Slides.Modules />
     <Slides.ArrowFunctions />
+    <Slides.TemplateLiterals />
   </>
 );
