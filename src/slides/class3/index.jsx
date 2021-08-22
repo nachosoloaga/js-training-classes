@@ -10,5 +10,6 @@ export default () => (
     <Slides.Destructuring />
     <Slides.ConditionalChaining />
     <Slides.Modules />
+    <Slides.ArrowFunctions />
   </>
 );
