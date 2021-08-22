@@ -17,7 +17,7 @@ export default () => (
       </Text>
 
       <Text fontSize={30}>
-        El código sincrónico nos impone algunas limitaciones cuando lo que debemos ejecutar es costoso, ya que JS no le devuelve el control al browser y éste puede parecer frizado, imposibilitando que maneje cualquier otra acción o tarea que el usuario solicite. A esto le llamamos código bloqueante.
+        El código sincrónico nos impone algunas limitaciones cuando lo que debemos ejecutar es costoso, ya que JS no le devuelve el control al browser y éste puede parecer congelado, imposibilitando que maneje cualquier otra acción o tarea que el usuario solicite. A esto le llamamos código bloqueante.
       </Text>
     </Slide>
 
@@ -50,7 +50,7 @@ export default () => (
       </Heading>
 
       <Text fontSize={30}>
-        Los <a href="https://github.com/JulianPasquale/Webpack-templating/commit/2192a8391ccdb897ee806412a513227810131135">Web Workers</a> hacen posible la ejecución de código JS en background, en un hilo separado del main thread. De esta forma podemos ejecutar tareas laboriosas o costasas sin bloquear completamente el navegador.
+        Los <a href="https://github.com/JulianPasquale/Webpack-templating/commit/2192a8391ccdb897ee806412a513227810131135">Web Workers</a> hacen posible la ejecución de código JS en background, en un thread separado del principal. De esta forma podemos ejecutar tareas laboriosas o costosas sin bloquear completamente el navegador.
       </Text>
 
       <Text fontSize={30}>
