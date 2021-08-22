@@ -9,5 +9,6 @@ export default () => (
     <Slides.RestSpread />
     <Slides.Destructuring />
     <Slides.ConditionalChaining />
+    <Slides.Modules />
   </>
 );
