@@ -10,6 +10,7 @@ export default () => (
     <Slides.Destructuring />
     <Slides.ConditionalChaining />
     <Slides.Modules />
+    <Slides.Classes />
     <Slides.ArrowFunctions />
     <Slides.TemplateLiterals />
   </>
