@@ -11,6 +11,10 @@ const classes = [
     classNumber: 3,
     slidesDirectory: "class3",
   },
+  {
+    classNumber: 4,
+    slidesDirectory: "class4",
+  },
 ];
 
 export default classes;

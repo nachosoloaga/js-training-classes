@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blocking code</title>
+</head>
+<body>
+  <button id="startBtn">Run script</button>
+  <textarea id="result" cols="100" rows="8">
+
+  </textarea>
+  
+  <script>
+    const result = document.querySelector("#result");
+    const clickHandler = () => {
+      let fecha;
+      for (let i = 0; i < 20000000; i++) {
+        fecha = new Date();
+      }
+      result.value = result.value + fecha;
+    };
+
+    document.querySelector("#startBtn").addEventListener("click", clickHandler);
+  </script>
+</body>
+</html>
