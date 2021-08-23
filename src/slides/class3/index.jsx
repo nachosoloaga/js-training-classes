@@ -4,6 +4,7 @@ import * as Slides from "./slides";
 
 export default () => (
   <>
+    <Slides.Agenda />
     <Slides.Introduction />
     <Slides.ArrayMethods />
     <Slides.RestSpread />
@@ -15,5 +16,6 @@ export default () => (
     <Slides.TemplateLiterals />
     <Slides.StrictMode />
     <Slides.NewDataStructures />
+    <Slides.Excercises />
   </>
 );
