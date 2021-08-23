@@ -9,3 +9,5 @@ export { default as TemplateLiterals } from "./TemplateLiterals";
 export { default as Classes } from "./Classes";
 export { default as StrictMode } from "./StrictMode";
 export { default as NewDataStructures } from "./NewDataStructures";
+export { default as Agenda } from "./Agenda";
+export { default as Excercises } from "./Excercises";
