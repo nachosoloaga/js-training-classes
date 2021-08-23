@@ -7,3 +7,4 @@ export { default as Modules } from "./Modules";
 export { default as ArrowFunctions } from "./ArrowFunctions";
 export { default as TemplateLiterals } from "./TemplateLiterals";
 export { default as Classes } from "./Classes";
+export { default as StrictMode } from "./StrictMode";
