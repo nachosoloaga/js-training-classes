@@ -14,5 +14,6 @@ export default () => (
     <Slides.ArrowFunctions />
     <Slides.TemplateLiterals />
     <Slides.StrictMode />
+    <Slides.NewDataStructures />
   </>
 );
