@@ -9,7 +9,7 @@ export default () => (
       </Heading>
 
       <Text fontSize={30}>
-        Async/Await es un sugar syntax agregado en ECMAScript 2017 que funciona con promesas y hace más fácil de leer y escribir el código asincrónico.
+        Async/Await es un sugar syntax agregado en ECMAScript 2017 que funciona con promesas y hace más fácil leer y escribir código asincrónico.
       </Text>
 
       <Text fontSize={30}>
