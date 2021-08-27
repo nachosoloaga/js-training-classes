@@ -6,6 +6,8 @@ export default () => (
   <>
     <Slides.BlockingCode />
 
+    <Slides.AsyncAwait />
+
     <Slides.AJAX />
   </>
 );
