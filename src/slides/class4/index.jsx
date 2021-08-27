@@ -5,5 +5,7 @@ import * as Slides from "./slides";
 export default () => (
   <>
     <Slides.BlockingCode />
+
+    <Slides.AJAX />
   </>
 );
