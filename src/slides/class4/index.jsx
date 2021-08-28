@@ -19,5 +19,7 @@ export default () => (
     <Slides.XMLHttpRequest />
 
     <Slides.FetchAPI />
+
+    <Slides.FormData />
   </>
 );
