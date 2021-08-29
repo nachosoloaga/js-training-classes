@@ -6,6 +6,8 @@ export default () => (
   <>
     <Slides.Agenda />
 
+    <Slides.ExecutionContext />
+
     <Slides.BlockingCode />
 
     <Slides.Promises />
