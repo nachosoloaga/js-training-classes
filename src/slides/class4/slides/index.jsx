@@ -1,3 +1,4 @@
+export { default as Agenda } from "./Agenda";
 export { default as BlockingCode } from "./BlockingCode";
 export { default as Promises } from "./Promises";
 export { default as AsyncAwait } from "./AsyncAwait";
