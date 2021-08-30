@@ -9,6 +9,10 @@ export default () => (
       </Heading>
 
       <Text fontSize={30}>
+        <b><i>JavaScript is a single-threaded non-blocking asynchronous concurrent language</i></b>
+      </Text>
+
+      <Text fontSize={30}>
         Podemos pensar en un thread (hilo) como un proceso que los programas utilizan para ejecutar tareas, y cada thread solo puede ejecutar una tarea a la vez. JavaScript ejecuta todo el código en un solo thread (<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Concepts#javascript_is_single_threaded">JavaScript is single-threaded</a>), llamado <b>main thread</b>.
       </Text>
 
