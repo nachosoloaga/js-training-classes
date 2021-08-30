@@ -9,7 +9,7 @@ export default () => (
       </Heading>
 
       <Text fontSize={30}>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">XHR</a> es una API que se utiliza para interactuar con servidores web, a través del envío de peticiones HTTP. Aunque su nombre pueda parecer confuso, XHR no solo sirve para obtener documentos XML, sino cualquier tipo de datos. Además permite realizar peticiones sincrónicas y asincrónicas, sin embargo se recomienda la utilizar la forma asincrónica. <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests">Synchronous and Asynchronous Requests</a>.
+        <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">XHR</a> es una API que se utiliza para interactuar con servidores web, a través del envío de peticiones HTTP. Aunque su nombre pueda parecer confuso, XHR no solo sirve para obtener documentos XML, sino cualquier tipo de datos. Además permite realizar peticiones sincrónicas y asincrónicas, sin embargo se recomienda utilizar la forma asincrónica. <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Synchronous_and_Asynchronous_Requests">Synchronous and Asynchronous Requests</a>.
       </Text>
 
       <Text fontSize={30}>
