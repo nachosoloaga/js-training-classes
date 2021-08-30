@@ -15,5 +15,7 @@ export default () => (
     <Slides.AsyncAwait />
 
     <Slides.AJAX />
+
+    <Slides.XMLHttpRequest />
   </>
 );
