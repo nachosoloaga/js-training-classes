@@ -17,5 +17,7 @@ export default () => (
     <Slides.AJAX />
 
     <Slides.XMLHttpRequest />
+
+    <Slides.FetchAPI />
   </>
 );
