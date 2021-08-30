@@ -18,7 +18,7 @@ export default () => (
         </ListItem>
 
         <ListItem>
-          Functional execution context (FEC): Este contexto es creado por JS cada vez que encuentra una invocación a una función. Cada función tiene su propio FEC y además tiene acceso a todas el código definido en el GEC. Si el código es ejecutado en modo estricto, el valor de this es undefinded, sino es window.
+          Functional execution context (FEC): Este contexto es creado por JS cada vez que encuentra una invocación a una función. Cada función tiene su propio FEC y además tiene acceso a todo el código definido en el GEC. Si el código es ejecutado en modo estricto, el valor de this es undefinded, sino es window.
         </ListItem>
 
         <ListItem>
@@ -27,7 +27,7 @@ export default () => (
       </UnorderedList>
 
       <Text fontSize={30}>
-        Cada contexto 2 fases: creation phase y execution phase.
+        Cada contexto consta de 2 fases: creation phase y execution phase.
       </Text>
     </Slide>
 
@@ -41,7 +41,7 @@ export default () => (
           Se crea el objeto global.
           <UnorderedList fontSize={30}>
             <ListItem>
-              En el caso del GEC, si se ejecuta en un navegador web se crea el objeto window, y si se ejecuta en Node se crea el objeto <b>global</b>. 
+              En el caso del GEC, si se ejecuta en un navegador web se crea el objeto <b>window</b>, y si se ejecuta en Node se crea el objeto <b>global</b>. 
             </ListItem>
 
             <ListItem>
