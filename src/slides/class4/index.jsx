@@ -21,5 +21,7 @@ export default () => (
     <Slides.FetchAPI />
 
     <Slides.FormData />
+
+    <Slides.Excercises />
   </>
 );
